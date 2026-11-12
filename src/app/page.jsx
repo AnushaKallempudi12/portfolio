@@ -124,7 +124,7 @@ export default function Home(){
    <div className="contact-links">
     <a className="contact-link" href="https://github.com/AnushaKallempudi12" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Github size={18}/></span><span><strong>GitHub</strong><small>Explore my code and projects</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="/portfolio/documents/Anusha-Kallempudi-Resume.pdf" target="_blank" rel="noreferrer"><span className="contact-link-icon"><ArrowUpRight size={18}/></span><span><strong>Resume</strong><small>View my experience and skills</small></span><ArrowUpRight size={16}/></a>
-    <a className="contact-link" href="https://www.linkedin.com/in/anushakallempudi" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Linkedin size={18}/></span><span><strong>LinkedIn</strong><small>Connect with me professionally</small></span><ArrowUpRight size={16}/></a>
+    <a className="contact-link" href="https://www.linkedin.com/in/anusha-kallempudi" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Linkedin size={18}/></span><span><strong>LinkedIn</strong><small>Connect with me professionally</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="mailto:anushakallempudi2002@gmail.com"><span className="contact-link-icon"><Mail size={18}/></span><span><strong>Email</strong><small>Send me a message</small></span><ArrowUpRight size={16}/></a>
    </div>
   </div></div></section>

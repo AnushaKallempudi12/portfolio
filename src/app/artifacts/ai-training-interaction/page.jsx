@@ -198,7 +198,7 @@ export default function AITrainingInteractionPage(){
    <section className="detail-section ati-reveal">
     <p className="detail-index">08 / PROJECT DOCUMENTATION</p><h2>AI Training Interaction activity record</h2>
     <p>This original activity document records my work through the Professor Predict stages, including my responses, classifications, reasoning, completion summary, personal reflection, and AI disclosure.</p>
-    <div className="detail-document-frame detail-html-document-frame"><iframe src="https://docs.google.com/gview?embedded=1&url=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
+    <div className="detail-document-frame detail-html-document-frame"><iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
     <p className="detail-document-fallback">If the preview does not load, <a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">open the original activity document</a>.</p>
    </section>
    <section className="detail-section ati-reveal">

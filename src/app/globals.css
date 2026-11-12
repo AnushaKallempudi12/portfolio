@@ -1771,3 +1771,8 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
 .detail-page.ati-page{
   background:#d9e5f1!important;
 }
+
+/* AI Training Interaction: deeper slate-blue outer canvas to complement the navy hero */
+.detail-page.ati-page{
+  background:#344b63!important;
+}

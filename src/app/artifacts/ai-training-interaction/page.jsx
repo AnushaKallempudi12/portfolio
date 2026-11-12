@@ -198,12 +198,8 @@ export default function AITrainingInteractionPage(){
    <section className="detail-section ati-reveal">
     <p className="detail-index">08 / PROJECT DOCUMENTATION</p><h2>AI Training Interaction activity record</h2>
     <p>This original activity document records my work through the Professor Predict stages, including my responses, classifications, reasoning, completion summary, personal reflection, and AI disclosure.</p>
-    <div className="detail-document-toolbar">
-     <span>WORD DOCUMENT · ORIGINAL ACTIVITY RECORD</span>
-     <div className="detail-document-actions"><a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">Open Word document <ArrowUpRight size={13}/></a><a href="/portfolio/documents/AI%20Training%20Interaction.docx" download>Download DOCX <ArrowUpRight size={13}/></a></div>
-    </div>
     <div className="detail-document-frame detail-html-document-frame"><iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
-    <p className="detail-document-fallback">The original Word file is embedded above. Use the open or download controls if the preview does not load in your browser.</p>
+    <p className="detail-document-fallback">The original Word activity record is embedded above.</p>
    </section>
    <section className="detail-section ati-reveal">
     <p className="detail-index">09 / AI DISCLOSURE</p><h2>How AI supported this activity</h2>

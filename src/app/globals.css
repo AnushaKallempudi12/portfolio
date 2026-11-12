@@ -1805,6 +1805,6 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
   width:100%;
   height:100%;
   object-fit:contain;
-  object-position:center;
+  object-position:right center;
   display:block;
 }

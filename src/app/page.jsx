@@ -11,10 +11,11 @@ const projects=[
  {n:"02",visual:"naavia",name:"Naavia AI",type:"AI agent concept",desc:"A travel-planning agent concept that turns preferences and constraints into practical itineraries.",tags:["AI agents","Travel","Planning"]}
 ];
 const skills=[
- {title:"Software engineering",items:["Java","Spring Boot","REST APIs","SQL","Git","Maven"]},
- {title:"Quality engineering",items:["Selenium","REST Assured","TestNG","Cucumber","API testing","Jira"]},
- {title:"AI & data",items:["Python","Machine Learning","CatBoost","Deep Learning","Data Analytics","Prompt Design"]},
- {title:"Tools & platforms",items:["Docker","Dynatrace","GitHub","Power BI","Jupyter","Postman"]}
+ {title:"Software engineering",items:["Java","Spring Boot","REST APIs","SQL"]},
+ {title:"Testing & automation",items:["Selenium","REST Assured","TestNG","Cucumber","API testing"]},
+ {title:"Data analytics & visualization",items:["Python","Data Analytics","Power BI","Jupyter"]},
+ {title:"Machine learning & AI",items:["Machine Learning","CatBoost","Deep Learning","Prompt Design"]},
+ {title:"Developer tools & platforms",items:["Git","GitHub","Maven","Docker","Jira","Dynatrace","Postman"]}
 ];
 function ProjectVisual({kind}) {
  const visuals={
@@ -85,7 +86,7 @@ export default function Home(){
   <section className="section" id="experience"><div className="wrap">
    <div className="reveal"><SectionTitle kicker="02 / Experience" title={<>The path so <em>far.</em></>}/></div>
    <div className="timeline">
-    <div className="timeline-item reveal"><div className="timeline-date">AUG 2023 — NOV 2025</div><div><div className="timeline-role">System Engineer</div><div className="timeline-org">Tata Consultancy Services · Marks & Spencer project</div><div className="timeline-desc">Worked across Java development, test automation, API testing and application support in a retail technology environment. Collaborated with the team to support application quality and dependable delivery.</div></div></div>
+    <div className="timeline-item reveal"><div className="timeline-date">AUG 2023 — NOV 2025</div><div><div className="timeline-role">System Engineer</div><div className="timeline-org">Tata Consultancy Services · Marks & Spencer project</div><ul className="timeline-points"><li>Contributed to Java development for a retail technology project supporting Marks & Spencer.</li><li>Worked on REST API testing to validate application behavior and support reliable integrations.</li><li>Used test automation practices and provided application support to help maintain software quality.</li></ul></div></div>
     <div className="timeline-item reveal"><div className="timeline-date">2026 — PRESENT</div><div><div className="timeline-role">M.S. Artificial Intelligence · Data Analytics</div><div className="timeline-org">Indiana Wesleyan University</div><div className="timeline-desc">Graduate study focused on data analytics, machine learning, data visualization and the practical application of AI.</div></div></div>
    </div>
   </div></section>

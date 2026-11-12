@@ -34,12 +34,12 @@ export default function CinematicVideo() {
       const height = canvas.height;
       context.clearRect(0, 0, width, height);
 
-      // Fill the screen, mirror the footage so the character faces left,
-      // and anchor the mirrored frame so the character stays on the right.
-      const scale = Math.max(width / video.videoWidth, height / video.videoHeight);
+      // Preserve the full source frame, mirror it so the character faces left,
+      // then shift the frame slightly right to keep the character in view.
+      const scale = Math.min(width / video.videoWidth, height / video.videoHeight);
       const drawWidth = video.videoWidth * scale;
       const drawHeight = video.videoHeight * scale;
-      const drawX = width - drawWidth * 0.45;
+      const drawX = width * 0.30;
       const drawY = (height - drawHeight) / 2;
       context.save();
       context.translate(2 * drawX + drawWidth, 0);

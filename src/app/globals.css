@@ -1761,3 +1761,8 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
  .ati-page .detail-content>.detail-section:nth-of-type(odd),
  .ati-page .detail-content>.detail-section:nth-of-type(even){padding:25px 20px}
 }
+
+/* AI Training Interaction: change only the accent line behind the introduction to a blue that echoes the hero */
+.ati-page .detail-content>.detail-section:first-of-type:before{
+  background:linear-gradient(180deg,#5b86bd,rgba(91,134,189,0));
+}

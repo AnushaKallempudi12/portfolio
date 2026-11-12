@@ -33,11 +33,11 @@ export default function CinematicVideo() {
       const height = canvas.height;
       context.clearRect(0, 0, width, height);
 
-      // Keep the source orientation unchanged and preserve the complete frame.
+      // Keep the source orientation unchanged, preserve the full frame, and align it to the right.
       const scale = Math.min(width / video.videoWidth, height / video.videoHeight);
       const drawWidth = video.videoWidth * scale;
       const drawHeight = video.videoHeight * scale;
-      const drawX = (width - drawWidth) / 2;
+      const drawX = width - drawWidth;
       const drawY = (height - drawHeight) / 2;
       context.drawImage(video, drawX, drawY, drawWidth, drawHeight);
 

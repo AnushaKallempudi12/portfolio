@@ -17,12 +17,11 @@ export default function CinematicVideo() {
     let seeking = false;
     let pendingTarget = null;
     
-    // Keep chroma-key work small: the canvas is capped at 960px wide.
-    // The browser scales this transparent result smoothly to the display area.
+    // Preserve up to the source video's 1080p detail while limiting excess work on larger displays.
     const resizeCanvas = () => {
       const stageWidth = Math.max(1, window.innerWidth);
       const stageHeight = Math.max(1, window.innerHeight);
-      const scale = Math.min(1, 1280 / stageWidth, 720 / stageHeight);
+      const scale = Math.min(1, 1920 / stageWidth, 1080 / stageHeight);
       canvas.width = Math.max(1, Math.round(stageWidth * scale));
       canvas.height = Math.max(1, Math.round(stageHeight * scale));
       renderFrame();
@@ -34,18 +33,13 @@ export default function CinematicVideo() {
       const height = canvas.height;
       context.clearRect(0, 0, width, height);
 
-      // Preserve the full source frame, mirror it so the character faces left,
-      // then shift the frame slightly right to keep the character in view.
+      // Keep the source orientation unchanged and preserve the complete frame.
       const scale = Math.min(width / video.videoWidth, height / video.videoHeight);
       const drawWidth = video.videoWidth * scale;
       const drawHeight = video.videoHeight * scale;
-      const drawX = width * 0.30;
+      const drawX = (width - drawWidth) / 2;
       const drawY = (height - drawHeight) / 2;
-      context.save();
-      context.translate(2 * drawX + drawWidth, 0);
-      context.scale(-1, 1);
       context.drawImage(video, drawX, drawY, drawWidth, drawHeight);
-      context.restore();
 
       const image = context.getImageData(0, 0, width, height);
       const pixels = image.data;

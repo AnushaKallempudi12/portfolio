@@ -11,11 +11,11 @@ const projects=[
  {n:"02",visual:"naavia",name:"Naavia AI",type:"AI agent concept",desc:"A travel-planning agent concept that turns preferences and constraints into practical itineraries.",tags:["AI agents","Travel","Planning"]}
 ];
 const skills=[
- {title:"Software engineering",items:["Java","Spring Boot","REST APIs","SQL"]},
- {title:"Testing & automation",items:["Selenium","REST Assured","TestNG","Cucumber","API testing"]},
- {title:"Data analytics & visualization",items:["Python","Data Analytics","Power BI","Jupyter"]},
- {title:"Machine learning & AI",items:["Machine Learning","CatBoost","Deep Learning","Prompt Design"]},
- {title:"Developer tools & platforms",items:["Git","GitHub","Maven","Docker","Jira","Dynatrace","Postman"]}
+ {title:"Backend & application development",items:["Java","Spring Boot","REST APIs","SQL"]},
+ {title:"Quality engineering & testing",items:["Selenium","REST Assured","TestNG","Cucumber","API testing"]},
+ {title:"Data analytics & visualization",items:["Python","Power BI","Jupyter","Data analysis"]},
+ {title:"Machine learning & AI",items:["Machine Learning","CatBoost","Deep Learning","Prompt design"]},
+ {title:"Development tools & delivery",items:["Git","GitHub","Maven","Docker","Jira","Dynatrace","Postman"]}
 ];
 function ProjectVisual({kind}) {
  const visuals={
@@ -110,7 +110,6 @@ export default function Home(){
      <div className="artifact-art model-art"><img className="artifact-thumb" src="/portfolio/images/ml%20vs%20dl_1.png" alt="Machine Learning versus Deep Learning visual" loading="lazy"/><div className="compare-panel" hidden><div><small>STRUCTURED DATA</small><strong>CatBoost</strong><span>Customer churn prediction</span><i className="compare-bars"><b/><b/><b/><b/><b/></i></div><div className="compare-divider">VS</div><div><small>MEDICAL IMAGES</small><strong>CNN</strong><span>Retinal disease detection</span><i className="retina-grid"><b/><b/><b/><b/><b/><b/><b/><b/><b/></i></div></div></div>
      <div className="artifact-meta"><span>ARTIFACT 02</span><span>MODEL COMPARISON</span></div>
      <h3>Machine Learning vs. Deep Learning</h3><p>A comparison of CatBoost for customer churn prediction and convolutional neural networks for diabetic retinopathy detection, showing how data type and problem context influence model selection.</p>
-     <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/ml-vs-dl/">Explore the comparison <ArrowUpRight size={14}/></a>
     </article>
     <article className="artifact-card reveal" id="artifact-ai-training"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/ai-training-interaction/" aria-label="Open AI Training Interaction artifact details"/>
      <div className="artifact-art training-art"><ProjectVisual kind="training"/></div>

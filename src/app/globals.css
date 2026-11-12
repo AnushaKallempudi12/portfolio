@@ -1940,15 +1940,3 @@ html,body{background:#080b12;color:#edf3ff}
 .ati-page .detail-document-fallback a{color:#83b5ff;text-decoration:underline;text-underline-offset:3px}
 
 
-/* Hero name follows the same typography as the About and Artifacts section headings. */
-.hero-nameplate,
-.hero-nameplate .hero-first-name,
-.hero-nameplate .hero-name{
-  font-family:inherit!important;
-  font-style:normal!important;
-  font-weight:700!important;
-  color:var(--cream)!important;
-  -webkit-text-stroke:0!important;
-  text-transform:uppercase!important;
-  letter-spacing:-.07em!important;
-}

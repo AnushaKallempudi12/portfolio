@@ -64,9 +64,9 @@ export default function Home(){
   <section className="hero" id="top">
    <div className="hero-grid"/><div className="hero-glow"/>
    <div className="hero-content">
-    <div className="eyebrow hero-enter">Software engineer · AI/ML graduate student</div>
+    
     <h1 className="hero-enter hero-nameplate"><span className="hero-first-name">Anusha</span><br/><span className="hero-name">Kallempudi</span></h1>
-    <p className="hero-copy hero-enter">I build reliable software and explore how data and intelligent systems can solve practical problems.</p>
+    <p className="hero-copy hero-enter">A software engineer by experience and an AI/ML graduate student by pursuit, I’m focused on strengthening my technical foundation, exploring intelligent technologies, and building solutions that address meaningful problems.</p>
     <div className="hero-profession hero-enter">SOFTWARE ENGINEER <span>·</span> AI/ML GRADUATE STUDENT</div>
     <div className="hero-actions hero-enter">
      <a className="button hero-button-primary" href="#about">About <ArrowDownRight size={15}/></a>

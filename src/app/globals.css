@@ -1940,3 +1940,16 @@ html,body{background:#080b12;color:#edf3ff}
 .ati-page .detail-document-fallback a{color:#83b5ff;text-decoration:underline;text-underline-offset:3px}
 
 
+
+
+/* Match the left-side name to the About and Artifacts navigation labels. */
+.brand{
+  font:11px var(--mono);
+  font-weight:400;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+/* Reduce the supporting introduction beneath the hero name. */
+.hero-copy{font-size:15px;line-height:1.8}
+@media(max-width:760px){.hero-copy{font-size:14px}}

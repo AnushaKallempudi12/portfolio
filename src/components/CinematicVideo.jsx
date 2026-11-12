@@ -17,11 +17,11 @@ export default function CinematicVideo() {
     let seeking = false;
     let pendingTarget = null;
     
-    // Preserve up to the source video's 1080p detail while limiting excess work on larger displays.
+    // Process at 720p to keep green-screen compositing responsive while scrolling.
     const resizeCanvas = () => {
       const stageWidth = Math.max(1, window.innerWidth);
       const stageHeight = Math.max(1, window.innerHeight);
-      const scale = Math.min(1, 1920 / stageWidth, 1080 / stageHeight);
+      const scale = Math.min(1, 1280 / stageWidth, 720 / stageHeight);
       canvas.width = Math.max(1, Math.round(stageWidth * scale));
       canvas.height = Math.max(1, Math.round(stageHeight * scale));
       renderFrame();
@@ -60,13 +60,15 @@ export default function CinematicVideo() {
           };
 
     const applyPendingSeek = () => {
-      if (!ready || seeking || pendingTarget === null) return;
+      if (!ready || pendingTarget === null) return;
       const target = pendingTarget;
       pendingTarget = null;
       if (Math.abs(target - video.currentTime) < 0.025) {
         renderFrame();
         return;
       }
+      // Replace an in-progress seek with the newest scroll position instead of
+      // waiting for an outdated frame to finish decoding.
       seeking = true;
       try {
         video.currentTime = target;

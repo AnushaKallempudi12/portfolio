@@ -1722,3 +1722,42 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
  .codecoach-page .detail-content>.detail-section:nth-of-type(even){padding:25px 20px}
  .codecoach-document-row{align-items:flex-start}
 }
+
+
+/* Apply the CodeCoach alternating blue-and-cream section treatment to the other artifacts */
+.ml-dl-page .detail-content>.detail-section:nth-of-type(odd),
+.ati-page .detail-content>.detail-section:nth-of-type(odd){
+ background:linear-gradient(145deg,#e9f0f7 0%,#dce7f1 100%);
+ border:1px solid #c8d7e5;
+ border-radius:7px;
+ padding:34px 36px;
+ margin:0 0 18px;
+ box-shadow:0 10px 26px rgba(24,48,72,.07);
+}
+.ml-dl-page .detail-content>.detail-section:nth-of-type(even),
+.ati-page .detail-content>.detail-section:nth-of-type(even){
+ background:linear-gradient(145deg,#fffdf7 0%,#f2eee4 100%);
+ border:1px solid #e1d9c9;
+ border-radius:7px;
+ padding:34px 36px;
+ margin:0 0 18px;
+ box-shadow:0 10px 26px rgba(75,62,43,.05);
+}
+.ml-dl-page .detail-content>.detail-section:nth-of-type(odd):before,
+.ati-page .detail-content>.detail-section:nth-of-type(odd):before{
+ background:linear-gradient(180deg,#315f9b,rgba(49,95,155,0));
+}
+.ml-dl-page .detail-content>.detail-section:nth-of-type(odd) .detail-index,
+.ati-page .detail-content>.detail-section:nth-of-type(odd) .detail-index{color:#315f9b}
+.ml-dl-page .detail-content>.detail-section:nth-of-type(even):before,
+.ati-page .detail-content>.detail-section:nth-of-type(even):before{
+ background:linear-gradient(180deg,#a58b62,rgba(165,139,98,0));
+}
+.ml-dl-page .detail-content>.detail-section:nth-of-type(even) .detail-index,
+.ati-page .detail-content>.detail-section:nth-of-type(even) .detail-index{color:#927a56}
+@media(max-width:650px){
+ .ml-dl-page .detail-content>.detail-section:nth-of-type(odd),
+ .ml-dl-page .detail-content>.detail-section:nth-of-type(even),
+ .ati-page .detail-content>.detail-section:nth-of-type(odd),
+ .ati-page .detail-content>.detail-section:nth-of-type(even){padding:25px 20px}
+}

@@ -78,6 +78,8 @@ button{font:inherit}
 
 /* Portfolio-specific project visuals: interface, model pipeline, product dashboard and trip route. */
 .project-art{height:154px;display:flex;align-items:center;justify-content:center;padding:12px;background:linear-gradient(135deg,#101c2e,#0a111c);perspective:900px}
+.project-art:has(.project-preview-image){padding:0;background:#0b111c}
+.project-preview-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;border-radius:3px}
 .project-art:before,.project-art:after{display:none}
 .project-visual{width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .visual-code{width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center}

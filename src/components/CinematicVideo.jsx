@@ -16,12 +16,12 @@ export default function CinematicVideo() {
     let ready = false;
     let seeking = false;
     let pendingTarget = null;
-    
-    // Process at 720p to keep green-screen compositing responsive while scrolling.
+
+    // Preserve the original full-resolution canvas quality (up to 1920x1080).
     const resizeCanvas = () => {
       const stageWidth = Math.max(1, window.innerWidth);
       const stageHeight = Math.max(1, window.innerHeight);
-      const scale = Math.min(1, 1280 / stageWidth, 720 / stageHeight);
+      const scale = Math.min(1, 1920 / stageWidth, 1080 / stageHeight);
       canvas.width = Math.max(1, Math.round(stageWidth * scale));
       canvas.height = Math.max(1, Math.round(stageHeight * scale));
       renderFrame();
@@ -57,7 +57,7 @@ export default function CinematicVideo() {
         }
       }
       context.putImageData(image, 0, 0);
-          };
+    };
 
     const applyPendingSeek = () => {
       if (!ready || pendingTarget === null) return;

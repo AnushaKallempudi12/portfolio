@@ -45,4 +45,5 @@ This version intentionally omits the reference project's admin CMS, database, vi
 
 ## Cinematic scroll experience
 
-The portfolio now uses the scroll-scrubbed forward/reverse video technique from [5araang/Nextjs-cinematic-portfolio](https://github.com/5araang/Nextjs-cinematic-portfolio), whose source repository is MIT licensed. For this first replication pass, the reference repository's public demo footage and poster are streamed from its raw GitHub URLs. This is reference footage, not Anusha's personal footage; replace the two video URLs and poster in `src/components/VideoScrub.jsx` with portfolio-owned footage before treating the page as final. The video playhead follows scroll position in both directions.
+The cinematic scroll experience uses original video footage created specifically for this portfolio. Its playback is synchronized with page scrolling, allowing the video to move forward or backward as visitors scroll through the page.
+The scroll-scrubbing interaction was inspired by the MIT-licensed [Next.js Cinematic Portfolio](https://github.com/5araang/Nextjs-cinematic-portfolio). However, the video footage presented on this portfolio is my own and is not taken from the reference project's public demo.

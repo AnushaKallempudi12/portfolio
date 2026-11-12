@@ -1929,3 +1929,12 @@ html,body{background:#080b12;color:#edf3ff}
 .ml-dl-page .detail-case-why{border-left-color:#315f9b}
 .ml-dl-page .detail-case-why strong{color:#244b7d}
 .ati-page .detail-document-toolbar>span{color:#315f9b}
+
+/* Keep the AI Training Interaction document viewer in the sapphire portfolio palette. */
+.ati-page .detail-document-frame{
+  background:#0d1727!important;
+  border-color:rgba(107,157,255,.28)!important;
+}
+.ati-page .detail-document-frame iframe{background:#0d1727}
+.ati-page .detail-document-fallback{color:#a9b6ca}
+.ati-page .detail-document-fallback a{color:#83b5ff;text-decoration:underline;text-underline-offset:3px}

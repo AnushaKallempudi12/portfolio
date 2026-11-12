@@ -1818,3 +1818,15 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
 @media(max-width:760px){
   .cinematic-stage{left:18%;width:82%}
 }
+
+
+/* Match the homepage navigation labels to the warm cream hero-name color. */
+.navlinks,
+.navlinks a,
+.nav-dropdown-trigger{
+  color:#f2eee5!important;
+}
+.navlinks a:hover,
+.nav-dropdown-trigger:hover{
+  color:#a9c8f5!important;
+}

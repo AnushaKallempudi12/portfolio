@@ -41,16 +41,20 @@ export default function CinematicVideo() {
       void main() {
         vec4 source = texture2D(u_video, v_texCoord);
         vec3 color = source.rgb;
-        float strongestNonGreen = max(color.r, color.b);
-        float chroma = color.g - strongestNonGreen;
-        float greenDominant = step(strongestNonGreen * 1.12, color.g);
-        float validGreen = step(0.28, color.g);
-        float keyStrength = smoothstep(0.035, 0.24, chroma) * greenDominant * validGreen;
-        float alpha = 1.0 - keyStrength;
+        float chroma = color.g - max(color.r, color.b);
+        float isGreen = step(70.0 / 255.0, color.g)
+          * step(24.0 / 255.0, chroma)
+          * step(color.r * 1.16, color.g)
+          * step(color.b * 1.12, color.g);
 
-        // Reduce green spill along partially transparent edges.
-        float cleanedGreen = min(color.g, strongestNonGreen + 0.055);
-        color.g = mix(color.g, cleanedGreen, keyStrength);
+        // Match the previous CPU key's thresholds and feathering.
+        float keyedAlpha = clamp(1.0 - (chroma - 18.0 / 255.0) / (48.0 / 255.0), 0.0, 1.0);
+        float alpha = mix(1.0, keyedAlpha, isGreen);
+
+        // Match the previous subtle edge decontamination only on translucent pixels.
+        float partiallyKeyed = step(0.001, alpha) * (1.0 - step(0.999, alpha));
+        float cleanedGreen = min(color.g, (color.r + color.b) * 0.5 + 18.0 / 255.0);
+        color.g = mix(color.g, cleanedGreen, partiallyKeyed * isGreen);
 
         // Premultiply for correct blending over the page.
         gl_FragColor = vec4(color * alpha, alpha);

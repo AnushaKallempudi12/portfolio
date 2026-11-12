@@ -1950,6 +1950,6 @@ html,body{background:#080b12;color:#edf3ff}
   text-transform:uppercase;
 }
 
-/* Reduce the supporting introduction beneath the hero name. */
-.hero-copy{font-size:15px;line-height:1.8}
-@media(max-width:760px){.hero-copy{font-size:14px}}
+/* Keep the supporting introduction beneath the hero name compact. */
+.hero-copy{font-size:13px;line-height:1.75}
+@media(max-width:760px){.hero-copy{font-size:12px}}

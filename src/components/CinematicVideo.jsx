@@ -51,12 +51,8 @@ export default function CinematicVideo() {
         float keyedAlpha = clamp(1.0 - (chroma - 18.0 / 255.0) / (48.0 / 255.0), 0.0, 1.0);
         float alpha = mix(1.0, keyedAlpha, isGreen);
 
-        // Match the previous subtle edge decontamination only on translucent pixels.
-        float partiallyKeyed = step(0.001, alpha) * (1.0 - step(0.999, alpha));
-        float cleanedGreen = min(color.g, (color.r + color.b) * 0.5 + 18.0 / 255.0);
-        color.g = mix(color.g, cleanedGreen, partiallyKeyed * isGreen);
-
-        // Premultiply for correct blending over the page.
+        // Preserve the source RGB exactly. Only alter transparency for the
+        // green-screen pixels; do not tint, desaturate, or recolor the subject.
         gl_FragColor = vec4(color * alpha, alpha);
       }
     `;

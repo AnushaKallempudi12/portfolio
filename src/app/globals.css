@@ -1776,3 +1776,10 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
 .detail-page.ati-page{
   background:#d9e5f1!important;
 }
+
+
+/* Match the outer canvas of Artifacts 2 and 3 to Artifact 1 (CodeCoach) */
+.detail-page.ml-dl-page,
+.detail-page.ati-page{
+  background:#c4cec8!important;
+}

@@ -1858,3 +1858,74 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
   opacity:0;
   pointer-events:none;
 }
+
+/* Restore the original sapphire-blue portfolio palette throughout the site. */
+:root{
+  --bg:#080b12;
+  --panel:#101725;
+  --panel2:#0d1420;
+  --ink:#edf3ff;
+  --muted:#8c9ab1;
+  --line:rgba(173,195,230,.13);
+  --blue:#6b9dff;
+  --cyan:#83d7ee;
+}
+html,body{background:#080b12;color:#edf3ff}
+::selection{background:#6b9dff;color:#07101e}
+.nav{background:linear-gradient(180deg,rgba(8,11,18,.88),rgba(8,11,18,.12))}
+.nav.scrolled{background:rgba(8,11,18,.9);border-color:rgba(173,195,230,.13)}
+.navlinks{color:#a9b6ca}
+.navlinks a:hover,.nav-dropdown-trigger:hover{color:#fff}
+.nav-dropdown-menu{background:rgba(13,22,37,.98);border-color:rgba(173,195,230,.2)}
+.nav-dropdown-menu a{color:#dce8f7}
+.nav-dropdown-menu a:hover{background:rgba(107,157,255,.14);color:#fff}
+.nav-cta,.button{border-color:rgba(107,157,255,.45);background:rgba(107,157,255,.1);color:#dce8ff}
+.nav-cta:hover,.button:hover{background:#6b9dff;color:#07101e}
+.hero{background:linear-gradient(90deg,rgba(8,11,18,.18),transparent 76%)}
+.hero-glow{background:radial-gradient(circle,rgba(40,103,210,.16),rgba(8,11,18,0) 68%)}
+.eyebrow,.section-kicker,.project-index,.skill-group h3{color:#6b9dff}
+.eyebrow:before{background:#6b9dff}
+.section{background:linear-gradient(180deg,rgba(8,11,18,.16),rgba(8,11,18,.52))}
+.section-heading em{color:#70829c}
+.about-copy{color:#a1aec2}
+.principle,.skill-group{background:linear-gradient(135deg,rgba(21,33,52,.8),rgba(12,18,29,.72));border-color:rgba(173,195,230,.13)}
+.principle small,.focus-list>div>span{color:#6b9dff}
+.stat-card{background:linear-gradient(145deg,rgba(19,31,49,.95),rgba(9,14,23,.95));border-color:rgba(173,195,230,.16)}
+.stat-card:before{background:radial-gradient(circle,rgba(85,142,255,.2),transparent 70%)}
+.stat-top{color:#8292ab}
+.focus-list strong{color:#edf3ff}
+.focus-list small{color:#9aa9c0}
+.project{background:linear-gradient(145deg,rgba(19,29,45,.9),rgba(9,14,22,.96));border-color:rgba(173,195,230,.13)}
+.project:hover{border-color:rgba(107,157,255,.5)}
+.project-art{background:linear-gradient(135deg,#121e31,#0b111c);border-color:rgba(140,173,226,.14)}
+.project p,.timeline-desc{color:#93a2b8}
+.project-arrow,.timeline-org{color:#6b9dff}
+.tag{border-color:rgba(173,195,230,.13);color:#9cacc2}
+.timeline,.timeline-item{border-color:rgba(173,195,230,.13)}
+.timeline-date{color:#8090a8}
+.skill-list span{color:#b2bfd2;background:rgba(127,155,198,.08);border-color:rgba(127,155,198,.1)}
+.contact-panel{border-color:rgba(107,157,255,.23);background:radial-gradient(ellipse at 90% 10%,rgba(69,122,215,.18),transparent 45%),linear-gradient(135deg,#121d30,#0b111c)}
+.contact-panel p{color:#9aa9c0}
+.footer{border-color:rgba(173,195,230,.13);color:#73839b}
+.artifacts-section{background:linear-gradient(180deg,rgba(8,11,18,.68),rgba(8,11,18,.92))}
+.artifact-card{background:linear-gradient(145deg,rgba(19,31,49,.94),rgba(9,14,23,.98));border-color:rgba(173,195,230,.16)}
+.artifact-card:hover{border-color:rgba(107,157,255,.5)}
+.artifact-art{background:radial-gradient(ellipse at 70% 20%,rgba(75,133,232,.2),transparent 48%),linear-gradient(135deg,#121e31,#0b111c);border-color:rgba(173,195,230,.12)}
+.terminal-top i{background:#6b9dff}
+.terminal-top i:nth-child(2){background:#83d7ee}
+.terminal-top i:nth-child(3){background:#8c9ab1}
+.terminal-body small,.compare-panel small{color:#6b9dff}
+.detail-nav{background:#080d17;color:#edf3ff;border-bottom-color:rgba(173,195,230,.16)}
+.detail-hero{background:radial-gradient(ellipse at 82% 22%,rgba(49,95,155,.32),transparent 38%),linear-gradient(120deg,#0b1a30,#17365b 65%,#10213a)}
+.codecoach-page .detail-hero .detail-primary{background:#315f9b;border-color:#315f9b;color:#fff;box-shadow:0 8px 22px rgba(37,73,124,.18)}
+.codecoach-page .detail-hero .detail-primary:hover{background:#244b7d;border-color:#244b7d}
+.codecoach-page .detail-section:before,
+.ml-dl-page .detail-section:before,
+.ati-page .detail-section:before{background:linear-gradient(180deg,#315f9b,rgba(49,95,155,0))}
+.codecoach-page .detail-index,.ml-dl-page .detail-index,.ati-page .detail-index{color:#315f9b}
+.ml-dl-page .detail-case-tabs button[aria-pressed="true"]{background:#315f9b;border-color:#315f9b}
+.ml-dl-page .detail-case-tabs button:hover{border-color:#315f9b;color:#244b7d}
+.ml-dl-page .detail-case-steps span{color:#315f9b}
+.ml-dl-page .detail-case-why{border-left-color:#315f9b}
+.ml-dl-page .detail-case-why strong{color:#244b7d}
+.ati-page .detail-document-toolbar>span{color:#315f9b}

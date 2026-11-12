@@ -47,12 +47,12 @@ export default function CinematicVideo() {
           * step(color.r * 1.16, color.g)
           * step(color.b * 1.12, color.g);
 
-        // Match the previous CPU key's thresholds and feathering.
-        float keyedAlpha = clamp(1.0 - (chroma - 18.0 / 255.0) / (48.0 / 255.0), 0.0, 1.0);
+        // Remove the muted/olive green-screen backdrop more decisively.
+        // The narrow smooth transition keeps anti-aliased hair and clothing edges soft.
+        float keyedAlpha = 1.0 - smoothstep(0.035, 0.155, chroma);
         float alpha = mix(1.0, keyedAlpha, isGreen);
 
-        // Preserve the source RGB exactly. Only alter transparency for the
-        // green-screen pixels; do not tint, desaturate, or recolor the subject.
+        // Keep the subject's original RGB; only green-screen pixels become transparent.
         gl_FragColor = vec4(color * alpha, alpha);
       }
     `;

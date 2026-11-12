@@ -16,14 +16,13 @@ export default function CinematicVideo() {
     let ready = false;
     let seeking = false;
     let pendingTarget = null;
-    let lastRenderedTime = -1;
-
+    
     // Keep chroma-key work small: the canvas is capped at 960px wide.
     // The browser scales this transparent result smoothly to the display area.
     const resizeCanvas = () => {
-      const stageWidth = Math.max(1, Math.round(window.innerWidth * 0.68));
+      const stageWidth = Math.max(1, window.innerWidth);
       const stageHeight = Math.max(1, window.innerHeight);
-      const scale = Math.min(1, 960 / stageWidth, 600 / stageHeight);
+      const scale = Math.min(1, 1280 / stageWidth, 720 / stageHeight);
       canvas.width = Math.max(1, Math.round(stageWidth * scale));
       canvas.height = Math.max(1, Math.round(stageHeight * scale));
       renderFrame();
@@ -57,8 +56,7 @@ export default function CinematicVideo() {
         }
       }
       context.putImageData(image, 0, 0);
-      lastRenderedTime = video.currentTime;
-    };
+          };
 
     const applyPendingSeek = () => {
       if (!ready || seeking || pendingTarget === null) return;
@@ -130,7 +128,7 @@ export default function CinematicVideo() {
       <video
         ref={videoRef}
         className="cinematic-source-video"
-        src="/portfolio/video/character.mp4"
+        src="/portfolio/video/Professional_character-1080p.mp4"
         muted
         playsInline
         preload="auto"

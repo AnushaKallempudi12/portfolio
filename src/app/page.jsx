@@ -57,7 +57,6 @@ export default function Home(){
      </div>}
     </div>
     <a href="#contact" onClick={close}>Contact</a>
-    <a href="/portfolio/documents/Anusha-Kallempudi-Resume.pdf" target="_blank" rel="noreferrer" onClick={close}>Resume</a>
    </div>
    <button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label={menu?"Close menu":"Open menu"}>{menu?<X/>:<Menu/>}</button>
   </nav>
@@ -71,7 +70,6 @@ export default function Home(){
     <div className="hero-actions hero-enter">
      <a className="button hero-button-primary" href="#about">About <ArrowDownRight size={15}/></a>
      <a className="button hero-button-secondary" href="#artifacts">Explore artifacts <ArrowUpRight size={15}/></a>
-     <a className="text-link hero-resume-link" href="/portfolio/documents/Anusha-Kallempudi-Resume.pdf" target="_blank" rel="noreferrer">Resume <ArrowUpRight size={14}/></a>
     </div>
    </div>
   </section>
@@ -123,7 +121,6 @@ export default function Home(){
    <div className="contact-copy"><div className="section-kicker">06 / Contact</div><h2>Let’s build<br/>something useful.</h2><p>I’m interested in opportunities where software engineering, data and emerging AI technologies come together. Connect with me, explore my work, or review my experience.</p></div>
    <div className="contact-links">
     <a className="contact-link" href="https://github.com/AnushaKallempudi12" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Github size={18}/></span><span><strong>GitHub</strong><small>Explore my code and projects</small></span><ArrowUpRight size={16}/></a>
-    <a className="contact-link" href="/portfolio/documents/Anusha-Kallempudi-Resume.pdf" target="_blank" rel="noreferrer"><span className="contact-link-icon"><ArrowUpRight size={18}/></span><span><strong>Resume</strong><small>View my experience and skills</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="https://www.linkedin.com/in/anusha-kallempudi" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Linkedin size={18}/></span><span><strong>LinkedIn</strong><small>Connect with me professionally</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="mailto:anushakallempudi2002@gmail.com"><span className="contact-link-icon"><Mail size={18}/></span><span><strong>Email</strong><small>Send me a message</small></span><ArrowUpRight size={16}/></a>
    </div>

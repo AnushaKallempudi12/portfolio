@@ -1626,3 +1626,37 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
  .skills-grid{grid-template-columns:1fr}
  .timeline-points{font-size:13px}
 }
+
+
+/* Consistent green accent across all academic artifact pages */
+.codecoach-page .detail-hero .detail-primary{
+ background:#347653;border-color:#347653;color:#fff;
+ box-shadow:0 8px 22px rgba(37,92,62,.18);
+}
+.codecoach-page .detail-hero .detail-primary:hover{background:#286342;border-color:#286342}
+.codecoach-page .detail-section:before,
+.ml-dl-page .detail-section:before,
+.ati-page .detail-section:before{
+ background:linear-gradient(180deg,#3f8158,rgba(63,129,88,0));
+}
+.codecoach-page .detail-index,.ati-page .detail-index{color:#347653}
+.ml-dl-page .detail-index{color:#347653}
+.ml-dl-page .detail-case-tabs button[aria-pressed="true"]{background:#347653;border-color:#347653}
+.ml-dl-page .detail-case-tabs button:hover{border-color:#347653;color:#285b3e}
+.ml-dl-page .detail-case-steps span{color:#347653}
+.ml-dl-page .detail-case-why{border-left-color:#347653}
+.ml-dl-page .detail-case-why strong{color:#286342}
+.ati-page .detail-index{color:#347653}
+.ati-page .detail-document-toolbar>span{color:#347653}
+
+/* Keep both parts of the hero name in the same editorial italic style and color */
+.hero-nameplate .hero-first-name,
+.hero-nameplate .hero-name{
+ font-family:"DM Serif Display",Georgia,serif!important;
+ font-style:italic!important;
+ font-weight:400!important;
+ font-size:1em!important;
+ letter-spacing:-.035em!important;
+ color:#f2eee5!important;
+ -webkit-text-stroke:0!important;
+}

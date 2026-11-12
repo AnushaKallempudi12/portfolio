@@ -1841,7 +1841,8 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
   z-index:0;
   overflow:hidden;
   pointer-events:none;
-  background:transparent;
+  /* Match the original homepage hero's deep sapphire-navy backdrop. */
+  background:radial-gradient(ellipse at 72% 42%,rgba(22,65,119,.2),transparent 42%),#080b12;
 }
 .cinematic-background-canvas{
   position:absolute;

@@ -1595,3 +1595,34 @@ a.contact-link:hover{transform:translateY(-3px);border-color:rgba(107,157,255,.5
 .ati-page .ati-audience-grid span,
 .ati-page .ati-source-note small{color:#5d625f}
 .ati-page .ati-source-note>span{color:#927a56}
+
+
+/* Readability pass: larger hero typography and clearer experience/skills layout */
+.hero-nameplate{
+ font-size:clamp(76px,8.2vw,116px)!important;
+ line-height:.98!important;
+}
+.hero-nameplate .hero-name{font-size:.9em!important}
+.hero-copy{font-size:18px;line-height:1.85;max-width:560px}
+.hero-profession{font-size:12px;letter-spacing:.14em}
+.timeline-points{
+ margin:0;padding-left:19px;max-width:760px;
+ color:#aebbd0;font-size:14px;line-height:1.9;
+}
+.timeline-points li{padding-left:5px;margin:5px 0}
+.skills-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.skill-group{min-width:0}
+.skill-group h3{line-height:1.6}
+.skill-list span{font-size:12px}
+@media(max-width:760px){
+ .hero-nameplate{font-size:clamp(62px,11vw,88px)!important}
+ .hero-copy{font-size:16px;max-width:90%}
+ .hero-profession{font-size:10px;letter-spacing:.1em}
+ .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:460px){
+ .hero-nameplate{font-size:clamp(58px,13.5vw,76px)!important}
+ .hero-copy{font-size:15px}
+ .skills-grid{grid-template-columns:1fr}
+ .timeline-points{font-size:13px}
+}

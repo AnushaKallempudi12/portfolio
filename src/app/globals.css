@@ -2492,3 +2492,156 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
   .detail-page .detail-content>.detail-section:nth-of-type(odd),
   .detail-page .detail-content>.detail-section:nth-of-type(even){padding:25px 20px!important}
 }
+
+
+/* Restore the original blue/cream artifact design throughout the content.
+   The forest-green outer page canvas remains unchanged. */
+.detail-page .detail-nav{
+  background:#080d17!important;
+  color:#edf3ff!important;
+  border-bottom:1px solid rgba(173,195,230,.16)!important;
+}
+.detail-page .detail-nav a,
+.detail-page .detail-nav button{color:#dce8f7!important}
+.detail-page .detail-nav a:hover,
+.detail-page .detail-nav button:hover{color:#fff!important}
+.detail-page .detail-hero{
+  background:radial-gradient(ellipse at 82% 22%,rgba(49,95,155,.32),transparent 38%),linear-gradient(120deg,#0b1a30,#17365b 65%,#10213a)!important;
+  color:#edf3ff!important;
+}
+.detail-page .detail-eyebrow,
+.detail-page .detail-case-label,
+.detail-page .detail-reference-type{color:#91b5e8!important}
+
+/* Pale blue and cream alternating content panels */
+.detail-page .detail-content>.detail-section:nth-of-type(odd){
+  background:linear-gradient(145deg,#e9f0f7 0%,#dce7f1 100%)!important;
+  color:#263d56!important;
+  border-color:#c8d7e5!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(even){
+  background:linear-gradient(145deg,#fffdf7 0%,#f2eee4 100%)!important;
+  color:#27384a!important;
+  border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(odd):before{
+  background:linear-gradient(180deg,#315f9b,rgba(49,95,155,0))!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(even):before{
+  background:linear-gradient(180deg,#a58b62,rgba(165,139,98,0))!important;
+}
+.detail-page .detail-content>.detail-section h2,
+.detail-page .detail-content>.detail-section h3,
+.detail-page .detail-content>.detail-section strong,
+.detail-page .detail-content>.detail-section .detail-snapshot-grid strong,
+.detail-page .detail-content>.detail-section .detail-index{color:#27384a!important}
+.detail-page .detail-content>.detail-section:nth-of-type(odd) .detail-index{color:#315f9b!important}
+.detail-page .detail-content>.detail-section:nth-of-type(even) .detail-index{color:#927a56!important}
+.detail-page .detail-content>.detail-section>p:not(.detail-index),
+.detail-page .detail-content>.detail-section .detail-two-col p,
+.detail-page .detail-content>.detail-section .detail-step-grid p,
+.detail-page .detail-content>.detail-section .detail-tool-grid p,
+.detail-page .detail-content>.detail-section .detail-list li,
+.detail-page .detail-content>.detail-section .detail-case-panel>p,
+.detail-page .detail-content>.detail-section .detail-case-steps p,
+.detail-page .detail-content>.detail-section .detail-case-why p,
+.detail-page .detail-content>.detail-section .detail-compare p,
+.detail-page .detail-content>.detail-section .detail-compare strong,
+.detail-page .detail-content>.detail-section .ati-source-note,
+.detail-page .detail-content>.detail-section .ati-task,
+.detail-page .detail-content>.detail-section .ati-insight,
+.detail-page .detail-content>.detail-section .ati-audience-grid span,
+.detail-page .detail-content>.detail-section .ati-source-note small{color:#5d625f!important}
+
+/* Nested cards, interactive panels and tables use the original light neutral treatment */
+.detail-page .detail-content>.detail-section .detail-tags span{
+  background:rgba(49,95,155,.07)!important;color:#315f9b!important;border-color:rgba(49,95,155,.18)!important;
+}
+.detail-page .detail-content>.detail-section .detail-snapshot-grid>div,
+.detail-page .detail-content>.detail-section .detail-step-grid article,
+.detail-page .detail-content>.detail-section .detail-tool-grid article,
+.detail-page .detail-content>.detail-section .detail-compare article,
+.detail-page .detail-content>.detail-section .detail-case-explorer,
+.detail-page .detail-content>.detail-section .detail-case-panel,
+.detail-page .detail-content>.detail-section .detail-case-steps article,
+.detail-page .detail-content>.detail-section .detail-case-why,
+.detail-page .detail-content>.detail-section .detail-table-wrap,
+.detail-page .detail-content>.detail-section .codecoach-lab,
+.detail-page .detail-content>.detail-section .codecoach-lab-body,
+.detail-page .detail-content>.detail-section .codecoach-problem,
+.detail-page .detail-content>.detail-section .codecoach-hint-area,
+.detail-page .detail-content>.detail-section .ati-stage-panel,
+.detail-page .detail-content>.detail-section .ati-summary-grid article,
+.detail-page .detail-content>.detail-section .ati-takeaway-grid article,
+.detail-page .detail-content>.detail-section .ati-audience-grid article,
+.detail-page .detail-content>.detail-section .ati-source-note,
+.detail-page .detail-content>.detail-section .ati-task,
+.detail-page .detail-content>.detail-section .ati-insight,
+.detail-page .detail-content>.detail-section .ati-reflection-quote,
+.detail-page .detail-content>.detail-section .ati-portfolio-reflection{
+  background:linear-gradient(145deg,#fffefa 0%,#eee8dc 100%)!important;
+  color:#5d625f!important;
+  border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-panel h3,
+.detail-page .detail-content>.detail-section .detail-step-grid h3,
+.detail-page .detail-content>.detail-section .detail-tool-grid h3,
+.detail-page .detail-content>.detail-section .detail-compare h3,
+.detail-page .detail-content>.detail-section .ati-audience-grid strong{color:#27384a!important}
+
+/* Tabs, buttons, document controls and data tables return to sapphire blue */
+.detail-page .detail-content>.detail-section .detail-case-tabs,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs,
+.detail-page .detail-content>.detail-section .ati-stage-nav,
+.detail-page .detail-content>.detail-section .ati-batch-tabs,
+.detail-page .detail-content>.detail-section .ati-filter-row{
+  background:#eee8dc!important;border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-tabs button,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs button,
+.detail-page .detail-content>.detail-section .ati-stage-nav button,
+.detail-page .detail-content>.detail-section .ati-batch-tabs button,
+.detail-page .detail-content>.detail-section .ati-filter-row button{
+  background:#fffdf7!important;color:#59616a!important;border-color:#ddd3c1!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-tabs button[aria-pressed="true"],
+.detail-page .detail-content>.detail-section .detail-case-tabs button.active,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs button.active,
+.detail-page .detail-content>.detail-section .ati-stage-nav button.active,
+.detail-page .detail-content>.detail-section .ati-batch-tabs button.active,
+.detail-page .detail-content>.detail-section .ati-filter-row button.active{
+  background:#315f9b!important;color:#fff!important;border-color:#315f9b!important;
+}
+.detail-page .detail-content>.detail-section .detail-primary,
+.detail-page .detail-content>.detail-section .ati-next,
+.detail-page .detail-content>.detail-section .detail-cta .detail-primary{
+  background:#315f9b!important;color:#fff!important;border-color:#315f9b!important;
+}
+.detail-page .detail-content>.detail-section .detail-secondary,
+.detail-page .detail-content>.detail-section .codecoach-text-button,
+.detail-page .detail-content>.detail-section .codecoach-reset,
+.detail-page .detail-content>.detail-section .ati-prev{
+  background:rgba(49,95,155,.07)!important;color:#315f9b!important;border-color:rgba(49,95,155,.25)!important;
+}
+.detail-page .detail-content>.detail-section .detail-table th,
+.detail-page .detail-content>.detail-section .detail-table td,
+.detail-page .detail-content>.detail-section .ati-data-row,
+.detail-page .detail-content>.detail-section .ati-table-head{
+  background:#f7f6f1!important;color:#34465c!important;border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section .detail-document-toolbar{
+  background:#eee8dc!important;color:#59616a!important;border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section .detail-document-toolbar>span,
+.detail-page .detail-content>.detail-section .detail-document-actions a,
+.detail-page .detail-content>.detail-section .ati-document-link{color:#315f9b!important}
+.detail-page .detail-content>.detail-section .detail-document-frame,
+.detail-page .detail-content>.detail-section .detail-html-document-frame{
+  background:#f7f6f1!important;border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section .detail-cta{
+  background:linear-gradient(135deg,#e9f0f7,#dce7f1)!important;
+  border-color:#c8d7e5!important;
+}
+.detail-page .detail-content>.detail-section .detail-cta h2{color:#27384a!important}
+.detail-page .detail-content>.detail-section .detail-cta p{color:#5d625f!important}

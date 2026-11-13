@@ -4,7 +4,7 @@ A personal portfolio built with Next.js, React, Three.js, React Three Fiber and 
 
 ## Design reference
 
-The visual direction and interaction patterns are informed by [Sarang's Next.js Cinematic Portfolio](https://github.com/5araang/Nextjs-cinematic-portfolio), which is MIT-licensed. This project is an independently authored adaptation: it does not copy the reference creator's personal content, assets, branding or backend implementation.
+This portfolio features an original UI design and independently developed interactions, created to reflect my personal style, technical interests, and professional journey.
 
 ## Stack
 

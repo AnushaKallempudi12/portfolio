@@ -108,6 +108,7 @@ export default function Home(){
      <div className="artifact-art model-art"><img className="artifact-thumb" src="/portfolio/images/ml%20vs%20dl_1.png" alt="Machine Learning versus Deep Learning visual" loading="lazy"/><div className="compare-panel" hidden><div><small>STRUCTURED DATA</small><strong>CatBoost</strong><span>Customer churn prediction</span><i className="compare-bars"><b/><b/><b/><b/><b/></i></div><div className="compare-divider">VS</div><div><small>MEDICAL IMAGES</small><strong>CNN</strong><span>Retinal disease detection</span><i className="retina-grid"><b/><b/><b/><b/><b/><b/><b/><b/><b/></i></div></div></div>
      <div className="artifact-meta"><span>ARTIFACT 02</span><span>MODEL COMPARISON</span></div>
      <h3>Machine Learning vs. Deep Learning</h3><p>A comparison of CatBoost for customer churn prediction and convolutional neural networks for diabetic retinopathy detection, showing how data type and problem context influence model selection.</p>
+     <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/ml-vs-dl/">Explore the comparison <ArrowUpRight size={14}/></a>
     </article>
     <article className="artifact-card reveal" id="artifact-ai-training"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/ai-training-interaction/" aria-label="Open AI Training Interaction artifact details"/>
      <div className="artifact-art training-art"><ProjectVisual kind="training"/></div>

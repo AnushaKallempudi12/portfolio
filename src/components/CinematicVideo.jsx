@@ -35,25 +35,27 @@ export default function CinematicVideo() {
     `;
 
     const fragmentSource = `
-      precision mediump float;
+      precision highp float;
       uniform sampler2D u_video;
       varying vec2 v_texCoord;
       void main() {
         vec4 source = texture2D(u_video, v_texCoord);
         vec3 color = source.rgb;
-        // The source screen is a consistent bright green. Key on green's
-        // dominance over BOTH red and blue so skin (red-dominant) stays intact.
-        float greenDominance = color.g - max(color.r, color.b);
-        float keyAmount = smoothstep(0.035, 0.22, greenDominance);
+        // Key only strongly green pixels. Requiring green to exceed both
+        // red and blue by a ratio protects skin tones and neutral clothing.
+        float greenOverRed = color.g - color.r * 1.18;
+        float greenOverBlue = color.g - color.b * 1.18;
+        float greenScreen = min(greenOverRed, greenOverBlue);
+        float keyAmount = smoothstep(0.025, 0.15, greenScreen);
         float alpha = 1.0 - keyAmount;
 
-        // Remove green spill only from partially transparent edge pixels.
-        // Fully opaque subject pixels keep their original RGB values.
-        float neutralGreen = max(color.r, color.b);
-        float despill = (1.0 - alpha) * 0.85;
-        color.g = mix(color.g, min(color.g, neutralGreen + 0.025), despill);
+        // Preserve the subject's original color. Reduce green spill only
+        // along semi-transparent boundary pixels, never across the subject.
+        float edge = 1.0 - smoothstep(0.02, 0.98, alpha);
+        float neutral = max(color.r, color.b);
+        color.g = mix(color.g, min(color.g, neutral + 0.035), edge * 0.72);
 
-        // WebGL blending is configured for premultiplied alpha below.
+        // Premultiplied alpha avoids grey fringes during compositing.
         gl_FragColor = vec4(color * alpha, alpha);
       }
     `;
@@ -236,7 +238,7 @@ export default function CinematicVideo() {
       <video
         ref={videoRef}
         className="cinematic-source-video"
-        src="/portfolio/video/cp.mp4"
+        src="/portfolio/video/character.mp4"
         muted
         playsInline
         preload="auto"

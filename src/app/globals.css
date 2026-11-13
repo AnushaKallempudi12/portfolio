@@ -2813,3 +2813,27 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
 .detail-page .detail-content>.detail-section strong{color:#27384a!important}
 .detail-page .detail-content>.detail-section>p:not(.detail-index),
 .detail-page .detail-content>.detail-section li{color:#5d625f!important}
+
+
+/* Finish the homepage scroll on a centered contact view. The footer sits
+   at the bottom of this final viewport instead of pushing Contact upward. */
+#contact{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  padding:100px 0 112px!important;
+  scroll-margin-top:0!important;
+}
+#contact>.wrap{width:min(1180px,calc(100% - 64px));}
+main>.footer{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  width:min(1180px,calc(100% - 64px));
+  padding:18px 0 24px;
+}
+@media(max-width:640px){
+  #contact{min-height:100svh;padding:90px 0 125px!important;}
+  main>.footer{width:calc(100% - 40px);padding:14px 0 18px;}
+}

@@ -2854,3 +2854,8 @@ main>.footer{
 @media(max-width:640px){
   .hero{min-height:100svh!important;height:100svh!important;padding-top:0!important;}
 }
+
+
+/* Pearl Cream palette for the three experience bullet points only. */
+.timeline-points{color:#F7F4EC!important}
+.timeline-points li::marker{color:#C8BFAE!important}

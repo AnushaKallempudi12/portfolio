@@ -2184,3 +2184,169 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
 .cinematic-stage{
   background:#17291F!important;
 }
+
+
+/* Unified dark forest-green theme for all artifact detail pages. */
+.detail-page,
+.detail-page.codecoach-page,
+.detail-page.ml-dl-page,
+.detail-page.ati-page{
+  background:#17291F!important;
+  color:#F1EEE4!important;
+}
+.detail-page .detail-nav{
+  background:rgba(20,37,28,.98)!important;
+  color:#F1EEE4!important;
+  border-bottom:1px solid rgba(241,238,228,.14)!important;
+}
+.detail-page .detail-nav a,
+.detail-page .detail-nav button{color:#DCE3D7!important}
+.detail-page .detail-nav a:hover,
+.detail-page .detail-nav button:hover{color:#C0CEBC!important}
+.detail-page .detail-hero{
+  background:linear-gradient(135deg,#20392A 0%,#17291F 72%,#1A3023 100%)!important;
+  color:#F1EEE4!important;
+}
+.detail-page .detail-eyebrow,
+.detail-page .detail-index,
+.detail-page .detail-section:before,
+.detail-page .detail-case-label,
+.detail-page .detail-reference-type{
+  color:#C0CEBC!important;
+}
+.detail-page .detail-section,
+.detail-page .detail-section:nth-child(even),
+.detail-page .detail-section:nth-of-type(3n),
+.detail-page .detail-content>.detail-section:nth-of-type(odd),
+.detail-page .detail-content>.detail-section:nth-of-type(even){
+  background:linear-gradient(145deg,#20392A,#1A3023)!important;
+  color:#F1EEE4!important;
+  border-color:rgba(241,238,228,.12)!important;
+}
+.detail-page .detail-section:before{
+  background:linear-gradient(180deg,#A9BBA6,rgba(169,187,166,0))!important;
+}
+.detail-page .detail-section h2,
+.detail-page .detail-section h3,
+.detail-page .detail-section strong,
+.detail-page .detail-snapshot-grid strong,
+.detail-page .detail-step-grid h3,
+.detail-page .detail-tool-grid h3,
+.detail-page .detail-case-panel h3,
+.detail-page .detail-compare h3,
+.detail-page .detail-cta h2{
+  color:#F1EEE4!important;
+}
+.detail-page .detail-section>p:not(.detail-index),
+.detail-page .detail-two-col p,
+.detail-page .detail-step-grid p,
+.detail-page .detail-tool-grid p,
+.detail-page .detail-list li,
+.detail-page .detail-case-panel>p,
+.detail-page .detail-case-steps p,
+.detail-page .detail-case-why p,
+.detail-page .detail-compare p,
+.detail-page .detail-compare strong,
+.detail-page .detail-cta p{
+  color:#B8C2B7!important;
+}
+.detail-page .detail-tags span,
+.detail-page .detail-snapshot-grid>div,
+.detail-page .detail-step-grid article,
+.detail-page .detail-tool-grid article,
+.detail-page .detail-compare article,
+.detail-page .detail-case-explorer,
+.detail-page .detail-case-panel,
+.detail-page .detail-case-steps article,
+.detail-page .detail-case-why,
+.detail-page .detail-table-wrap,
+.detail-page .codecoach-lab,
+.detail-page .codecoach-lab-body,
+.detail-page .codecoach-problem,
+.detail-page .codecoach-hint-area,
+.detail-page .ati-stage-panel,
+.detail-page .ati-summary-grid article,
+.detail-page .ati-takeaway-grid article,
+.detail-page .ati-audience-grid article,
+.detail-page .ati-source-note,
+.detail-page .ati-task,
+.detail-page .ati-insight,
+.detail-page .ati-reflection-quote,
+.detail-page .ati-portfolio-reflection{
+  background:#20392A!important;
+  color:#F1EEE4!important;
+  border-color:rgba(241,238,228,.14)!important;
+}
+.detail-page .detail-case-tabs,
+.detail-page .codecoach-challenge-tabs,
+.detail-page .ati-stage-nav,
+.detail-page .ati-batch-tabs,
+.detail-page .ati-filter-row{
+  background:#17291F!important;
+  border-color:rgba(241,238,228,.14)!important;
+}
+.detail-page .detail-case-tabs button,
+.detail-page .codecoach-challenge-tabs button,
+.detail-page .ati-stage-nav button,
+.detail-page .ati-batch-tabs button,
+.detail-page .ati-filter-row button{
+  background:#294333!important;
+  color:#DCE3D7!important;
+  border-color:rgba(241,238,228,.15)!important;
+}
+.detail-page .detail-case-tabs button[aria-pressed="true"],
+.detail-page .detail-case-tabs button.active,
+.detail-page .codecoach-challenge-tabs button.active,
+.detail-page .ati-stage-nav button.active,
+.detail-page .ati-batch-tabs button.active,
+.detail-page .ati-filter-row button.active{
+  background:#DCE3D7!important;
+  color:#17291F!important;
+  border-color:#DCE3D7!important;
+}
+.detail-page .detail-primary,
+.detail-page .ati-next,
+.detail-page .detail-cta .detail-primary{
+  background:#DCE3D7!important;
+  color:#17291F!important;
+  border-color:#DCE3D7!important;
+}
+.detail-page .detail-secondary,
+.detail-page .codecoach-text-button,
+.detail-page .codecoach-reset,
+.detail-page .ati-prev{
+  background:rgba(241,238,228,.06)!important;
+  color:#DCE3D7!important;
+  border-color:rgba(241,238,228,.25)!important;
+}
+.detail-page .detail-table th,
+.detail-page .detail-table td,
+.detail-page .ati-data-row,
+.detail-page .ati-table-head{
+  background:#20392A!important;
+  color:#DCE3D7!important;
+  border-color:rgba(241,238,228,.14)!important;
+}
+.detail-page .detail-document-toolbar{
+  background:#20392A!important;
+  color:#DCE3D7!important;
+  border-color:rgba(241,238,228,.14)!important;
+}
+.detail-page .detail-document-toolbar>span,
+.detail-page .detail-document-actions a,
+.detail-page .ati-document-link{
+  color:#C0CEBC!important;
+}
+.detail-page .detail-document-frame,
+.detail-page .detail-html-document-frame{
+  background:#17291F!important;
+  border-color:rgba(241,238,228,.16)!important;
+}
+.detail-page .detail-cta{
+  background:linear-gradient(135deg,#20392A,#17291F)!important;
+  border-color:rgba(197,208,190,.2)!important;
+}
+.detail-page .ati-stage-controls{
+  border-color:rgba(241,238,228,.16)!important;
+}
+.detail-page .ati-stage-controls button:disabled{opacity:.45}

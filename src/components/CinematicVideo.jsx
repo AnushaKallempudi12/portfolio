@@ -236,7 +236,7 @@ export default function CinematicVideo() {
       <video
         ref={videoRef}
         className="cinematic-source-video"
-        src="/portfolio/video/character.mp4"
+        src="/portfolio/video/cp.mp4"
         muted
         playsInline
         preload="auto"

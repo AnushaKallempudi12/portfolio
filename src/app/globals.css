@@ -2754,3 +2754,62 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
 #contact .contact-copy{width:100%;max-width:720px}
 #contact .contact-links{width:100%;max-width:none;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px;align-content:stretch}
 @media(max-width:640px){#contact .contact-links{grid-template-columns:1fr;margin-top:24px}}
+
+
+/* Keep all contact cards to the left of the character, stacked vertically. */
+#contact .contact-links{
+  width:min(460px,100%)!important;
+  max-width:460px!important;
+  grid-template-columns:1fr!important;
+  margin-top:30px!important;
+}
+#contact .contact-link{width:100%;}
+
+/* Artifact pages use the original sapphire, pale-blue and warm-cream palette.
+   Remove the leftover forest-green canvas and green hero feature cards. */
+.detail-page,
+.detail-page.codecoach-page,
+.detail-page.ml-dl-page,
+.detail-page.ati-page{
+  background:#e9f0f7!important;
+  color:#27384a!important;
+}
+.detail-page .detail-content{background:#e9f0f7!important;}
+.detail-page .detail-nav{
+  background:#080d17!important;
+  color:#edf3ff!important;
+  border-color:rgba(173,195,230,.16)!important;
+}
+.detail-page .detail-hero{
+  background:radial-gradient(ellipse at 82% 22%,rgba(49,95,155,.32),transparent 38%),linear-gradient(120deg,#0b1a30,#17365b 65%,#10213a)!important;
+  color:#edf3ff!important;
+}
+.detail-page .detail-hero .detail-snapshot-grid>div{
+  background:linear-gradient(145deg,#e9f0f7,#dce7f1)!important;
+  color:#27384a!important;
+  border-color:#c8d7e5!important;
+}
+.detail-page .detail-hero .detail-snapshot-grid strong,
+.detail-page .detail-hero .detail-snapshot-grid span,
+.detail-page .detail-hero .detail-tags span{
+  color:#315f9b!important;
+}
+.detail-page .detail-hero .detail-tags span{
+  background:rgba(233,240,247,.1)!important;
+  border-color:rgba(233,240,247,.24)!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(odd){
+  background:linear-gradient(145deg,#e9f0f7 0%,#dce7f1 100%)!important;
+  color:#263d56!important;
+  border-color:#c8d7e5!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(even){
+  background:linear-gradient(145deg,#fffdf7 0%,#f2eee4 100%)!important;
+  color:#27384a!important;
+  border-color:#e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section h2,
+.detail-page .detail-content>.detail-section h3,
+.detail-page .detail-content>.detail-section strong{color:#27384a!important}
+.detail-page .detail-content>.detail-section>p:not(.detail-index),
+.detail-page .detail-content>.detail-section li{color:#5d625f!important}

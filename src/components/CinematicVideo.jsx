@@ -41,18 +41,19 @@ export default function CinematicVideo() {
       void main() {
         vec4 source = texture2D(u_video, v_texCoord);
         vec3 color = source.rgb;
-        float chroma = color.g - max(color.r, color.b);
-        // Keep the key conservative so yellow/green skin highlights and hair
-        // are not mistaken for the green screen.
-        float isGreen = step(70.0 / 255.0, color.g)
-          * step(0.055, chroma)
-          * step(color.r * 1.18, color.g)
-          * step(color.b * 1.15, color.g);
+        // The source screen is a consistent bright green. Key on green's
+        // dominance over BOTH red and blue so skin (red-dominant) stays intact.
+        float greenDominance = color.g - max(color.r, color.b);
+        float keyAmount = smoothstep(0.035, 0.22, greenDominance);
+        float alpha = 1.0 - keyAmount;
 
-        // Remove green-dominant pixels at the edge without recoloring the subject.
-        float keyedAlpha = 1.0 - smoothstep(0.045, 0.145, chroma);
-        float alpha = mix(1.0, keyedAlpha, isGreen);
+        // Remove green spill only from partially transparent edge pixels.
+        // Fully opaque subject pixels keep their original RGB values.
+        float neutralGreen = max(color.r, color.b);
+        float despill = (1.0 - alpha) * 0.85;
+        color.g = mix(color.g, min(color.g, neutralGreen + 0.025), despill);
 
+        // WebGL blending is configured for premultiplied alpha below.
         gl_FragColor = vec4(color * alpha, alpha);
       }
     `;

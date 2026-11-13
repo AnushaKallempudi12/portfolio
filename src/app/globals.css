@@ -2975,3 +2975,39 @@ main>.footer{
   color:#17365b!important;
 }
 .detail-page .detail-nav .nav-dropdown-menu a svg{color:#315f9b!important}
+
+/* Slightly increase homepage navigation labels for readability. */
+.navlinks{font-size:10.5px!important}
+.navlinks a,.navlinks button{font-size:10.5px!important}
+
+/* Ensure artifact dropdown labels remain clearly readable on the pale-blue
+   menu, overriding inherited navigation/link colors from the detail header. */
+.detail-page .detail-nav .nav-dropdown-menu{
+  background:#e9f0f7!important;
+  opacity:1!important;
+}
+.detail-page .detail-nav .nav-dropdown-menu a,
+.detail-page .detail-nav .nav-dropdown-menu a:visited{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:12px!important;
+  color:#1b2d43!important;
+  -webkit-text-fill-color:#1b2d43!important;
+  opacity:1!important;
+  font-size:11px!important;
+  font-weight:600!important;
+  line-height:1.5!important;
+}
+.detail-page .detail-nav .nav-dropdown-menu a:hover,
+.detail-page .detail-nav .nav-dropdown-menu a:focus-visible{
+  background:#d5e3f1!important;
+  color:#17365b!important;
+  -webkit-text-fill-color:#17365b!important;
+}
+.detail-page .detail-nav .nav-dropdown-menu a svg{
+  color:#315f9b!important;
+  stroke:#315f9b!important;
+  opacity:1!important;
+  flex-shrink:0!important;
+}

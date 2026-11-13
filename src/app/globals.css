@@ -2350,3 +2350,47 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
   border-color:rgba(241,238,228,.16)!important;
 }
 .detail-page .ati-stage-controls button:disabled{opacity:.45}
+
+
+/* Artifact pages: alternate muted sage and warm cream sections on the forest-green page. */
+.detail-page .detail-content>.detail-section:nth-of-type(odd){
+  background:linear-gradient(145deg,#E4EBDD 0%,#D7E1D2 100%)!important;
+  color:#263D31!important;
+  border-color:rgba(38,61,49,.12)!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(even){
+  background:linear-gradient(145deg,#FFFDF7 0%,#F2EEE4 100%)!important;
+  color:#263D31!important;
+  border-color:rgba(38,61,49,.12)!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(odd):before{
+  background:linear-gradient(180deg,#71866F,rgba(113,134,111,0))!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(even):before{
+  background:linear-gradient(180deg,#A58B62,rgba(165,139,98,0))!important;
+}
+.detail-page .detail-content>.detail-section h2,
+.detail-page .detail-content>.detail-section h3,
+.detail-page .detail-content>.detail-section strong,
+.detail-page .detail-content>.detail-section .detail-index{
+  color:#263D31!important;
+}
+.detail-page .detail-content>.detail-section>p:not(.detail-index),
+.detail-page .detail-content>.detail-section .detail-two-col p,
+.detail-page .detail-content>.detail-section .detail-step-grid p,
+.detail-page .detail-content>.detail-section .detail-tool-grid p,
+.detail-page .detail-content>.detail-section .detail-list li,
+.detail-page .detail-content>.detail-section .detail-case-panel>p,
+.detail-page .detail-content>.detail-section .detail-case-steps p,
+.detail-page .detail-content>.detail-section .detail-case-why p,
+.detail-page .detail-content>.detail-section .detail-compare p,
+.detail-page .detail-content>.detail-section .ati-source-note,
+.detail-page .detail-content>.detail-section .ati-task,
+.detail-page .detail-content>.detail-section .ati-insight{
+  color:#526257!important;
+}
+.detail-page .detail-content>.detail-section .detail-tags span{
+  background:rgba(38,61,49,.08)!important;
+  color:#344F3D!important;
+  border-color:rgba(38,61,49,.16)!important;
+}

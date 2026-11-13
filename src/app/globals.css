@@ -2645,3 +2645,94 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
 }
 .detail-page .detail-content>.detail-section .detail-cta h2{color:#27384a!important}
 .detail-page .detail-content>.detail-section .detail-cta p{color:#5d625f!important}
+
+
+/* Final pass: recolor artifact-specific panels that were not covered by the
+   shared section styles. Keep only the outer artifact canvas forest green. */
+.detail-page .detail-content .codecoach-feature-panel,
+.detail-page .detail-content .codecoach-approach,
+.detail-page .detail-content .codecoach-reference-list,
+.detail-page .detail-content .codecoach-document-download,
+.detail-page .detail-content .codecoach-document-row,
+.detail-page .detail-content .detail-original-evidence,
+.detail-page .detail-content .detail-highlight,
+.detail-page .detail-content .detail-highlight-note,
+.detail-page .detail-content .detail-reference-grid,
+.detail-page .detail-content .detail-document-section,
+.detail-page .detail-content .ati-intro,
+.detail-page .detail-content .ati-objective,
+.detail-page .detail-content .ati-mechanism,
+.detail-page .detail-content .ati-process-list,
+.detail-page .detail-content .ati-stage-content,
+.detail-page .detail-content .ati-stage-panel-head,
+.detail-page .detail-content .ati-prediction-table,
+.detail-page .detail-content .ati-data-table,
+.detail-page .detail-content .ati-task-list,
+.detail-page .detail-content .ati-summary-grid article,
+.detail-page .detail-content .ati-takeaway-grid article,
+.detail-page .detail-content .ati-audience-grid article,
+.detail-page .detail-content .ati-reflection-quote,
+.detail-page .detail-content .ati-portfolio-reflection {
+  background:linear-gradient(145deg,#fffefa 0%,#eee8dc 100%)!important;
+  color:#5d625f!important;
+  border-color:#e1d9c9!important;
+}
+.detail-page .detail-content .codecoach-download-link,
+.detail-page .detail-content .detail-reference-type,
+.detail-page .detail-content .ati-document-link {
+  color:#315f9b!important;
+}
+.detail-page .detail-content .codecoach-feature-panel h2,
+.detail-page .detail-content .codecoach-feature-panel h3,
+.detail-page .detail-content .codecoach-approach h2,
+.detail-page .detail-content .codecoach-approach h3,
+.detail-page .detail-content .detail-highlight h2,
+.detail-page .detail-content .detail-highlight h3,
+.detail-page .detail-content .detail-highlight-note strong,
+.detail-page .detail-content .ati-intro strong,
+.detail-page .detail-content .ati-objective strong,
+.detail-page .detail-content .ati-mechanism strong,
+.detail-page .detail-content .ati-stage-panel-head strong,
+.detail-page .detail-content .ati-reflection-quote strong,
+.detail-page .detail-content .ati-portfolio-reflection strong {
+  color:#27384a!important;
+}
+.detail-page .detail-content .codecoach-feature-panel p,
+.detail-page .detail-content .codecoach-approach p,
+.detail-page .detail-content .detail-highlight p,
+.detail-page .detail-content .detail-highlight-note,
+.detail-page .detail-content .detail-reference-grid,
+.detail-page .detail-content .ati-intro,
+.detail-page .detail-content .ati-objective,
+.detail-page .detail-content .ati-mechanism,
+.detail-page .detail-content .ati-process-list,
+.detail-page .detail-content .ati-stage-content,
+.detail-page .detail-content .ati-reflection-quote,
+.detail-page .detail-content .ati-portfolio-reflection {
+  color:#5d625f!important;
+}
+.detail-page .detail-content .codecoach-hints,
+.detail-page .detail-content .codecoach-hint-heading,
+.detail-page .detail-content .codecoach-language,
+.detail-page .detail-content .ati-table-head,
+.detail-page .detail-content .ati-data-row,
+.detail-page .detail-content .ati-prediction-row {
+  background:#f7f6f1!important;
+  color:#34465c!important;
+  border-color:#e1d9c9!important;
+}
+.detail-page .detail-content .codecoach-empty,
+.detail-page .detail-content .ati-insight,
+.detail-page .detail-content .ati-task {
+  background:#e9f0f7!important;
+  color:#34465c!important;
+  border-color:#c8d7e5!important;
+}
+.detail-page .detail-content .ati-completion-badge {
+  background:#315f9b!important;
+  color:#fff!important;
+}
+.detail-page .detail-content .ati-flow-arrow,
+.detail-page .detail-content .ati-insight-icon {
+  color:#315f9b!important;
+}

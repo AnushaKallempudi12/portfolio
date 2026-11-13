@@ -2152,7 +2152,7 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
 .nav-dropdown-menu{background:rgba(20,37,28,.99)!important;border-color:rgba(241,238,228,.15)!important}
 .nav-dropdown-menu a{color:#F1EEE4!important}
 .nav-dropdown-menu a:hover{background:rgba(169,187,166,.13)!important;color:#fff!important}
-.hero,.section,.artifacts-section{background:#17291F!important}
+.hero,.section,.artifacts-section{background:transparent!important}
 .hero-grid{background-image:linear-gradient(rgba(241,238,228,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(241,238,228,.035) 1px,transparent 1px)!important;opacity:.22}
 .hero-glow{background:radial-gradient(circle,rgba(169,187,166,.09),rgba(23,41,31,0) 68%)!important}
 .hero h1,.section-heading,.section-heading em,.about-copy strong,.focus-list strong,.timeline-role,.project h3,.artifact-card h3,.contact-panel h2{color:#F1EEE4!important}

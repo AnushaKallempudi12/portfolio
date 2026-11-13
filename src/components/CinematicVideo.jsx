@@ -17,7 +17,7 @@ export default function CinematicVideo() {
       alpha: true,
       antialias: false,
       premultipliedAlpha: true,
-      preserveDrawingBuffer: false,
+      preserveDrawingBuffer: true,
     });
     if (!gl) {
       console.error("WebGL is unavailable; cinematic video cannot be composited.");

@@ -45,7 +45,9 @@ export default function CinematicVideo() {
         // A difference-based key handles uneven/bright green-screen backgrounds.
         float nonGreen = max(color.r, color.b);
         float greenChroma = color.g - nonGreen;
-        float keyAmount = smoothstep(0.055, 0.22, greenChroma);
+        // Key darker, uneven green-screen areas as well as bright green.
+        // Keep the transition narrow to avoid fading neutral character details.
+        float keyAmount = smoothstep(0.018, 0.105, greenChroma);
         float alpha = 1.0 - keyAmount;
 
         // Decontaminate only partially transparent edge pixels. Interior

@@ -2180,14 +2180,7 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
 .nav.mobile-open .navlinks{background:rgba(20,37,28,.99)!important}
 
 
-/* Persistent soft forest-green halo behind the scroll-scrubbed character.
-   Kept on the fixed stage so it remains visible across every video frame. */
+/* Keep the character backdrop clean and uniformly dark green. */
 .cinematic-stage{
-  background:
-    radial-gradient(ellipse 29% 58% at 73% 48%,
-      rgba(119,158,112,.22) 0%,
-      rgba(83,124,82,.14) 38%,
-      rgba(54,91,60,.06) 62%,
-      rgba(23,41,31,0) 82%),
-    #17291F!important;
+  background:#17291F!important;
 }

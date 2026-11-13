@@ -3166,3 +3166,22 @@ main>.footer{
 .rai-home-visual{width:90%;height:82%;display:flex;flex-direction:column;justify-content:center;gap:13px;padding:15px;border:1px solid rgba(169,192,223,.24);border-radius:4px;background:linear-gradient(135deg,#132b49,#0b1a30);color:#dce8f8}.rai-home-visual>span,.rai-home-visual>small{font:8px var(--mono);letter-spacing:.13em;color:#9bb7dc}.rai-home-visual>div{display:flex;align-items:center;justify-content:space-between;gap:5px}.rai-home-visual i{font:8px var(--mono);font-style:normal;padding:7px 8px;border:1px solid rgba(169,192,223,.32);border-radius:3px}.rai-home-visual b{color:#7198d0;font:12px var(--mono)}
 @media(max-width:760px){.rai-overview-grid,.rai-unique-grid,.rai-relevance-grid{grid-template-columns:1fr}.rai-lab-body{grid-template-columns:1fr}.rai-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.rai-process-grid{grid-template-columns:1fr}.rai-lab-top{align-items:flex-start;flex-direction:column}.rai-tabs button{flex:1;justify-content:center}.rai-feature-panel{padding:20px}.rai-lab-body{padding:14px}}
+
+/* Nova project preview — visual treatment within the existing Projects card system. */
+.nova-preview{width:94%;max-width:520px;padding:10px 12px;border:1px solid rgba(196,215,238,.2);border-radius:5px;background:linear-gradient(145deg,#17283c,#0c1726);color:#eaf1fa;box-shadow:0 10px 24px rgba(0,0,0,.18);font-family:var(--sans)}
+.nova-preview-top{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-bottom:8px;border-bottom:1px solid rgba(196,215,238,.14);font:7px var(--mono);letter-spacing:.1em;color:#a9bfdc}
+.nova-preview-top i{font-style:normal;color:#8fc7b0;font-size:6px}
+.nova-preview-heading{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:9px 0}
+.nova-preview-heading b{font-size:12px;font-weight:700}
+.nova-preview-heading small{font:6px var(--mono);letter-spacing:.08em;color:#8da8ca}
+.nova-preview-search{display:flex;align-items:center;gap:7px;padding:6px 8px;border:1px solid rgba(169,192,223,.2);border-radius:3px;background:rgba(5,13,23,.5);font-size:8px;color:#aebed2}
+.nova-preview-search span{font-size:13px;color:#91b5e8}
+.nova-preview-search i{margin-left:auto;font:7px var(--mono);font-style:normal;color:#a9c8f2}
+.nova-preview-result{display:flex;align-items:center;gap:8px;margin-top:7px;padding:7px;background:rgba(230,239,250,.06);border:1px solid rgba(196,215,238,.1);border-radius:3px}
+.nova-company-mark{display:grid;place-items:center;width:22px;height:22px;border-radius:3px;background:#dce7f5;color:#244467;font:11px var(--mono)}
+.nova-preview-result>div{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}
+.nova-preview-result b{font-size:8px;font-weight:700}
+.nova-preview-result small{font-size:6px;color:#93a8c2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nova-preview-result strong{font:7px var(--mono);color:#a9c8f2}
+@media(max-width:640px){.nova-preview-heading{align-items:flex-start;flex-direction:column;gap:3px}.nova-preview-top{font-size:6px}}
+

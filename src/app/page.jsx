@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const CinematicVideo = dynamic(()=>import("../components/CinematicVideo"),{ssr:false});
 const projects=[
  {n:"01",visual:"lifesync",name:"LifeSync",type:"Product concept · Web app",desc:"A personal dashboard concept connecting money, learning and everyday habits in one place.",tags:["Product thinking","UX","Web app"],href:"https://anushakallempudi12.github.io/LIfeSync/",linkLabel:"Explore LifeSync"},
- {n:"02",visual:"nova",name:"Nova",type:"AI career-search assistant · Web app",desc:"A career-search workspace for discovering relevant roles, comparing job requirements with resume skills, preparing tailored cover-letter drafts, and keeping applications organized.",tags:["AI-assisted workflow","Resume matching","Job discovery","FastAPI"],href:"https://github.com/AnushaKallempudi12/nova",linkLabel:"View Nova on GitHub"},
+ {n:"02",visual:"nova",name:"Nova",type:"AI career-search assistant · Web app",desc:"A career-search workspace for discovering relevant roles, comparing job requirements with resume skills, preparing tailored cover-letter drafts, and keeping applications organized.",tags:["AI-assisted workflow","Resume matching","Job discovery","FastAPI"],href:"https://nova-frontend-production-fe57.up.railway.app/",linkLabel:"Open Nova"},
  {n:"03",visual:"visa",name:"Vee Bot",type:"AI visa assistant · Chatbot",desc:"An AI-powered visa assistant that helps users explore visa-related questions and navigate guidance through a conversational experience.",tags:["AI assistant","Visa guidance","Conversational AI"],href:"https://anushakallempudi12.github.io/vee_bot/",linkLabel:"Try Vee Bot"}
 ];
 const skills=[

@@ -3101,3 +3101,30 @@ main>.footer{
   grid-template-columns:minmax(0,1fr)!important;
   max-width:980px!important;
 }
+
+
+/* Homepage contact links: replace sapphire-blue cards with muted sage green. */
+#contact .contact-link{
+  background:linear-gradient(145deg,#E5EAE3,#D8E2D6)!important;
+  border:1px solid #BDCCBA!important;
+  color:#263D31!important;
+  box-shadow:0 8px 22px rgba(17,41,28,.12)!important;
+}
+#contact .contact-link strong{
+  color:#263D31!important;
+}
+#contact .contact-link small{
+  color:#526454!important;
+}
+#contact .contact-link>svg:last-child{
+  color:#45634D!important;
+}
+#contact .contact-link-icon{
+  background:rgba(69,99,77,.09)!important;
+  border-color:rgba(69,99,77,.22)!important;
+  color:#45634D!important;
+}
+#contact .contact-link:hover{
+  background:linear-gradient(145deg,#D8E2D6,#C9D8C8)!important;
+  border-color:#AABDA8!important;
+}

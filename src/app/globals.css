@@ -2129,3 +2129,52 @@ html,body{background:#385747;color:#F3EFE5}
   border-color:rgba(213,225,207,.25)!important;
 }
 .nav.mobile-open .navlinks{background:rgba(48,75,61,.98)!important}
+
+
+/* Deep forest-green theme across the entire portfolio. */
+:root{
+  --bg:#17291F;
+  --panel:#1D3326;
+  --panel2:#14251C;
+  --ink:#F1EEE4;
+  --muted:#B8C2B7;
+  --line:rgba(241,238,228,.13);
+  --blue:#A9BBA6;
+  --cyan:#C5D0BE;
+}
+html,body{background:#17291F!important;color:#F1EEE4!important}
+::selection{background:#A9BBA6;color:#17291F}
+.cinematic-stage{background:#17291F!important}
+.nav{background:linear-gradient(180deg,rgba(23,41,31,.98),rgba(23,41,31,.86))!important;border-color:rgba(241,238,228,.12)!important}
+.nav.scrolled{background:rgba(20,37,28,.98)!important;border-color:rgba(241,238,228,.14)!important}
+.brand,.navlinks,.navlinks a,.nav-dropdown-trigger,.menu-btn{color:#F1EEE4!important}
+.navlinks a:hover,.nav-dropdown-trigger:hover{color:#C5D0BE!important}
+.nav-dropdown-menu{background:rgba(20,37,28,.99)!important;border-color:rgba(241,238,228,.15)!important}
+.nav-dropdown-menu a{color:#F1EEE4!important}
+.nav-dropdown-menu a:hover{background:rgba(169,187,166,.13)!important;color:#fff!important}
+.hero,.section,.artifacts-section{background:#17291F!important}
+.hero-grid{background-image:linear-gradient(rgba(241,238,228,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(241,238,228,.035) 1px,transparent 1px)!important;opacity:.22}
+.hero-glow{background:radial-gradient(circle,rgba(169,187,166,.09),rgba(23,41,31,0) 68%)!important}
+.hero h1,.section-heading,.section-heading em,.about-copy strong,.focus-list strong,.timeline-role,.project h3,.artifact-card h3,.contact-panel h2{color:#F1EEE4!important}
+.hero h1 .outline{-webkit-text-stroke:1px rgba(241,238,228,.42)!important}
+.hero-copy,.about-copy,.principle p,.focus-list small,.project p,.timeline-desc,.contact-panel p{color:#B8C2B7!important}
+.hero-profession,.hero-meta,.scroll-cue,.stat-top,.timeline-date,.footer{color:#AAB7AA!important}
+.hero-profession span,.eyebrow,.section-kicker,.project-index,.skill-group h3,.principle small,.focus-list>div>span,.project-arrow,.timeline-org{color:#C0CEBC!important}
+.eyebrow:before{background:#A9BBA6!important}
+.hero-button-primary,.nav-cta,.button{color:#17291F!important;background:#DCE3D7!important;border-color:#DCE3D7!important}
+.hero-button-primary:hover,.nav-cta:hover,.button:hover{background:#B8C9B4!important;color:#17291F!important}
+.hero-button-secondary{color:#F1EEE4!important;background:rgba(241,238,228,.045)!important;border-color:rgba(241,238,228,.25)!important}
+.text-link,.contact-link,.artifact-link{color:#C5D0BE!important}
+.scroll-cue:after{background:#AAB7AA!important}
+.principle,.skill-group,.project,.artifact-card{
+ background:linear-gradient(145deg,#20392A,#1A3023)!important;
+ border-color:rgba(241,238,228,.12)!important;
+}
+.principle:hover,.project:hover,.artifact-card:hover{border-color:rgba(197,208,190,.38)!important}
+.stat-card{background:linear-gradient(145deg,#294333,#1A3023)!important;border-color:rgba(241,238,228,.14)!important}
+.stat-card:before{background:radial-gradient(circle,rgba(197,208,190,.1),transparent 70%)!important}
+.project-art,.artifact-art{background:linear-gradient(135deg,#294333,#182B20)!important;border-color:rgba(241,238,228,.12)!important}
+.tag,.skill-list span{color:#D3DCCF!important;background:rgba(241,238,228,.045)!important;border-color:rgba(241,238,228,.12)!important}
+.timeline,.timeline-item{border-color:rgba(241,238,228,.13)!important}
+.contact-panel{background:linear-gradient(135deg,#20392A,#17291F)!important;border-color:rgba(197,208,190,.2)!important}
+.nav.mobile-open .navlinks{background:rgba(20,37,28,.99)!important}

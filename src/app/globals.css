@@ -2859,3 +2859,8 @@ main>.footer{
 /* Pearl Cream palette for the three experience bullet points only. */
 .timeline-points{color:#F7F4EC!important}
 .timeline-points li::marker{color:#C8BFAE!important}
+
+/* Pearl Cream text for the homepage role labels and graduate-study summary. */
+.hero-profession,
+.hero-profession span,
+.timeline-desc{color:#F7F4EC!important}

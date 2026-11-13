@@ -53,7 +53,7 @@ export default function Home(){
      {artifactsOpen&&<div className="nav-dropdown-menu">
       <a href="/portfolio/artifacts/codecoach/" onClick={close}>CodeCoach <ArrowUpRight size={13}/></a>
       <a href="/portfolio/artifacts/ml-vs-dl/" onClick={close}>Machine Learning vs. Deep Learning <ArrowUpRight size={13}/></a>
-      <a href="/portfolio/artifacts/ai-training-interaction/" onClick={close}>AI Training Interaction <ArrowUpRight size={13}/></a>
+      <a href="/portfolio/artifacts/ai-training-interaction/" onClick={close}>AI Training Interaction <ArrowUpRight size={13}/></a>\n      <a href="/portfolio/artifacts/responsible-ai/" onClick={close}>Responsible AI/ML Development <ArrowUpRight size={13}/></a>
      </div>}
     </div>
     <a href="#contact" onClick={close}>Contact</a>
@@ -109,6 +109,12 @@ export default function Home(){
      <div className="artifact-meta"><span>ARTIFACT 02</span><span>MODEL COMPARISON</span></div>
      <h3>Machine Learning vs. Deep Learning</h3><p>A comparison of CatBoost for customer churn prediction and convolutional neural networks for diabetic retinopathy detection, showing how data type and problem context influence model selection.</p>
      <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/ml-vs-dl/">Explore the comparison <ArrowUpRight size={14}/></a>
+    </article>
+    <article className="artifact-card reveal" id="artifact-responsible-ai"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/responsible-ai/" aria-label="Open Responsible AI/ML Development artifact details"/>
+     <div className="artifact-art responsible-ai-art"><div className="rai-home-visual"><span>RESPONSIBLE AI REVIEW</span><div><i>DATA</i><b>→</b><i>FAIRNESS</i><b>→</b><i>PRIVACY</i></div><small>RISK · EVALUATE · PROTECT</small></div></div>
+     <div className="artifact-meta"><span>ARTIFACT 04</span><span>RESPONSIBLE AI · DATA CHALLENGES</span></div>
+     <h3>Responsible AI/ML Development</h3><p>A scenario-based review of data quality, fairness, privacy, and security, exploring how responsible decisions shape the development and evaluation of machine-learning systems.</p>
+     <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/responsible-ai/">Explore responsible AI <ArrowUpRight size={14}/></a>
     </article>
     <article className="artifact-card reveal" id="artifact-ai-training"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/ai-training-interaction/" aria-label="Open AI Training Interaction artifact details"/>
      <div className="artifact-art training-art"><ProjectVisual kind="training"/></div>

@@ -2837,3 +2837,20 @@ main>.footer{
   #contact{min-height:100svh;padding:90px 0 125px!important;}
   main>.footer{width:calc(100% - 40px);padding:14px 0 18px;}
 }
+
+
+/* Keep the homepage introduction centered in the first viewport. */
+.hero{
+  min-height:100svh!important;
+  height:100svh!important;
+  max-height:none!important;
+  padding-top:0!important;
+  align-items:center!important;
+}
+.hero-content{
+  margin-top:0!important;
+  transform:translateY(0)!important;
+}
+@media(max-width:640px){
+  .hero{min-height:100svh!important;height:100svh!important;padding-top:0!important;}
+}

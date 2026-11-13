@@ -3084,3 +3084,20 @@ main>.footer{
   .nav:not(.detail-nav){height:54px!important;padding-left:20px!important;padding-right:20px!important}
   .nav.scrolled:not(.detail-nav){height:50px!important}
 }
+
+
+/* Homepage navigation typography: set the brand and all navigation labels to 12px. */
+.nav:not(.detail-nav) .brand,
+.nav:not(.detail-nav) .navlinks,
+.nav:not(.detail-nav) .navlinks a,
+.nav:not(.detail-nav) .navlinks button,
+.nav:not(.detail-nav) .nav-dropdown-trigger,
+.nav:not(.detail-nav) .nav-cta{
+  font-size:12px!important;
+}
+
+/* The future-growth panel has been removed; let the About content use a single column. */
+.about-grid{
+  grid-template-columns:minmax(0,1fr)!important;
+  max-width:980px!important;
+}

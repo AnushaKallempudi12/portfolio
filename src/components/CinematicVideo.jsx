@@ -42,21 +42,16 @@ export default function CinematicVideo() {
         vec4 source = texture2D(u_video, v_texCoord);
         vec3 color = source.rgb;
         float chroma = color.g - max(color.r, color.b);
-        float isGreen = step(52.0 / 255.0, color.g)
-          * step(0.035, chroma)
-          * step(color.r * 1.12, color.g)
-          * step(color.b * 1.10, color.g);
+        // Keep the key conservative so yellow/green skin highlights and hair
+        // are not mistaken for the green screen.
+        float isGreen = step(70.0 / 255.0, color.g)
+          * step(0.055, chroma)
+          * step(color.r * 1.18, color.g)
+          * step(color.b * 1.15, color.g);
 
-        // Use a softer key threshold to remove the thin green fringe left
-        // around anti-aliased hair, shoulders, and clothing edges.
-        float keyedAlpha = 1.0 - smoothstep(0.025, 0.135, chroma);
+        // Remove green-dominant pixels at the edge without recoloring the subject.
+        float keyedAlpha = 1.0 - smoothstep(0.045, 0.145, chroma);
         float alpha = mix(1.0, keyedAlpha, isGreen);
-
-        // Despill only partially transparent edge pixels. Fully opaque subject
-        // pixels retain their original colors, including skin, hair, and clothing.
-        float greenSpill = max(0.0, color.g - max(color.r, color.b));
-        float edge = 1.0 - alpha;
-        color.g = max(max(color.r, color.b), color.g - greenSpill * edge * 1.15);
 
         gl_FragColor = vec4(color * alpha, alpha);
       }

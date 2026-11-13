@@ -2747,3 +2747,10 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
   backdrop-filter:none!important;
   -webkit-backdrop-filter:none!important;
 }
+
+
+/* Stack contact links below the Let’s build introduction. */
+#contact .contact-panel{display:block!important}
+#contact .contact-copy{width:100%;max-width:720px}
+#contact .contact-links{width:100%;max-width:none;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px;align-content:stretch}
+@media(max-width:640px){#contact .contact-links{grid-template-columns:1fr;margin-top:24px}}

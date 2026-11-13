@@ -203,11 +203,19 @@ export default function CinematicVideo() {
       applyPendingSeek();
     };
 
+    let renderLoop = 0;
+    const drawContinuously = () => {
+      if (!ready) return;
+      renderFrame();
+      renderLoop = window.requestAnimationFrame(drawContinuously);
+    };
+
     const onMetadata = () => {
       ready = true;
       video.pause();
       resizeCanvas();
       syncToScroll();
+      if (!renderLoop) renderLoop = window.requestAnimationFrame(drawContinuously);
     };
 
     video.addEventListener("loadedmetadata", onMetadata);
@@ -224,6 +232,7 @@ export default function CinematicVideo() {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", resizeCanvas);
       if (frameRef.current) window.cancelAnimationFrame(frameRef.current);
+      if (renderLoop) window.cancelAnimationFrame(renderLoop);
       gl.deleteTexture(texture);
       gl.deleteBuffer(buffer);
       gl.deleteProgram(program);

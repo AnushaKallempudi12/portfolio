@@ -3057,3 +3057,30 @@ main>.footer{
 }
 .nav:not(.detail-nav) .brand span{color:#315f9b!important;-webkit-text-fill-color:#315f9b!important}
 .nav:not(.detail-nav) .navlinks a:hover{color:#315f9b!important;-webkit-text-fill-color:#315f9b!important}
+
+
+/* Homepage navigation: muted sage-gray surface, compact height, and consistent 11px typography. */
+.nav:not(.detail-nav){
+  height:54px!important;
+  background:#E5EAE3!important;
+  color:#27384a!important;
+  border-bottom:1px solid #cfd8cf!important;
+  box-shadow:0 4px 14px rgba(31,77,58,.08)!important;
+}
+.nav.scrolled:not(.detail-nav){
+  height:50px!important;
+  background:rgba(229,234,227,.97)!important;
+  border-bottom-color:#cfd8cf!important;
+}
+.nav:not(.detail-nav) .brand,
+.nav:not(.detail-nav) .navlinks,
+.nav:not(.detail-nav) .navlinks a,
+.nav:not(.detail-nav) .navlinks button,
+.nav:not(.detail-nav) .nav-dropdown-trigger,
+.nav:not(.detail-nav) .nav-cta{
+  font-size:11px!important;
+}
+@media(max-width:760px){
+  .nav:not(.detail-nav){height:54px!important;padding-left:20px!important;padding-right:20px!important}
+  .nav.scrolled:not(.detail-nav){height:50px!important}
+}

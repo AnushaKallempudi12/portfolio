@@ -114,6 +114,7 @@ export default function AITrainingInteractionPage(){
      <Link href="/artifacts/codecoach/" onClick={()=>setMenuOpen(false)}>CodeCoach <ArrowUpRight size={13}/></Link>
      <Link href="/artifacts/ml-vs-dl/" onClick={()=>setMenuOpen(false)}>Machine Learning vs. Deep Learning <ArrowUpRight size={13}/></Link>
      <Link href="/artifacts/ai-training-interaction/" onClick={()=>setMenuOpen(false)}>AI Training Interaction <ArrowUpRight size={13}/></Link>
+     <Link href="/artifacts/responsible-ai/" onClick={()=>setMenuOpen(false)}>Responsible AI/ML Development <ArrowUpRight size={13}/></Link>
     </div>}
    </div>
    <Link href="/#top">← Back to Portfolio</Link>

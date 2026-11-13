@@ -2394,3 +2394,95 @@ html,body{background:#17291F!important;color:#F1EEE4!important}
   color:#344F3D!important;
   border-color:rgba(38,61,49,.16)!important;
 }
+
+
+/* Restore the original sapphire-blue and cream artifact section palette.
+   Keep the deep forest-green page background, hero, and navigation unchanged. */
+.detail-page .detail-content>.detail-section:nth-of-type(odd){
+  background:linear-gradient(145deg,#E8EDF1 0%,#F4F1E9 100%)!important;
+  color:#14263E!important;
+  border-color:#D9DFE5!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(even){
+  background:linear-gradient(145deg,#FBF8F0 0%,#F1EEE6 100%)!important;
+  color:#14263E!important;
+  border-color:#D9DFE5!important;
+}
+.detail-page .detail-content>.detail-section:nth-of-type(odd):before,
+.detail-page .detail-content>.detail-section:nth-of-type(even):before{
+  background:linear-gradient(180deg,#315F9B,rgba(49,95,155,0))!important;
+}
+.detail-page .detail-content>.detail-section h2,
+.detail-page .detail-content>.detail-section h3,
+.detail-page .detail-content>.detail-section strong,
+.detail-page .detail-content>.detail-section .detail-index{
+  color:#142B45!important;
+}
+.detail-page .detail-content>.detail-section>p:not(.detail-index),
+.detail-page .detail-content>.detail-section .detail-two-col p,
+.detail-page .detail-content>.detail-section .detail-step-grid p,
+.detail-page .detail-content>.detail-section .detail-tool-grid p,
+.detail-page .detail-content>.detail-section .detail-list li,
+.detail-page .detail-content>.detail-section .detail-case-panel>p,
+.detail-page .detail-content>.detail-section .detail-case-steps p,
+.detail-page .detail-content>.detail-section .detail-case-why p,
+.detail-page .detail-content>.detail-section .detail-compare p{
+  color:#566477!important;
+}
+.detail-page .detail-content>.detail-section .detail-tags span{
+  background:rgba(49,95,155,.08)!important;
+  color:#315F9B!important;
+  border-color:rgba(49,95,155,.18)!important;
+}
+.detail-page .detail-content>.detail-section .detail-step-grid article,
+.detail-page .detail-content>.detail-section .detail-tool-grid article,
+.detail-page .detail-content>.detail-section .detail-compare article,
+.detail-page .detail-content>.detail-section .detail-case-panel,
+.detail-page .detail-content>.detail-section .detail-case-steps article,
+.detail-page .detail-content>.detail-section .detail-case-why,
+.detail-page .detail-content>.detail-section .detail-snapshot-grid>div{
+  background:rgba(255,255,255,.72)!important;
+  color:#142B45!important;
+  border-color:rgba(49,95,155,.14)!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-tabs button,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs button,
+.detail-page .detail-content>.detail-section .ati-stage-nav button,
+.detail-page .detail-content>.detail-section .ati-batch-tabs button,
+.detail-page .detail-content>.detail-section .ati-filter-row button{
+  background:#E8EDF1!important;
+  color:#315F9B!important;
+  border-color:#D9DFE5!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-tabs button[aria-pressed="true"],
+.detail-page .detail-content>.detail-section .detail-case-tabs button.active,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs button.active,
+.detail-page .detail-content>.detail-section .ati-stage-nav button.active,
+.detail-page .detail-content>.detail-section .ati-batch-tabs button.active,
+.detail-page .detail-content>.detail-section .ati-filter-row button.active{
+  background:#315F9B!important;
+  color:#FFFFFF!important;
+  border-color:#315F9B!important;
+}
+.detail-page .detail-content>.detail-section .detail-primary,
+.detail-page .detail-content>.detail-section .ati-next{
+  background:#315F9B!important;
+  color:#FFFFFF!important;
+  border-color:#315F9B!important;
+}
+.detail-page .detail-content>.detail-section .detail-secondary,
+.detail-page .detail-content>.detail-section .codecoach-text-button,
+.detail-page .detail-content>.detail-section .codecoach-reset,
+.detail-page .detail-content>.detail-section .ati-prev{
+  background:rgba(49,95,155,.07)!important;
+  color:#315F9B!important;
+  border-color:rgba(49,95,155,.25)!important;
+}
+.detail-page .detail-content>.detail-section .detail-table th,
+.detail-page .detail-content>.detail-section .detail-table td,
+.detail-page .detail-content>.detail-section .ati-data-row,
+.detail-page .detail-content>.detail-section .ati-table-head{
+  background:#F7F6F1!important;
+  color:#34465C!important;
+  border-color:#D9DFE5!important;
+}

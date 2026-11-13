@@ -2873,3 +2873,38 @@ main>.footer{
   border-color:#C8BFAE!important;
   background:rgba(247,244,236,.08)!important;
 }
+
+/* Compact Pearl Cream artifact dropdown; keep it clear of the character. */
+.nav-dropdown-menu{
+  top:calc(100% + 10px)!important;
+  right:-8px!important;
+  width:248px!important;
+  max-width:min(248px,calc(100vw - 32px))!important;
+  padding:6px!important;
+  gap:2px!important;
+  background:rgba(8,13,23,.96)!important;
+  border:1px solid rgba(200,191,174,.48)!important;
+  box-shadow:0 12px 30px rgba(0,0,0,.28)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+}
+.nav-dropdown-menu a{
+  padding:9px 10px!important;
+  min-height:0!important;
+  color:#F7F4EC!important;
+  font:10px var(--mono)!important;
+  line-height:1.45!important;
+  letter-spacing:0!important;
+}
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible{
+  background:rgba(200,191,174,.14)!important;
+  color:#F7F4EC!important;
+}
+.nav-dropdown-menu a svg{flex:0 0 auto}
+@media(max-width:640px){
+  .nav-dropdown-menu{
+    right:0!important;
+    width:min(248px,calc(100vw - 40px))!important;
+  }
+}

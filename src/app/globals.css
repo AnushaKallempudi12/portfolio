@@ -3011,3 +3011,57 @@ main>.footer{
   opacity:1!important;
   flex-shrink:0!important;
 }
+
+/* Consistent 10.5px navigation typography and navy artifact labels. */
+.nav .brand,
+.nav .navlinks,
+.nav .navlinks a,
+.nav .navlinks button,
+.nav .nav-dropdown-trigger,
+.detail-page .detail-nav,
+.detail-page .detail-nav a,
+.detail-page .detail-nav button,
+.detail-page .detail-nav .nav-dropdown-trigger{
+  font-size:10.5px!important;
+}
+
+/* Give the homepage navigation a light surface so navy labels remain legible. */
+.nav{
+  background:linear-gradient(110deg,rgba(233,240,247,.97) 0%,rgba(220,231,241,.97) 100%)!important;
+  border-bottom:1px solid #c8d7e5!important;
+  box-shadow:0 5px 18px rgba(18,42,72,.08)!important;
+}
+.nav.scrolled{
+  background:rgba(233,240,247,.98)!important;
+  border-color:#c8d7e5!important;
+}
+.nav .brand,
+.nav .navlinks,
+.nav .navlinks a,
+.nav .navlinks button,
+.nav .nav-dropdown-trigger{
+  color:#27384a!important;
+  -webkit-text-fill-color:#27384a!important;
+}
+.nav .brand span,
+.nav .navlinks a:hover,
+.nav .navlinks button:hover,
+.nav .nav-dropdown-trigger:hover{
+  color:#17365b!important;
+  -webkit-text-fill-color:#17365b!important;
+}
+.nav .nav-dropdown-trigger svg{color:#315f9b!important;stroke:#315f9b!important}
+
+/* The Artifacts control uses the same navy text on standalone artifact pages. */
+.detail-page .detail-nav .nav-dropdown-trigger,
+.detail-page .detail-nav .nav-dropdown-trigger svg{
+  color:#27384a!important;
+  -webkit-text-fill-color:#27384a!important;
+  stroke:#315f9b!important;
+}
+.detail-page .detail-nav>a{
+  color:#27384a!important;
+  -webkit-text-fill-color:#27384a!important;
+  font-size:10.5px!important;
+}
+

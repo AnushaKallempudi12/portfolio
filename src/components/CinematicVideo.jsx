@@ -41,21 +41,21 @@ export default function CinematicVideo() {
       void main() {
         vec4 source = texture2D(u_video, v_texCoord);
         vec3 color = source.rgb;
-        // Key only strongly green pixels. Requiring green to exceed both
-        // red and blue by a ratio protects skin tones and neutral clothing.
-        float greenOverRed = color.g - color.r * 1.18;
-        float greenOverBlue = color.g - color.b * 1.18;
-        float greenScreen = min(greenOverRed, greenOverBlue);
-        float keyAmount = smoothstep(0.025, 0.15, greenScreen);
+        // Remove saturated green while protecting neutral, skin and clothing tones.
+        // A difference-based key handles uneven/bright green-screen backgrounds.
+        float nonGreen = max(color.r, color.b);
+        float greenChroma = color.g - nonGreen;
+        float keyAmount = smoothstep(0.055, 0.22, greenChroma);
         float alpha = 1.0 - keyAmount;
 
-        // Preserve the subject's original color. Reduce green spill only
-        // along semi-transparent boundary pixels, never across the subject.
-        float edge = 1.0 - smoothstep(0.02, 0.98, alpha);
-        float neutral = max(color.r, color.b);
-        color.g = mix(color.g, min(color.g, neutral + 0.035), edge * 0.72);
+        // Decontaminate only partially transparent edge pixels. Interior
+        // character pixels retain their source RGB values without fading.
+        float edge = 1.0 - smoothstep(0.08, 0.92, alpha);
+        float spill = clamp((greenChroma - 0.025) * 3.2, 0.0, 1.0);
+        float cleanGreen = min(color.g, nonGreen + 0.025);
+        color.g = mix(color.g, cleanGreen, spill * edge * 0.9);
 
-        // Premultiplied alpha avoids grey fringes during compositing.
+        // Premultiplied alpha prevents dark/grey fringes over the cream canvas.
         gl_FragColor = vec4(color * alpha, alpha);
       }
     `;

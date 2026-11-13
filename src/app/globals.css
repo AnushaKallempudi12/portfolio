@@ -2946,20 +2946,20 @@ main>.footer{
 
 /* Keep the homepage Artifacts dropdown dark; apply the pale-blue dropdown
    only to the three standalone artifact pages. */
-body:not(:has(.detail-page)) .nav-dropdown-menu{
+.nav .nav-dropdown-menu{
   background:rgba(8,13,23,.96)!important;
   border:1px solid rgba(200,191,174,.48)!important;
   box-shadow:0 12px 30px rgba(0,0,0,.28)!important;
 }
-body:not(:has(.detail-page)) .nav-dropdown-menu a{
+.nav .nav-dropdown-menu a{
   color:#F7F4EC!important;
 }
-body:not(:has(.detail-page)) .nav-dropdown-menu a:hover,
-body:not(:has(.detail-page)) .nav-dropdown-menu a:focus-visible{
+.nav .nav-dropdown-menu a:hover,
+.nav .nav-dropdown-menu a:focus-visible{
   background:rgba(200,191,174,.14)!important;
   color:#F7F4EC!important;
 }
-body:not(:has(.detail-page)) .nav-dropdown-menu a svg{color:#F7F4EC!important}
+.nav .nav-dropdown-menu a svg{color:#F7F4EC!important}
 
 .detail-page .detail-nav .nav-dropdown-menu{
   background:linear-gradient(145deg,#e9f0f7 0%,#dce7f1 100%)!important;

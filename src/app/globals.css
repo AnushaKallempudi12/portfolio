@@ -2908,3 +2908,38 @@ main>.footer{
     width:min(248px,calc(100vw - 40px))!important;
   }
 }
+
+/* Slimmer homepage navigation: keep the header visually lighter. */
+.nav{
+  height:64px!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+.nav.scrolled{height:56px!important}
+.brand{font-size:16px!important}
+.navlinks{gap:24px!important;font-size:10px!important}
+.nav-dropdown-trigger{font-size:inherit!important}
+@media(max-width:760px){
+  .nav{height:60px!important;padding-left:20px!important;padding-right:20px!important}
+  .nav.scrolled{height:54px!important}
+}
+
+/* Artifact-page navigation uses the same pale-blue and sapphire palette
+   as the artifact content, replacing the previous green-tinted header. */
+.detail-page .detail-nav{
+  height:62px!important;
+  background:linear-gradient(110deg,#e9f0f7 0%,#dce7f1 100%)!important;
+  color:#27384a!important;
+  border-bottom:1px solid #c8d7e5!important;
+  box-shadow:0 5px 18px rgba(18,42,72,.08)!important;
+}
+.detail-page .detail-nav a,
+.detail-page .detail-nav a:last-child{
+  color:#27384a!important;
+}
+.detail-page .detail-nav a:first-child span{
+  color:#315f9b!important;
+}
+.detail-page .detail-nav a:hover{
+  color:#315f9b!important;
+}

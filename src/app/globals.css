@@ -3128,3 +3128,17 @@ main>.footer{
   background:linear-gradient(145deg,#D8E2D6,#C9D8C8)!important;
   border-color:#AABDA8!important;
 }
+
+
+/* Homepage Artifacts dropdown: enforce pearl-cream text and icons on every state. */
+.nav:not(.detail-nav) .nav-dropdown-menu a,
+.nav:not(.detail-nav) .nav-dropdown-menu a:visited,
+.nav:not(.detail-nav) .nav-dropdown-menu a:hover,
+.nav:not(.detail-nav) .nav-dropdown-menu a:focus-visible{
+  color:#F7F4EC!important;
+  -webkit-text-fill-color:#F7F4EC!important;
+}
+.nav:not(.detail-nav) .nav-dropdown-menu a svg{
+  color:#F7F4EC!important;
+  stroke:#F7F4EC!important;
+}

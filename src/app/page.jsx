@@ -81,12 +81,12 @@ export default function Home(){
     <div className="principles"><div className="principle"><small>01 — BUILD</small><p>Reliable software with a clear purpose.</p></div><div className="principle"><small>02 — LEARN</small><p>Stay curious and keep improving.</p></div></div>
     <div className="portfolio-positioning">
      <article className="positioning-card">
-      <div className="positioning-kicker">02 / Personal Value Proposition</div>
+      <div className="positioning-kicker">Personal Value Proposition</div>
       <h3>Engineering experience. Applied AI perspective.</h3>
       <p>I bring together hands-on software engineering experience and graduate study in artificial intelligence and data analytics to turn practical problems into reliable, thoughtfully designed software and data-informed AI solutions. My background across application development, API integration, testing, and analytics helps me connect technical decisions with quality, usability, and real-world needs.</p>
      </article>
      <article className="positioning-card">
-      <div className="positioning-kicker">03 / Target Audience</div>
+      <div className="positioning-kicker">Target Audience</div>
       <h3>Who this portfolio is for.</h3>
       <p>This portfolio is intended for recruiters, hiring managers, and technical teams exploring early-career software engineering, data, and AI/ML talent, as well as educators and peers interested in applied learning. It brings together my professional experience, technical toolkit, and four academic artifacts so visitors can understand how I approach problems, choose tools, and connect technical work to practical value.</p>
      </article>
@@ -127,14 +127,12 @@ export default function Home(){
      <div className="artifact-art training-art"><ProjectVisual kind="training"/></div>
      <div className="artifact-meta"><span>ARTIFACT 03</span><span>RESPONSIBLE AI · LLM BASICS</span></div>
      <h3>AI Training Interaction</h3><p>A five-stage exploration of next-token prediction, training-data representation, hallucination, and choosing when an LLM needs external sources or expert review.</p>
-     <div className="artifact-overview-points"><div><strong>Objective</strong><span>Understand prediction, training-data limits, and verification.</span></div><div><strong>Process</strong><span>Predict, inspect, classify, evaluate, and reflect.</span></div><div><strong>Tools</strong><span>Professor Predict activity and ChatGPT-supported review.</span></div><div><strong>Value</strong><span>Make informed decisions about when to trust or verify AI output.</span></div></div>
      <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/ai-training-interaction/">Explore the interaction <ArrowUpRight size={14}/></a>
     </article>
     <article className="artifact-card reveal" id="artifact-responsible-ai"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/responsible-ai/" aria-label="Open Data Challenge Scenarios artifact details"/>
      <div className="artifact-art rai-card-art"><div className="rai-card-symbols"><span>DATA</span><b>→</b><span>MODEL</span><b>→</b><span>IMPACT</span></div><div className="rai-card-orbit"><i/><i/><i/></div></div>
      <div className="artifact-meta"><span>ARTIFACT 04</span><span>RESPONSIBLE AI · DATA CHALLENGES</span></div>
      <h3>Data Challenge Scenarios</h3><p>A scenario-based exploration of data quality, fairness, privacy, and safeguards that support more dependable machine-learning systems.</p>
-     <div className="artifact-overview-points"><div><strong>Objective</strong><span>Connect data, fairness, and privacy risks to responsible ML practice.</span></div><div><strong>Process</strong><span>Analyze three scenarios, assess risk, and consider safeguards.</span></div><div><strong>Tools</strong><span>Data checks, fairness evaluation, shift monitoring, and privacy methods.</span></div><div><strong>Value</strong><span>Look beyond accuracy to reliability, accountability, and human impact.</span></div></div>
      <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/responsible-ai/">Explore Artifact 4 <ArrowUpRight size={14}/></a>
     </article>
    </div>

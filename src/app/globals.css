@@ -3648,3 +3648,103 @@ main>.footer{
   .portfolio-positioning{grid-template-columns:1fr;gap:12px;margin-top:26px}
   .positioning-card{padding:19px}
 }
+
+
+/* Workshop 5 refinement: align the About section with the homepage hero content. */
+.about-grid{
+  max-width:none!important;
+}
+
+/* Artifact-page navigation follows the home bar: dropdown left, portfolio link right. */
+.detail-nav{
+  justify-content:space-between!important;
+  gap:0!important;
+}
+
+/* Forest-green treatment for the About principles and Workshop 5 information cards. */
+.principle,
+.positioning-card{
+  border:1px solid rgba(142,174,151,.28)!important;
+  background:linear-gradient(135deg,rgba(27,53,42,.96),rgba(17,36,29,.94))!important;
+  box-shadow:0 10px 26px rgba(3,13,8,.16);
+}
+.principle small,
+.positioning-kicker{
+  color:#b6d0b8!important;
+}
+.principle p,
+.positioning-card p{
+  color:#d1ddd2!important;
+}
+.positioning-card h3{
+  color:#f0f5ef!important;
+}
+
+
+/* Homepage academic artifact cards: dusty-plum surfaces, flowing wave detail, and coordinated light text. */
+.artifacts-section .artifact-card{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 82% 12%,rgba(207,151,190,.20),transparent 44%),
+    linear-gradient(145deg,#684B65 0%,#50384F 48%,#38283D 100%)!important;
+  border:1px solid rgba(222,181,211,.34)!important;
+  box-shadow:0 14px 34px rgba(8,17,12,.22);
+  color:#F5EAF2!important;
+}
+.artifacts-section .artifact-card::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  pointer-events:none;
+  left:-4%;
+  right:-4%;
+  bottom:-2px;
+  height:48%;
+  opacity:.78;
+  background:
+    radial-gradient(ellipse 78% 58% at 8% 112%,transparent 56%,rgba(218,157,199,.60) 57%,transparent 58.2%),
+    radial-gradient(ellipse 92% 72% at 34% 124%,transparent 57%,rgba(185,125,171,.48) 58%,transparent 59.2%),
+    radial-gradient(ellipse 108% 84% at 76% 137%,transparent 58%,rgba(145,99,143,.54) 59%,transparent 60.2%),
+    linear-gradient(165deg,transparent 35%,rgba(190,133,177,.10) 100%);
+}
+.artifacts-section .artifact-card::after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  pointer-events:none;
+  width:68%;
+  height:48%;
+  right:-18%;
+  top:-22%;
+  border-radius:50%;
+  background:radial-gradient(ellipse,rgba(226,174,207,.12),transparent 70%);
+}
+.artifacts-section .artifact-card>*:not(.artifact-card-hitarea){
+  position:relative;
+  z-index:2;
+}
+.artifacts-section .artifact-card h3{
+  color:#FFF4FA!important;
+}
+.artifacts-section .artifact-card>p{
+  color:#E5D5E2!important;
+}
+.artifacts-section .artifact-meta{
+  color:#E7BBD8!important;
+}
+.artifacts-section .artifact-link{
+  color:#F6DCEC!important;
+  border-bottom-color:rgba(238,190,220,.58)!important;
+}
+.artifacts-section .artifact-link:hover{
+  color:#FFFFFF!important;
+  border-bottom-color:#FFFFFF!important;
+}
+.artifacts-section .artifact-art{
+  background:
+    radial-gradient(ellipse at 75% 18%,rgba(218,157,199,.19),transparent 48%),
+    linear-gradient(135deg,#59415A,#35283D)!important;
+  border-color:rgba(222,181,211,.24)!important;
+}

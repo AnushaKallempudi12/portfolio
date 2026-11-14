@@ -3230,3 +3230,9 @@ main>.footer{
 .rai-page .rai-objective>span{display:none}
 .rai-page .rai-tool-note a{display:inline-flex;align-items:center;gap:7px;color:#315f9b;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.detail-nav{height:52px;min-height:52px;padding-left:18px;padding-right:18px}}
+
+/* Match artifact navigation to the portfolio navigation height. */
+.detail-nav{height:70px;min-height:70px;padding-top:0;padding-bottom:0}
+.detail-nav-dropdown .nav-dropdown-trigger{padding:6px 0}
+.detail-nav-dropdown .nav-dropdown-menu{top:calc(100% + 8px)}
+@media(max-width:600px){.detail-nav{height:70px;min-height:70px;padding-left:20px;padding-right:20px}}

@@ -130,6 +130,12 @@ export default function AITrainingInteractionPage(){
     <div><span>03 / OUTCOME</span><strong>Critical use</strong><small>Know when to seek extra support</small></div>
    </div>
   </div></section>
+  <div className="detail-wrap ati-brief-grid" aria-label="Artifact 3 overview">
+   <article><span>OBJECTIVE</span><strong>Understand LLM behavior</strong><small>Explore next-token prediction, training-data limits, and verification.</small></article>
+   <article><span>PROCESS</span><strong>Five-stage exploration</strong><small>Predict, examine, classify, evaluate, and reflect on model behavior.</small></article>
+   <article><span>TOOLS</span><strong>Professor Predict + ChatGPT</strong><small>Interactive learning activity, feedback, and writing review.</small></article>
+   <article><span>VALUE PROPOSITION</span><strong>Use AI with judgment</strong><small>Recognize when to verify information or use another source or tool.</small></article>
+  </div>
   <div className="detail-wrap detail-content ati-content">
    <section className="detail-section ati-reveal">
     <p className="detail-index">01 / INTRODUCTION</p><h2>Learning to question a fluent answer</h2>

@@ -131,12 +131,6 @@ export default function AITrainingInteractionPage(){
     <div><span>03 / OUTCOME</span><strong>Critical use</strong><small>Know when to seek extra support</small></div>
    </div>
   </div></section>
-  <div className="detail-wrap ati-brief-grid" aria-label="Artifact 3 overview">
-   <article><span>OBJECTIVE</span><strong>Understand LLM behavior</strong><small>Explore next-token prediction, training-data limits, and verification.</small></article>
-   <article><span>PROCESS</span><strong>Five-stage exploration</strong><small>Predict, examine, classify, evaluate, and reflect on model behavior.</small></article>
-   <article><span>TOOLS</span><strong>Professor Predict + ChatGPT</strong><small>Interactive learning activity, feedback, and writing review.</small></article>
-   <article><span>VALUE PROPOSITION</span><strong>Use AI with judgment</strong><small>Recognize when to verify information or use another source or tool.</small></article>
-  </div>
   <div className="detail-wrap detail-content ati-content">
    <section className="detail-section ati-reveal">
     <p className="detail-index">01 / INTRODUCTION</p><h2>Introduction</h2>
@@ -192,8 +186,8 @@ export default function AITrainingInteractionPage(){
    </section>
 <section className="detail-section ati-reveal">
     <p className="detail-index">07 / VALUE PROPOSITION</p><h2>Why this learning artifact matters</h2>
-    <h3>Unique Value</h3>
-    <p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p>
+    <h3 className="ati-subsection-title">Unique Value</h3>
+    <div className="ati-unique-card"><p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p></div>
     <h3>Relevance</h3>
     <div className="ati-audience-grid">
      <article><strong>For AI learners</strong><span>Build a practical mental model of next-token prediction and training-data limits.</span></article>

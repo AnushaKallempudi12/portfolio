@@ -54,6 +54,7 @@ export default function Home(){
       <a href="/portfolio/artifacts/codecoach/" onClick={close}>CodeCoach <ArrowUpRight size={13}/></a>
       <a href="/portfolio/artifacts/ml-vs-dl/" onClick={close}>Machine Learning vs. Deep Learning <ArrowUpRight size={13}/></a>
       <a href="/portfolio/artifacts/ai-training-interaction/" onClick={close}>AI Training Interaction <ArrowUpRight size={13}/></a>
+      <a href="/portfolio/artifacts/responsible-ai/" onClick={close}>Responsible AI/ML Development <ArrowUpRight size={13}/></a>
      </div>}
     </div>
     <a href="#contact" onClick={close}>Contact</a>
@@ -114,7 +115,15 @@ export default function Home(){
      <div className="artifact-art training-art"><ProjectVisual kind="training"/></div>
      <div className="artifact-meta"><span>ARTIFACT 03</span><span>RESPONSIBLE AI · LLM BASICS</span></div>
      <h3>AI Training Interaction</h3><p>A five-stage exploration of next-token prediction, training-data representation, hallucination, and choosing when an LLM needs external sources or expert review.</p>
+     <div className="artifact-overview-points"><div><strong>Objective</strong><span>Understand prediction, training-data limits, and verification.</span></div><div><strong>Process</strong><span>Predict, inspect, classify, evaluate, and reflect.</span></div><div><strong>Tools</strong><span>Professor Predict activity and ChatGPT-supported review.</span></div><div><strong>Value</strong><span>Make informed decisions about when to trust or verify AI output.</span></div></div>
      <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/ai-training-interaction/">Explore the interaction <ArrowUpRight size={14}/></a>
+    </article>
+    <article className="artifact-card reveal" id="artifact-responsible-ai"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/responsible-ai/" aria-label="Open Responsible AI/ML Development artifact details"/>
+     <div className="artifact-art rai-card-art"><div className="rai-card-symbols"><span>DATA</span><b>→</b><span>MODEL</span><b>→</b><span>IMPACT</span></div><div className="rai-card-orbit"><i/><i/><i/></div></div>
+     <div className="artifact-meta"><span>ARTIFACT 04</span><span>RESPONSIBLE AI · DATA CHALLENGES</span></div>
+     <h3>Responsible AI/ML Development</h3><p>A scenario-based exploration of data quality, fairness, privacy, and safeguards that support more dependable machine-learning systems.</p>
+     <div className="artifact-overview-points"><div><strong>Objective</strong><span>Connect data, fairness, and privacy risks to responsible ML practice.</span></div><div><strong>Process</strong><span>Analyze three scenarios, assess risk, and consider safeguards.</span></div><div><strong>Tools</strong><span>Data checks, fairness evaluation, shift monitoring, and privacy methods.</span></div><div><strong>Value</strong><span>Look beyond accuracy to reliability, accountability, and human impact.</span></div></div>
+     <a className="artifact-link" href="https://anushakallempudi12.github.io/portfolio/artifacts/responsible-ai/">Explore Artifact 4 <ArrowUpRight size={14}/></a>
     </article>
    </div>
   </div></section>

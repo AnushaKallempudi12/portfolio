@@ -3220,3 +3220,13 @@ main>.footer{
  .rai-page .rai-brief-grid,.rai-page .rai-tabs,.rai-page .rai-scenario-columns,.rai-page .rai-tool-grid,.rai-page .rai-takeaway-grid,.rai-page .rai-relevance-grid{grid-template-columns:1fr}
 }
 @media(max-width:420px){.ati-page .ati-brief-grid,.artifact-overview-points{grid-template-columns:1fr}}
+
+
+/* Compact artifact-page navigation and complete artifact menu spacing. */
+.detail-nav{height:54px;min-height:54px;padding-top:0;padding-bottom:0}
+.detail-nav-dropdown .nav-dropdown-trigger{padding:6px 0}
+.detail-nav-dropdown .nav-dropdown-menu{top:calc(100% + 8px)}
+.rai-page .rai-objective h3{margin:0 0 8px;color:#27384a;font-size:13px}
+.rai-page .rai-objective>span{display:none}
+.rai-page .rai-tool-note a{display:inline-flex;align-items:center;gap:7px;color:#315f9b;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.detail-nav{height:52px;min-height:52px;padding-left:18px;padding-right:18px}}

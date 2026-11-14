@@ -132,7 +132,7 @@ export default function Home(){
    <div className="contact-links">
     <a className="contact-link" href="https://github.com/AnushaKallempudi12" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Github size={18}/></span><span><strong>GitHub</strong><small>Explore my code and projects</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="https://www.linkedin.com/in/anusha-kallempudi" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Linkedin size={18}/></span><span><strong>LinkedIn</strong><small>Connect with me professionally</small></span><ArrowUpRight size={16}/></a>
-    <a className="contact-link" href="mailto:anushakallempudi2002@gmail.com"><span className="contact-link-icon"><Mail size={18}/></span><span><strong>Email</strong><small>anushakallempudi2002@gmail.com</small></span><ArrowUpRight size={16}/></a>
+    <a className="contact-link" href="mailto:anushakallempudi2002@gmail.com"><span className="contact-link-icon"><Mail size={18}/></span><span><strong>Email</strong><small>Opens your email app</small></span><ArrowUpRight size={16}/></a>
    </div>
   </div></div></section>
   <footer className="wrap footer"><span>© {new Date().getFullYear()} Anusha Kallempudi</span><span>Designed around curiosity. Built with intention.</span><div style={{display:"flex",gap:16}}><a href="https://github.com/AnushaKallempudi12" aria-label="GitHub"><Github size={15}/></a></div></footer>

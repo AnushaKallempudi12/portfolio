@@ -3142,3 +3142,81 @@ main>.footer{
   color:#F7F4EC!important;
   stroke:#F7F4EC!important;
 }
+
+
+/* Artifact 3 feedback response: surface objective, process, tools, and value near the top. */
+.ati-page .ati-brief-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0 8px}
+.ati-page .ati-brief-grid article{padding:16px;border:1px solid #c8d7e5;border-radius:9px;background:linear-gradient(145deg,#fffefa,#eee8dc)}
+.ati-page .ati-brief-grid span{display:block;color:#315f9b;font:8px var(--mono);letter-spacing:.12em;margin-bottom:7px}
+.ati-page .ati-brief-grid strong{display:block;color:#27384a;font-size:13px;margin-bottom:6px}
+.ati-page .ati-brief-grid small{display:block;color:#5d625f;font-size:11px;line-height:1.6}
+
+/* Artifact 4 — use the shared sapphire and warm-cream visual system. */
+.rai-page .rai-objective,.rai-page .rai-brief-grid article,.rai-page .rai-scenario-panel,.rai-page .rai-tool-grid article,.rai-page .rai-tool-note,.rai-page .rai-takeaway-grid article,.rai-page .rai-unique,.rai-page .rai-relevance-grid article{background:linear-gradient(145deg,#fffefa 0%,#eee8dc 100%);border:1px solid #e1d9c9;border-radius:10px;color:#5d625f}
+.rai-page .rai-objective{padding:20px 22px;margin-top:24px}
+.rai-page .rai-objective>span,.rai-page .rai-brief-grid article>span,.rai-page .rai-scenario-heading>div>span,.rai-page .rai-takeaway-grid article>span,.rai-page .rai-unique>span{display:block;color:#315f9b;font:9px var(--mono);letter-spacing:.13em;margin-bottom:9px}
+.rai-page .rai-objective p{margin:0;color:#34465c;font-size:14px;line-height:1.8}
+.rai-page .rai-brief-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.rai-page .rai-brief-grid article{padding:18px;min-height:145px}
+.rai-page .rai-brief-grid strong{display:block;color:#27384a;font-size:15px;margin:5px 0 8px}
+.rai-page .rai-brief-grid small{display:block;color:#5d625f;font-size:12px;line-height:1.7}
+.rai-page .rai-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:26px 0 16px}
+.rai-page .rai-tabs button{text-align:left;padding:16px;border:1px solid #c8d7e5;border-radius:8px;background:linear-gradient(145deg,#e9f0f7,#dce7f1);color:#34465c;cursor:pointer;transition:transform .2s,border-color .2s}
+.rai-page .rai-tabs button:hover{transform:translateY(-2px);border-color:#7c9fc7}
+.rai-page .rai-tabs button.active{background:linear-gradient(145deg,#17365b,#10213a);border-color:#315f9b;color:#fff}
+.rai-page .rai-tabs button span,.rai-page .rai-tabs button small{display:block;font:8px var(--mono);letter-spacing:.1em;color:#315f9b}
+.rai-page .rai-tabs button strong{display:block;margin:9px 0 7px;font-size:13px;line-height:1.4;color:#27384a}
+.rai-page .rai-tabs button small{font-size:8px;letter-spacing:.06em}
+.rai-page .rai-tabs button.active span,.rai-page .rai-tabs button.active small,.rai-page .rai-tabs button.active strong{color:#f7f4ec}
+.rai-page .rai-scenario-panel{padding:24px}
+.rai-page .rai-scenario-heading{display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid #e1d9c9}
+.rai-page .rai-scenario-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:9px;background:#e9f0f7;color:#315f9b;flex:0 0 auto}
+.rai-page .rai-scenario-heading h3{margin:0;color:#27384a}
+.rai-page .rai-scenario-columns{display:grid;grid-template-columns:1fr 1fr;gap:26px;padding:22px 0}
+.rai-page .rai-scenario-columns h4{margin:0 0 9px;color:#27384a;font-size:14px}
+.rai-page .rai-scenario-columns p,.rai-page .rai-scenario-columns li{color:#5d625f;font-size:12px;line-height:1.75}
+.rai-page .rai-scenario-columns ul,.rai-page .rai-scenario-columns ol{padding-left:19px;margin:0 0 18px}
+.rai-page .rai-scenario-columns li{margin:0 0 7px}
+.rai-page .rai-approach{padding:18px;border-radius:8px;background:#f7f6f1;border:1px solid #e1d9c9}
+.rai-page .rai-learning{display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:8px;background:#e9f0f7;border:1px solid #c8d7e5;color:#315f9b}
+.rai-page .rai-learning p{margin:0;color:#34465c;font-size:12px;line-height:1.75}
+.rai-page .rai-learning strong{display:block;color:#27384a;margin-bottom:4px}
+.rai-page .rai-process-list{display:grid;gap:0;margin-top:24px}
+.rai-page .rai-process-list article{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:20px 0;border-top:1px solid #c8d7e5}
+.rai-page .rai-process-list article>span{font:11px var(--mono);color:#315f9b;padding-top:3px}
+.rai-page .rai-process-list h3{margin:0 0 6px;color:#27384a;font-size:16px}
+.rai-page .rai-process-list p{margin:0;color:#5d625f;font-size:13px;line-height:1.75}
+.rai-page .rai-tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.rai-page .rai-tool-grid article{padding:20px}
+.rai-page .rai-tool-grid article>svg{color:#315f9b;margin-bottom:12px}
+.rai-page .rai-tool-grid h3{margin:0 0 7px;color:#27384a;font-size:15px}
+.rai-page .rai-tool-grid p{margin:0;color:#5d625f;font-size:12px;line-height:1.75}
+.rai-page .rai-tool-note{padding:18px;margin-top:14px;background:#e9f0f7;border-color:#c8d7e5}
+.rai-page .rai-tool-note strong{color:#27384a;font-size:13px}
+.rai-page .rai-tool-note p{margin:6px 0 0;color:#5d625f;font-size:12px;line-height:1.7}
+.rai-page .rai-takeaway-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.rai-page .rai-takeaway-grid article{padding:20px}
+.rai-page .rai-takeaway-grid h3{margin:0 0 8px;color:#27384a;font-size:15px;line-height:1.45}
+.rai-page .rai-takeaway-grid p{margin:0;color:#5d625f;font-size:12px;line-height:1.75}
+.rai-page .rai-unique{padding:22px;margin:22px 0}
+.rai-page .rai-unique h3{margin:0 0 8px;color:#27384a;font-size:18px}
+.rai-page .rai-unique p{margin:0;color:#5d625f;font-size:13px;line-height:1.8}
+.rai-page .rai-relevance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.rai-page .rai-relevance-grid article{padding:18px}
+.rai-page .rai-relevance-grid strong{display:block;color:#27384a;font-size:13px;margin-bottom:7px}
+.rai-page .rai-relevance-grid span{display:block;color:#5d625f;font-size:12px;line-height:1.7}
+.artifact-overview-points{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0 12px}
+.artifact-overview-points>div{padding:10px 11px;border:1px solid rgba(200,191,174,.2);border-radius:4px;background:rgba(247,244,236,.035)}
+.artifact-overview-points strong{display:block;color:#e2bd91;font:8px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.artifact-overview-points span{display:block;color:#c7c0b4;font-size:10px;line-height:1.55}
+.rai-card-art{position:relative;flex-direction:column;gap:22px;background:radial-gradient(ellipse at 50% 45%,rgba(49,95,155,.28),transparent 58%),linear-gradient(135deg,#14243a,#0b1422)!important}
+.rai-card-symbols{display:flex;align-items:center;justify-content:center;gap:12px;color:#d9e6f7;font:9px var(--mono);letter-spacing:.13em}
+.rai-card-symbols b{color:#79b9d6;font-size:14px}
+.rai-card-orbit{width:118px;height:62px;border:1px solid rgba(121,185,214,.45);border-radius:50%;transform:rotate(-20deg);position:relative}
+.rai-card-orbit i{position:absolute;width:8px;height:8px;border-radius:50%;background:#8fc8df;box-shadow:0 0 13px rgba(143,200,223,.6)}
+.rai-card-orbit i:nth-child(1){left:12px;top:22px}.rai-card-orbit i:nth-child(2){right:12px;top:22px}.rai-card-orbit i:nth-child(3){left:54px;top:-4px}
+@media(max-width:760px){
+ .ati-page .ati-brief-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .rai-page .rai-brief-grid,.rai-page .rai-tabs,.rai-page .rai-scenario-columns,.rai-page .rai-tool-grid,.rai-page .rai-takeaway-grid,.rai-page .rai-relevance-grid{grid-template-columns:1fr}
+}
+@media(max-width:420px){.ati-page .ati-brief-grid,.artifact-overview-points{grid-template-columns:1fr}}

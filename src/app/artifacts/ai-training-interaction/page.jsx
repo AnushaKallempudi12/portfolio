@@ -124,7 +124,7 @@ export default function AITrainingInteractionPage(){
      <Link href="/artifacts/responsible-ai/" onClick={()=>setMenuOpen(false)}>Data Challenge Scenarios <ArrowUpRight size={13}/></Link>
     </div>}
    </div>
-   <Link href="/#top">← Back to Portfolio</Link>
+   <Link href="/#top">← BACK TO PORTFOLIO</Link>
   </header>
   <section className="detail-hero ati-hero"><div className="detail-wrap">
    <p className="detail-eyebrow">ACADEMIC ARTIFACT 03 · MACHINE LEARNING FUNDAMENTALS</p>

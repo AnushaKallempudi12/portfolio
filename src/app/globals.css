@@ -3516,3 +3516,135 @@ main>.footer{
 @media(max-width:560px){
   .rai-page .rai-process-flow{grid-template-columns:1fr}
 }
+
+
+/* Match academic artifact navigation to the home navigation proportions and centered placement. */
+.detail-nav{
+  height:82px;
+  min-height:82px;
+  justify-content:center;
+  gap:30px;
+  padding:0 max(32px,calc((100vw - 1180px)/2));
+  font:11px var(--mono);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.detail-nav-dropdown .nav-dropdown-trigger{
+  font:11px var(--mono);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:400;
+}
+.detail-nav>a{
+  font:11px var(--mono)!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase;
+}
+@media(max-width:640px){
+  .detail-nav{
+    height:70px;
+    min-height:70px;
+    padding:0 20px;
+    gap:22px;
+  }
+}
+.ati-walkthrough-label{
+  margin:0 0 8px;
+  color:#7198d0;
+  font:10px var(--mono);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+
+/* Keep all selected interactive states readable: light selection surface, dark labels. */
+.detail-page .detail-content>.detail-section .detail-case-tabs button[aria-pressed="true"],
+.detail-page .detail-content>.detail-section .detail-case-tabs button.active,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs button.active,
+.detail-page .detail-content>.detail-section .ati-stage-nav button.active,
+.detail-page .detail-content>.detail-section .ati-batch-tabs button.active,
+.detail-page .detail-content>.detail-section .ati-filter-row button.active,
+.rai-page .rai-tabs button.active{
+  background:linear-gradient(145deg,#fffdf7 0%,#eee8dc 100%)!important;
+  color:#20334a!important;
+  border-color:#cbbd9f!important;
+  box-shadow:0 5px 15px rgba(28,43,64,.08)!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-tabs button[aria-pressed="true"] *,
+.detail-page .detail-content>.detail-section .detail-case-tabs button.active *,
+.detail-page .detail-content>.detail-section .codecoach-challenge-tabs button.active *,
+.detail-page .detail-content>.detail-section .ati-stage-nav button.active *,
+.detail-page .detail-content>.detail-section .ati-batch-tabs button.active *,
+.detail-page .detail-content>.detail-section .ati-filter-row button.active *,
+.rai-page .rai-tabs button.active span,
+.rai-page .rai-tabs button.active strong,
+.rai-page .rai-tabs button.active small{
+  color:#20334a!important;
+  -webkit-text-fill-color:#20334a!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-panel,
+.detail-page .detail-content>.detail-section .ati-stage-panel,
+.rai-page .rai-scenario-panel{
+  background:linear-gradient(145deg,#fffdf7 0%,#f2ecdf 100%)!important;
+  color:#34465c!important;
+  border:1px solid #e1d9c9!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-panel h3,
+.detail-page .detail-content>.detail-section .detail-case-panel h4,
+.detail-page .detail-content>.detail-section .detail-case-panel strong,
+.detail-page .detail-content>.detail-section .ati-stage-panel h3,
+.detail-page .detail-content>.detail-section .ati-stage-panel h4,
+.detail-page .detail-content>.detail-section .ati-stage-panel strong,
+.rai-page .rai-scenario-panel h3,
+.rai-page .rai-scenario-panel h4,
+.rai-page .rai-scenario-panel strong{
+  color:#27384a!important;
+}
+.detail-page .detail-content>.detail-section .detail-case-panel p,
+.detail-page .detail-content>.detail-section .detail-case-panel li,
+.detail-page .detail-content>.detail-section .ati-stage-panel p,
+.detail-page .detail-content>.detail-section .ati-stage-panel li,
+.rai-page .rai-scenario-panel p,
+.rai-page .rai-scenario-panel li{
+  color:#59616a!important;
+}
+
+
+/* Workshop 5 homepage additions: preserve the existing About layout and add two compact, matching cards. */
+.portfolio-positioning{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:34px;
+}
+.positioning-card{
+  min-width:0;
+  padding:22px 23px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:linear-gradient(135deg,rgba(21,33,52,.82),rgba(12,18,29,.72));
+}
+.positioning-kicker{
+  margin-bottom:13px;
+  color:var(--blue);
+  font:10px var(--mono);
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.positioning-card h3{
+  margin:0 0 11px;
+  color:#eaf1fc;
+  font-size:17px;
+  line-height:1.45;
+  font-weight:600;
+}
+.positioning-card p{
+  margin:0;
+  color:#a1aec2;
+  font-size:13px;
+  line-height:1.85;
+}
+@media(max-width:760px){
+  .portfolio-positioning{grid-template-columns:1fr;gap:12px;margin-top:26px}
+  .positioning-card{padding:19px}
+}

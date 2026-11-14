@@ -3236,3 +3236,150 @@ main>.footer{
 .detail-nav-dropdown .nav-dropdown-trigger{padding:6px 0}
 .detail-nav-dropdown .nav-dropdown-menu{top:calc(100% + 8px)}
 @media(max-width:600px){.detail-nav{height:70px;min-height:70px;padding-left:20px;padding-right:20px}}
+
+ 
+/* Artifact page polish: compact top bar, clearer Artifact 4 labels and layouts. */
+.detail-page .detail-nav{
+  height:48px!important;
+  min-height:48px!important;
+  padding:0 28px!important;
+  gap:18px!important;
+}
+.detail-page .detail-nav .nav-dropdown-trigger,
+.detail-page .detail-nav>a{
+  min-height:32px!important;
+  padding:5px 0!important;
+  line-height:1.2!important;
+}
+@media(max-width:600px){
+  .detail-page .detail-nav{
+    height:46px!important;
+    min-height:46px!important;
+    padding:0 18px!important;
+  }
+}
+
+/* Artifact 4 hero topic labels use the same pearl-cream treatment as Artifacts 1–3. */
+.rai-page .detail-hero .detail-tags span{
+  color:#F7F4EC!important;
+  -webkit-text-fill-color:#F7F4EC!important;
+  border-color:rgba(247,244,236,.55)!important;
+  background:rgba(247,244,236,.08)!important;
+}
+
+/* Artifact 4 process: a five-part visual journey instead of a plain numbered list. */
+.rai-page .rai-process-flow{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+  margin-top:28px;
+  position:relative;
+}
+.rai-page .rai-process-flow article{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  position:relative;
+}
+.rai-page .rai-process-node{
+  min-height:64px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:10px 12px;
+  border:1px solid #c8d7e5;
+  border-radius:9px;
+  background:linear-gradient(145deg,#e9f0f7 0%,#dce7f1 100%);
+  position:relative;
+}
+.rai-page .rai-process-node:after{
+  content:"";
+  position:absolute;
+  left:100%;
+  top:50%;
+  width:13px;
+  border-top:1px solid #8da9c7;
+}
+.rai-page .rai-process-flow article:last-child .rai-process-node:after{display:none}
+.rai-page .rai-process-node>span{
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#17365b;
+  color:#F7F4EC;
+  font:11px var(--mono);
+}
+.rai-page .rai-process-node>i{
+  color:#315f9b;
+  font:8px var(--mono);
+  font-style:normal;
+  letter-spacing:.1em;
+}
+.rai-page .rai-process-card{
+  flex:1;
+  padding:17px 15px 18px;
+  border:1px solid #e1d9c9;
+  border-radius:9px;
+  background:linear-gradient(145deg,#fffefa 0%,#eee8dc 100%);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.rai-page .rai-process-flow article:hover .rai-process-card{
+  transform:translateY(-4px);
+  border-color:#9db4ce;
+  box-shadow:0 12px 24px rgba(23,54,91,.1);
+}
+.rai-page .rai-process-card h3{
+  margin:0 0 9px;
+  color:#27384a;
+  font-size:14px;
+  line-height:1.4;
+}
+.rai-page .rai-process-card p{
+  margin:0;
+  color:#5d625f;
+  font-size:11px;
+  line-height:1.7;
+}
+
+/* Make Unique Value a full-width content card, parallel to the Relevance cards. */
+.rai-page .rai-subsection-title{
+  margin:26px 0 14px;
+  color:#27384a;
+  font-size:20px;
+  line-height:1.3;
+  font-weight:650;
+}
+.rai-page .rai-unique-card{
+  padding:20px 22px;
+  border:1px solid #e1d9c9;
+  border-radius:10px;
+  background:linear-gradient(145deg,#fffefa 0%,#eee8dc 100%);
+}
+.rai-page .rai-unique-card h4{
+  margin:0 0 8px;
+  color:#27384a;
+  font-size:15px;
+  line-height:1.45;
+}
+.rai-page .rai-unique-card p{
+  margin:0;
+  color:#5d625f;
+  font-size:13px;
+  line-height:1.8;
+}
+.rai-page .rai-relevance-title{margin-top:30px}
+@media(max-width:900px){
+  .rai-page .rai-process-flow{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .rai-page .rai-process-flow article:last-child{grid-column:1/-1;}
+  .rai-page .rai-process-node:after{display:none}
+}
+@media(max-width:560px){
+  .rai-page .rai-process-flow{grid-template-columns:1fr;gap:14px}
+  .rai-page .rai-process-flow article:last-child{grid-column:auto}
+  .rai-page .rai-process-node{min-height:54px}
+  .rai-page .rai-subsection-title{font-size:19px}
+}

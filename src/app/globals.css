@@ -4102,3 +4102,47 @@ main>.footer{
     font-size:11.5px!important;
   }
 }
+
+
+/* Restore the solid muted sage-green toolkit cards with high-contrast dark text. */
+#skills .skill-group{
+  background:#E5EAE3!important;
+  border:1px solid #cfd8cf!important;
+  color:#263b30!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+#skills .skill-group h3{color:#263b30!important}
+#skills .skill-group .skill-list span{
+  color:#263b30!important;
+  background:rgba(255,255,255,.66)!important;
+  border-color:rgba(38,59,48,.20)!important;
+}
+
+/* Match LifeSync and Vee Bot project-card surfaces to the academic artifact cards. */
+#work .project{
+  background:
+    radial-gradient(ellipse 90% 46% at 50% 112%,rgba(72,79,88,.24),transparent 72%),
+    linear-gradient(145deg,#1c2128 0%,#161b22 58%,#11161d 100%)!important;
+  border:1px solid #30363d!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.20)!important;
+}
+#work .project:hover{
+  border-color:#59636f!important;
+  box-shadow:0 18px 36px rgba(0,0,0,.28)!important;
+}
+#work .project h3{color:#f0f6fc!important}
+#work .project p{color:#c9d1d9!important}
+#work .project-index{color:#8b949e!important}
+#work .project .tag{
+  color:#c9d1d9!important;
+  background:rgba(139,148,158,.09)!important;
+  border-color:rgba(139,148,158,.20)!important;
+}
+#work .project-arrow{color:#8b949e!important}
+#work .project-art{
+  background:linear-gradient(145deg,#21262d,#161b22)!important;
+  border-color:#30363d!important;
+}
+#work .project-art:before,
+#work .project-art:after{display:none!important}

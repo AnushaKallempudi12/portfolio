@@ -89,7 +89,7 @@ export default function CodeCoachPage(){
    <Link href="/#top">← BACK TO PORTFOLIO</Link>
   </header>
   <section className="detail-hero"><div className="detail-wrap">
-   <p className="detail-eyebrow">ACADEMIC ARTIFACT 01 · AI & MACHINE LEARNING</p>
+   <p className="detail-eyebrow">ACADEMIC ARTIFACT 01 · MACHINE LEARNING FUNDAMENTALS</p>
    <h1>CodeCoach – AI-Powered<br/><em>Interview Coach</em></h1>
    <p className="detail-lead">A hint-first AI coding coach for beginner-to-intermediate learners. It encourages independent attempts, gives progressively useful hints, and explains the reasoning behind programming solutions.</p>
    <div className="detail-tags"><span>Java</span><span>Python</span><span>AI chatbot</span><span>Hint-first learning</span><span>DSA</span></div>

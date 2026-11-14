@@ -216,19 +216,19 @@ export default function AITrainingInteractionPage(){
     <p>This experience influenced my decision to move from the basic Google Sites format to the portfolio website I have developed. I now see the portfolio as an evolving professional space where I can communicate my technical interests, learning progress, and the way I respond to feedback. The professor's comment reinforced that my work should show not only what I create, but also how I learn and grow from feedback.</p>
    </section>
    <section className="detail-section ati-reveal">
-    <p className="detail-index">11 / PROJECT DOCUMENTATION</p><h2>AI Training Interaction activity record</h2>
-    <p>This original activity document records my work through the Professor Predict stages, including my responses, classifications, reasoning, completion summary, personal reflection, and AI disclosure.</p>
-    <div className="detail-document-frame detail-html-document-frame"><iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
-    <p className="detail-document-fallback">If the preview does not load, <a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">open the original activity document</a>.</p>
-   </section>
-   <section className="detail-section ati-reveal">
-    <p className="detail-index">12 / AI DISCLOSURE</p><h2>How AI supported this activity</h2>
+    <p className="detail-index">11 / AI DISCLOSURE</p><h2>How AI supported this activity</h2>
     <p>I used ChatGPT during the Professor Predict activity to interact with the AI chatbot, explore the training concepts, and receive feedback on my responses. I also used ChatGPT to organize my observations, improve the structure and clarity of my responses, and correct grammar. The activity responses, classifications, decisions, and personal reflections reflect my own understanding and reasoning. I reviewed the final document to ensure it accurately represents my learning from the assignment.</p>
     <div className="ati-source-note"><span>DOCUMENTED IN</span><strong>AI Training Interaction</strong><small>Machine Learning Fundamentals · Original eight-page activity record</small></div>
    </section>
-   <section className="detail-section ati-reveal">
-    <p className="detail-index">13 / REFERENCES</p><h2>References</h2>
+<section className="detail-section ati-reveal">
+    <p className="detail-index">12 / REFERENCES</p><h2>References</h2>
     <p>No external references were used or cited in this activity. The artifact documents my responses and reflections from the interactive learning exercise.</p>
+   </section>
+<section className="detail-section ati-reveal">
+    <p className="detail-index">13 / PROJECT DOCUMENTATION</p><h2>AI Training Interaction activity record</h2>
+    <p>This original activity document records my work through the Professor Predict stages, including my responses, classifications, reasoning, completion summary, personal reflection, and AI disclosure.</p>
+    <div className="detail-document-frame detail-html-document-frame"><iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
+    <p className="detail-document-fallback">If the preview does not load, <a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">open the original activity document</a>.</p>
    </section>
    <section className="detail-cta ati-reveal">
     <div><p className="detail-index">RETURN TO THE COLLECTION</p><h2>One more way to think critically about AI.</h2><p>Explore the other academic artifacts to see how I approach AI learning assistants and model selection.</p></div>

@@ -3972,3 +3972,133 @@ main>.footer{
     height:50px!important;min-height:50px!important;max-height:50px!important;
   }
 }
+
+
+/* Card polish: reveal the complete ML/DL artwork and align all artifact actions. */
+.artifacts-section .artifact-art{
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:16 / 9!important;
+  width:100%!important;
+  padding:0!important;
+  margin-bottom:18px!important;
+  overflow:hidden!important;
+  border-radius:7px!important;
+}
+.artifacts-section .artifact-art .artifact-thumb{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  padding:0!important;
+  margin:0!important;
+  background:transparent!important;
+}
+.artifacts-section .artifact-card{
+  display:flex!important;
+  flex-direction:column!important;
+  min-width:0!important;
+  height:100%!important;
+}
+.artifacts-section .artifact-card>p{
+  flex:1 1 auto!important;
+  margin-bottom:16px!important;
+}
+.artifacts-section .artifact-card>.artifact-link{
+  align-self:flex-start!important;
+  margin-top:auto!important;
+}
+
+/* Replace outlined ellipse lines with layered, filled flowing waves. */
+.artifacts-section .artifact-card::before{
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  pointer-events:none!important;
+  left:-12%!important;
+  bottom:-31%!important;
+  width:128%!important;
+  height:67%!important;
+  right:auto!important;
+  top:auto!important;
+  opacity:.86!important;
+  border:0!important;
+  border-radius:48% 52% 0 0!important;
+  transform:rotate(-7deg)!important;
+  clip-path:ellipse(78% 57% at 48% 100%)!important;
+  background:linear-gradient(155deg,rgba(100,139,168,.58) 0%,rgba(63,101,134,.42) 52%,rgba(47,76,105,.16) 100%)!important;
+}
+.artifacts-section .artifact-card::after{
+  content:""!important;
+  position:absolute!important;
+  z-index:0!important;
+  pointer-events:none!important;
+  left:25%!important;
+  right:auto!important;
+  bottom:-39%!important;
+  top:auto!important;
+  width:105%!important;
+  height:64%!important;
+  opacity:.78!important;
+  border:0!important;
+  border-radius:52% 48% 0 0!important;
+  transform:rotate(8deg)!important;
+  clip-path:ellipse(78% 53% at 54% 100%)!important;
+  background:linear-gradient(145deg,rgba(193,157,119,.36) 0%,rgba(115,143,155,.26) 50%,rgba(68,99,119,.12) 100%)!important;
+}
+
+/* Keep toolkit surfaces sage, but use clear dark text for stronger contrast. */
+#skills .skill-group{
+  color:#263b30!important;
+}
+#skills .skill-group h3{
+  color:#263b30!important;
+}
+#skills .skill-group .skill-list span{
+  color:#263b30!important;
+  background:rgba(255,255,255,.66)!important;
+  border-color:rgba(38,59,48,.20)!important;
+}
+
+/* Give the LifeSync and Vee Bot project cards a cool slate-blue treatment. */
+#work .project{
+  background:linear-gradient(145deg,#20334a 0%,#18283b 58%,#132235 100%)!important;
+  border:1px solid rgba(139,174,207,.26)!important;
+  box-shadow:0 12px 28px rgba(3,12,23,.24)!important;
+}
+#work .project:hover{
+  border-color:rgba(118,183,220,.58)!important;
+  box-shadow:0 17px 34px rgba(3,12,23,.32)!important;
+}
+#work .project h3{color:#f0f5fb!important}
+#work .project p{color:#c5d2df!important}
+#work .project-index{color:#9dc9e3!important}
+#work .project .tag{
+  color:#d7e5ef!important;
+  background:rgba(176,211,231,.09)!important;
+  border-color:rgba(176,211,231,.2)!important;
+}
+#work .project-arrow{color:#9dc9e3!important}
+#work .project-art{
+  background:linear-gradient(135deg,#294968 0%,#1b3049 55%,#14243a 100%)!important;
+  border-color:rgba(157,196,220,.22)!important;
+}
+#work .project-art:before,
+#work .project-art:after{display:none!important}
+
+/* Artifact-page navigation labels: uppercase and 11.5px on every viewport. */
+.detail-page header.detail-nav .nav-dropdown-trigger,
+.detail-page header.detail-nav>a{
+  font-size:11.5px!important;
+  text-transform:uppercase!important;
+  letter-spacing:.045em!important;
+  font-weight:600!important;
+}
+@media(max-width:760px){
+  .detail-page header.detail-nav .nav-dropdown-trigger,
+  .detail-page header.detail-nav>a{
+    font-size:11.5px!important;
+  }
+}

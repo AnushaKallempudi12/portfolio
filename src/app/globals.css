@@ -3857,8 +3857,10 @@ main>.footer{
 
 /* Use the same muted sage-gray as the homepage navigation for toolkit cards. */
 #skills .skill-group{
-  background:#E5EAE3!important;
-  border:1px solid #cfd8cf!important;
+  background:rgba(229,234,227,.78)!important;
+  border:1px solid rgba(207,216,207,.88)!important;
+  backdrop-filter:blur(9px);
+  -webkit-backdrop-filter:blur(9px);
   box-shadow:0 5px 16px rgba(31,77,58,.07)!important;
 }
 #skills .skill-group h3{color:#344f43!important}
@@ -3933,3 +3935,8 @@ main>.footer{
   color:#203d28!important;
   border-bottom-color:#203d28!important;
 }
+
+
+/* Requested artifact navigation order: Back to Portfolio left, Artifacts right. */
+.detail-page .detail-nav>a{order:1!important}
+.detail-page .detail-nav .detail-nav-dropdown{order:2!important}

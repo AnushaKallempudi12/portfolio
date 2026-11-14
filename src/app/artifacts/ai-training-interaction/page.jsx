@@ -185,7 +185,7 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">3. VALUE PROPOSITION</p><h2>Why this learning artifact matters</h2>
+    <p className="detail-index">3. VALUE PROPOSITION</p><h2>Value Proposition of the Artifact</h2>
     <h3 className="ati-subsection-title">3.1 UNIQUE VALUE</h3>
     <div className="ati-unique-card"><p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p></div>
     <h3 className="ati-subsection-title">3.2 RELEVANCE</h3>

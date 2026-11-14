@@ -24,6 +24,13 @@ export default function MachineLearningPage(){
   items.forEach(item=>observer.observe(item));
   return()=>observer.disconnect();
  },[]);
+ useEffect(()=>{
+  const nav=document.querySelector(".detail-page .detail-nav");
+  const updateNav=()=>nav?.classList.toggle("scrolled",window.scrollY>24);
+  updateNav();
+  window.addEventListener("scroll",updateNav,{passive:true});
+  return()=>window.removeEventListener("scroll",updateNav);
+ },[]);
  return <main className="detail-page ml-dl-page">
  <header className="detail-nav"><div className="nav-dropdown detail-nav-dropdown"><button className="nav-dropdown-trigger" type="button" onClick={()=>setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Artifacts <ChevronDown size={15} className={menuOpen?"chevron-open":""}/></button>{menuOpen&&<div className="nav-dropdown-menu"><Link href="/artifacts/codecoach/" onClick={()=>setMenuOpen(false)}>CodeCoach <ArrowUpRight size={13}/></Link><Link href="/artifacts/ml-vs-dl/" onClick={()=>setMenuOpen(false)}>Machine Learning vs. Deep Learning <ArrowUpRight size={13}/></Link>
           <Link href="/artifacts/ai-training-interaction/" onClick={()=>setMenuOpen(false)}>AI Training Interaction <ArrowUpRight size={13}/></Link>

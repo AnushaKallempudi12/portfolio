@@ -3857,8 +3857,10 @@ main>.footer{
 
 /* Use the same muted sage-gray as the homepage navigation for toolkit cards. */
 #skills .skill-group{
-  background:#E5EAE3!important;
-  border:1px solid #cfd8cf!important;
+  background:rgba(229,234,227,.78)!important;
+  border:1px solid rgba(207,216,207,.88)!important;
+  backdrop-filter:blur(9px);
+  -webkit-backdrop-filter:blur(9px);
   box-shadow:0 5px 16px rgba(31,77,58,.07)!important;
 }
 #skills .skill-group h3{color:#344f43!important}
@@ -3932,4 +3934,41 @@ main>.footer{
 .artifact-link:hover{
   color:#203d28!important;
   border-bottom-color:#203d28!important;
+}
+
+
+/* Requested artifact navigation order: Back to Portfolio left, Artifacts right. */
+.detail-page .detail-nav>a{order:1!important}
+.detail-page .detail-nav .detail-nav-dropdown{order:2!important}
+
+
+/* Match artifact navigation dimensions to the homepage navigation at every scroll state. */
+.detail-page header.detail-nav{
+  box-sizing:border-box!important;
+  width:100%!important;
+  height:64px!important;
+  min-height:64px!important;
+  max-height:64px!important;
+  padding:0 max(24px,calc((100vw - 1020px)/2))!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:16px!important;
+  transition:height .3s ease,min-height .3s ease,max-height .3s ease!important;
+}
+.detail-page header.detail-nav.scrolled{
+  height:56px!important;
+  min-height:56px!important;
+  max-height:56px!important;
+}
+.detail-page header.detail-nav>a{order:1!important}
+.detail-page header.detail-nav .detail-nav-dropdown{order:2!important}
+@media(max-width:760px){
+  .detail-page header.detail-nav{
+    height:54px!important;min-height:54px!important;max-height:54px!important;
+    padding-left:24px!important;padding-right:24px!important;gap:12px!important;
+  }
+  .detail-page header.detail-nav.scrolled{
+    height:50px!important;min-height:50px!important;max-height:50px!important;
+  }
 }

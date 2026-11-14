@@ -63,6 +63,13 @@ export default function CodeCoachPage(){
   items.forEach(item=>observer.observe(item));
   return()=>observer.disconnect();
  },[]);
+ useEffect(()=>{
+  const nav=document.querySelector(".detail-page .detail-nav");
+  const updateNav=()=>nav?.classList.toggle("scrolled",window.scrollY>24);
+  updateNav();
+  window.addEventListener("scroll",updateNav,{passive:true});
+  return()=>window.removeEventListener("scroll",updateNav);
+ },[]);
  const active=challenges.find(item=>item.id===challengeId) || challenges[0];
  const chooseChallenge=(id)=>{setChallengeId(id);setHintLevel(0);setShowApproach(false);};
  const resetPractice=()=>{setHintLevel(0);setShowApproach(false);};

@@ -3648,3 +3648,34 @@ main>.footer{
   .portfolio-positioning{grid-template-columns:1fr;gap:12px;margin-top:26px}
   .positioning-card{padding:19px}
 }
+
+
+/* Workshop 5 refinement: align the About section with the homepage hero content. */
+.about-grid{
+  max-width:none!important;
+}
+
+/* Artifact-page navigation follows the home bar: dropdown left, portfolio link right. */
+.detail-nav{
+  justify-content:space-between!important;
+  gap:0!important;
+}
+
+/* Forest-green treatment for the About principles and Workshop 5 information cards. */
+.principle,
+.positioning-card{
+  border:1px solid rgba(142,174,151,.28)!important;
+  background:linear-gradient(135deg,rgba(27,53,42,.96),rgba(17,36,29,.94))!important;
+  box-shadow:0 10px 26px rgba(3,13,8,.16);
+}
+.principle small,
+.positioning-kicker{
+  color:#b6d0b8!important;
+}
+.principle p,
+.positioning-card p{
+  color:#d1ddd2!important;
+}
+.positioning-card h3{
+  color:#f0f5ef!important;
+}

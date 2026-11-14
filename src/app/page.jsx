@@ -78,7 +78,6 @@ export default function Home(){
    <div className="reveal"><div className="section-kicker">01 / Professional Bio</div><h2 className="section-heading">From software foundations<br/><em>to applied AI.</em></h2>
     <p className="about-copy">My background is in software engineering at <strong>Tata Consultancy Services</strong>, where I worked on a retail technology project for Marks & Spencer. I contributed to developing backend functionality, integrating application services, validating APIs, automating regression testing, and supporting application releases. Working across these areas gave me an understanding of how different parts of an enterprise application come together to support business operations.</p>
     <p className="about-copy">I’m currently pursuing an <strong>M.S. in Artificial Intelligence, specializing in Data Analytics</strong> at Indiana Wesleyan University. I’m building on my engineering experience to understand how data and AI can solve practical problems, while continuing to grow as a software developer.</p>
-    <div className="principles"><div className="principle"><small>01 — BUILD</small><p>Reliable software with a clear purpose.</p></div><div className="principle"><small>02 — LEARN</small><p>Stay curious and keep improving.</p></div></div>
     <div className="portfolio-positioning">
      <article className="positioning-card">
       <div className="positioning-kicker">Personal Value Proposition</div>

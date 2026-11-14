@@ -1,5 +1,5 @@
 "use client";
-import {useState} from "react";
+import {useEffect,useState} from "react";
 import Link from "next/link";
 import {ArrowUpRight,ChevronDown,Database,Scale,LockKeyhole,ShieldCheck,Activity} from "lucide-react";
 
@@ -12,6 +12,13 @@ const process=[["Frame the challenge","Identify the decision the model supports,
 export default function ResponsibleAIArtifactPage(){
  const[menu,setMenu]=useState(false),[active,setActive]=useState("quality");
  const selected=scenarios.find(x=>x.id===active)||scenarios[0],Icon=selected.icon;
+ useEffect(()=>{
+  const nav=document.querySelector(".detail-page .detail-nav");
+  const updateNav=()=>nav?.classList.toggle("scrolled",window.scrollY>24);
+  updateNav();
+  window.addEventListener("scroll",updateNav,{passive:true});
+  return()=>window.removeEventListener("scroll",updateNav);
+ },[]);
  return <main className="detail-page rai-page">
  <header className="detail-nav"><div className="nav-dropdown detail-nav-dropdown"><button className="nav-dropdown-trigger" onClick={()=>setMenu(!menu)} aria-expanded={menu}>Artifacts <ChevronDown size={15}/></button>{menu&&<div className="nav-dropdown-menu"><Link href="/artifacts/codecoach/">CodeCoach <ArrowUpRight size={13}/></Link><Link href="/artifacts/ml-vs-dl/">Machine Learning vs. Deep Learning <ArrowUpRight size={13}/></Link><Link href="/artifacts/ai-training-interaction/">AI Training Interaction <ArrowUpRight size={13}/></Link><Link href="/artifacts/responsible-ai/">Data Challenge Scenarios <ArrowUpRight size={13}/></Link></div>}</div><Link href="/#top">← Back to Portfolio</Link></header>
  <section className="detail-hero rai-hero"><div className="detail-wrap"><p className="detail-eyebrow">ACADEMIC ARTIFACT 04 · MACHINE LEARNING FUNDAMENTALS</p><h1>Data Challenge<br/><em>Scenarios</em></h1><p className="detail-lead">A scenario-based exploration of data quality, fairness, privacy, and the decisions that help make machine-learning systems more dependable and responsible.</p><div className="detail-tags"><span>Data quality</span><span>Fairness</span><span>Privacy</span><span>AI governance</span></div><div className="detail-snapshot-grid"><div><span>01 / LEARNING FOCUS</span><strong>Trustworthy data</strong><small>Quality, representation, and context</small></div><div><span>02 / RESPONSIBILITY</span><strong>People & impact</strong><small>Fairness, privacy, and safeguards</small></div><div><span>03 / APPROACH</span><strong>Risk-aware thinking</strong><small>Evaluate, document, and monitor</small></div></div></div></section>

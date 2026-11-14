@@ -114,7 +114,7 @@ export default function AITrainingInteractionPage(){
      <Link href="/artifacts/codecoach/" onClick={()=>setMenuOpen(false)}>CodeCoach <ArrowUpRight size={13}/></Link>
      <Link href="/artifacts/ml-vs-dl/" onClick={()=>setMenuOpen(false)}>Machine Learning vs. Deep Learning <ArrowUpRight size={13}/></Link>
      <Link href="/artifacts/ai-training-interaction/" onClick={()=>setMenuOpen(false)}>AI Training Interaction <ArrowUpRight size={13}/></Link>
-     <Link href="/artifacts/responsible-ai/" onClick={()=>setMenuOpen(false)}>Responsible AI/ML Development <ArrowUpRight size={13}/></Link>
+     <Link href="/artifacts/responsible-ai/" onClick={()=>setMenuOpen(false)}>Data Challenge Scenarios <ArrowUpRight size={13}/></Link>
     </div>}
    </div>
    <Link href="/#top">← Back to Portfolio</Link>
@@ -206,19 +206,19 @@ export default function AITrainingInteractionPage(){
     <p className="detail-document-fallback">If the preview does not load, <a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">open the original activity document</a>.</p>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">09 / PERSONAL REFLECTION</p><h2>How the exercise changed my approach</h2>
+    <p className="detail-index">PERSONAL REFLECTION</p><h2>How the exercise changed my approach</h2>
     <p>This activity helped me understand how large language models work and why their answers are not always accurate. The Velmora example was particularly interesting because I recognized the unfamiliar country name and questioned whether the information was real instead of making up an answer.</p>
     <p>I also learned that the quality of an AI response depends on its training data and access to external tools. An LLM can help draft cover letters, explain algorithms, and brainstorm product names, but it needs reliable sources for current stock prices and recent research. I also understood why calculators and professional experts are important for exact calculations and legal questions.</p>
     <div className="ati-reflection-quote"><Sparkles size={18}/><p>Going forward, I would use AI as a supporting tool, verify important information, and recognize when a task requires external sources or expert knowledge.</p></div>
    </section>
 <section className="detail-section ati-reveal ati-portfolio-reflection">
-    <p className="detail-index">10 / FEEDBACK & PORTFOLIO DEVELOPMENT</p><h2>How feedback and new experiences shaped my vision</h2>
+    <p className="detail-index">FEEDBACK & PORTFOLIO DEVELOPMENT</p><h2>How feedback and new experiences shaped my vision</h2>
     <p>One specific piece of feedback I received on Artifact 2 was that my reflection needed to be more complete: I should identify the feedback I received and explain how it influenced my vision. That comment made me think beyond describing what I had completed and consider how feedback and new experiences shape the direction of my work.</p>
     <p>At the beginning of the program, I used Google Sites as a basic way to present my assignments. During the residency, meeting others and exploring the tools, platforms, and approaches I was introduced to expanded my understanding of what a professional portfolio could be. I became interested in creating a portfolio that did more than display submissions. I wanted it to present my work in a more organized and interactive way, while giving me room to add future projects, documentation, and reflections.</p>
     <p>This experience influenced my decision to move from the basic Google Sites format to the portfolio website I have developed. I now see the portfolio as an evolving professional space where I can communicate my technical interests, learning progress, and the way I respond to feedback. The professor's comment reinforced that my work should show not only what I create, but also how I learn and grow from feedback.</p>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">11 / AI DISCLOSURE</p><h2>How AI supported this activity</h2>
+    <p className="detail-index">AI DISCLOSURE</p><h2>How AI supported this activity</h2>
     <p>I used ChatGPT during the Professor Predict activity to interact with the AI chatbot, explore the training concepts, and receive feedback on my responses. I also used ChatGPT to organize my observations, improve the structure and clarity of my responses, and correct grammar. The activity responses, classifications, decisions, and personal reflections reflect my own understanding and reasoning. I reviewed the final document to ensure it accurately represents my learning from the assignment.</p>
     <div className="ati-source-note"><span>DOCUMENTED IN</span><strong>AI Training Interaction</strong><small>Machine Learning Fundamentals · Original eight-page activity record</small></div>
    </section>

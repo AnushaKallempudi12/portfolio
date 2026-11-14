@@ -105,6 +105,13 @@ export default function AITrainingInteractionPage(){
   nodes.forEach((node)=>observer.observe(node));
   return ()=>observer.disconnect();
  },[]);
+ useEffect(()=>{
+  const nav=document.querySelector(".detail-page .detail-nav");
+  const updateNav=()=>nav?.classList.toggle("scrolled",window.scrollY>24);
+  updateNav();
+  window.addEventListener("scroll",updateNav,{passive:true});
+  return()=>window.removeEventListener("scroll",updateNav);
+ },[]);
  const move=(delta)=>setActiveStage((value)=>Math.max(0,Math.min(stages.length-1,value+delta)));
  return <main className="detail-page ati-page">
   <header className="detail-nav">

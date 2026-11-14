@@ -3516,3 +3516,42 @@ main>.footer{
 @media(max-width:560px){
   .rai-page .rai-process-flow{grid-template-columns:1fr}
 }
+
+
+/* Match academic artifact navigation to the home navigation proportions and centered placement. */
+.detail-nav{
+  height:82px;
+  min-height:82px;
+  justify-content:center;
+  gap:30px;
+  padding:0 max(32px,calc((100vw - 1180px)/2));
+  font:11px var(--mono);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.detail-nav-dropdown .nav-dropdown-trigger{
+  font:11px var(--mono);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:400;
+}
+.detail-nav>a{
+  font:11px var(--mono)!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase;
+}
+@media(max-width:640px){
+  .detail-nav{
+    height:70px;
+    min-height:70px;
+    padding:0 20px;
+    gap:22px;
+  }
+}
+.ati-walkthrough-label{
+  margin:0 0 8px;
+  color:#7198d0;
+  font:10px var(--mono);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}

@@ -3833,3 +3833,103 @@ main>.footer{
 @media(max-width:640px){
   #about .about-grid{margin-top:-30px!important}
 }
+
+
+/* Latest homepage refinements: four artifact cards in one row, sage toolkit cards,
+   and artifact navigation aligned to the detail content container. */
+@media(min-width:1101px){
+  .artifacts-section .artifact-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    max-width:1180px!important;
+    gap:14px!important;
+  }
+}
+@media(min-width:761px) and (max-width:1100px){
+  .artifacts-section .artifact-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:760px){
+  .artifacts-section .artifact-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
+/* Use the same muted sage-gray as the homepage navigation for toolkit cards. */
+#skills .skill-group{
+  background:#E5EAE3!important;
+  border:1px solid #cfd8cf!important;
+  box-shadow:0 5px 16px rgba(31,77,58,.07)!important;
+}
+#skills .skill-group h3{color:#344f43!important}
+#skills .skill-list span{
+  background:rgba(255,255,255,.56)!important;
+  border-color:rgba(52,79,67,.16)!important;
+  color:#35483e!important;
+}
+
+/* Match artifact-page navigation to homepage nav height, typography and detail-content margins. */
+.detail-page .detail-nav{
+  box-sizing:border-box!important;
+  width:100%!important;
+  height:54px!important;
+  min-height:54px!important;
+  padding:0 max(24px,calc((100vw - 1020px)/2))!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:16px!important;
+  font-size:11px!important;
+  line-height:1.2!important;
+}
+.detail-page .detail-nav .nav-dropdown-trigger,
+.detail-page .detail-nav>a,
+.detail-page .detail-nav>a:last-child{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:0!important;
+  height:auto!important;
+  padding:0!important;
+  margin:0!important;
+  font-size:11px!important;
+  line-height:1.2!important;
+  font-weight:500!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+@media(max-width:650px){
+  .detail-page .detail-nav{
+    height:54px!important;
+    min-height:54px!important;
+    padding:0 20px!important;
+    gap:12px!important;
+  }
+  .detail-page .detail-nav .nav-dropdown-trigger,
+  .detail-page .detail-nav>a,
+  .detail-page .detail-nav>a:last-child{
+    font-size:10px!important;
+  }
+}
+
+
+/* Light sage treatment for the academic artifact cards */
+.artifact-card{
+  background:linear-gradient(145deg,#eef2ec,#e5ebe3)!important;
+  border:1px solid #cbd7ca!important;
+  box-shadow:0 12px 30px rgba(8,18,12,.10);
+}
+.artifact-card:hover{
+  border-color:#8da58e!important;
+  box-shadow:0 18px 36px rgba(8,18,12,.16);
+}
+.artifact-meta{color:#58745d!important}
+.artifact-card h3{color:#202a22!important}
+.artifact-card p{color:#4d594f!important}
+.artifact-link{
+  color:#365f40!important;
+  border-bottom-color:rgba(54,95,64,.35)!important;
+}
+.artifact-link:hover{
+  color:#203d28!important;
+  border-bottom-color:#203d28!important;
+}

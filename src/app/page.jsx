@@ -76,17 +76,16 @@ export default function Home(){
   </section>
   <section className="section" id="about"><div className="wrap about-grid">
    <div className="reveal"><div className="section-kicker">01 / Professional Bio</div><h2 className="section-heading">From software foundations<br/><em>to applied AI.</em></h2>
-    <p className="about-copy">My background is in software engineering at <strong>Tata Consultancy Services</strong>, where I worked on a retail technology project for Marks & Spencer. I contributed to developing backend functionality, integrating application services, validating APIs, automating regression testing, and supporting application releases. Working across these areas gave me an understanding of how different parts of an enterprise application come together to support business operations.</p>
-    <p className="about-copy">I’m currently pursuing an <strong>M.S. in Artificial Intelligence, specializing in Data Analytics</strong> at Indiana Wesleyan University. I’m building on my engineering experience to understand how data and AI can solve practical problems, while continuing to grow as a software developer.</p>
-    <div className="principles"><div className="principle"><small>01 — BUILD</small><p>Reliable software with a clear purpose.</p></div><div className="principle"><small>02 — LEARN</small><p>Stay curious and keep improving.</p></div></div>
+    <p className="about-copy">I am a software engineering professional with experience in enterprise application development, backend services, and software testing. I previously worked at <strong>Tata Consultancy Services</strong> on a retail technology project for Marks & Spencer.</p>
+    <p className="about-copy">I am currently pursuing an <strong>M.S. in Artificial Intelligence with a specialization in Data Analytics</strong> at Indiana Wesleyan University, building on my engineering background to explore machine learning and practical AI applications.</p>
     <div className="portfolio-positioning">
      <article className="positioning-card">
-      <div className="positioning-kicker">Personal Value Proposition</div>
+      <div className="positioning-kicker">02 / Personal Value Proposition</div>
       <h3>Engineering experience. Applied AI perspective.</h3>
       <p>I bring together hands-on software engineering experience and graduate study in artificial intelligence and data analytics to turn practical problems into reliable, thoughtfully designed software and data-informed AI solutions. My background across application development, API integration, testing, and analytics helps me connect technical decisions with quality, usability, and real-world needs.</p>
      </article>
      <article className="positioning-card">
-      <div className="positioning-kicker">Target Audience</div>
+      <div className="positioning-kicker">03 / Target Audience</div>
       <h3>Who this portfolio is for.</h3>
       <p>This portfolio is intended for recruiters, hiring managers, and technical teams exploring early-career software engineering, data, and AI/ML talent, as well as educators and peers interested in applied learning. It brings together my professional experience, technical toolkit, and four academic artifacts so visitors can understand how I approach problems, choose tools, and connect technical work to practical value.</p>
      </article>
@@ -95,21 +94,21 @@ export default function Home(){
    
   </div></section>
   <section className="section" id="experience"><div className="wrap">
-   <div className="reveal"><SectionTitle kicker="02 / Experience" title={<>The path so <em>far.</em></>}/></div>
+   <div className="reveal"><SectionTitle kicker="04 / Experience" title={<>The path so <em>far.</em></>}/></div>
    <div className="timeline">
-    <div className="timeline-item reveal"><div className="timeline-date">AUG 2023 — NOV 2025</div><div><div className="timeline-role">System Engineer</div><div className="timeline-org">Tata Consultancy Services · Marks & Spencer project</div><ul className="timeline-points"><li>Developed and maintained backend services, REST APIs, and microservices using Java, Spring Boot, and Micronaut.</li><li>Implemented business logic and integrated application modules to support functional and end-to-end requirements.</li><li>Worked with MySQL, PostgreSQL, MongoDB, and Oracle databases, including SQL query optimization for transactional operations.</li><li>Performed API, unit, and integration testing using Postman, JUnit, and Mockito, and maintained Selenium WebDriver and Cucumber automation frameworks.</li><li>Supported CI/CD pipelines and application deployments using Jenkins, GitHub Actions, Docker, and Microsoft Azure. Automated regression testing and reporting, contributing to a 90% reduction in testing time.</li></ul></div></div>
+    <div className="timeline-item reveal"><div className="timeline-date">AUG 2023 — NOV 2025</div><div><div className="timeline-role">System Engineer</div><div className="timeline-org">Tata Consultancy Services · Marks & Spencer project</div><ul className="timeline-points"><li>Developed backend functionality and REST APIs using Java and Spring Boot.</li><li>Integrated application services and worked with relational and NoSQL databases.</li><li>Contributed to API testing and regression automation using Postman, Selenium, and Cucumber.</li><li>Supported CI/CD processes, application deployments, and release activities.</li></ul></div></div>
     <div className="timeline-item reveal"><div className="timeline-date">2026 — PRESENT</div><div><div className="timeline-role">M.S. Artificial Intelligence · Data Analytics</div><div className="timeline-org">Indiana Wesleyan University</div><div className="timeline-desc">Graduate study focused on data analytics, machine learning, data visualization and the practical application of AI.</div></div></div>
    </div>
   </div></section>
-  <section className="section" id="skills"><div className="wrap"><div className="reveal"><SectionTitle kicker="03 / Toolkit" title={<>Tools I work <em>with.</em></>} sub="A growing toolkit across application development, testing, data and AI."/></div>
+  <section className="section" id="skills"><div className="wrap"><div className="reveal"><SectionTitle kicker="05 / Toolkit" title={<>Tools I work <em>with.</em></>} sub="A growing toolkit across application development, testing, data and AI."/></div>
    <div className="skills-grid">{skills.map(s=><div className="skill-group reveal" key={s.title}><h3>{s.title}</h3><div className="skill-list">{s.items.map(i=><span key={i}>{i}</span>)}</div></div>)}</div>
   </div></section>
   <section className="section" id="work"><div className="wrap">
-   <div className="reveal"><SectionTitle kicker="04 / Projects" title={<>Ideas shaped into <em>useful products.</em></>} sub="Product concepts that bring together practical problem-solving, thoughtful experiences and emerging technology."/></div>
+   <div className="reveal"><SectionTitle kicker="06 / Projects" title={<>Ideas shaped into <em>useful products.</em></>} sub="Product concepts that bring together practical problem-solving, thoughtful experiences and emerging technology."/></div>
    <div className="project-grid">{projects.map(p=><article className="project reveal" key={p.n}><div className="project-art"><ProjectVisual kind={p.visual}/></div><div className="project-index">{p.n} / {p.type}</div><h3>{p.name}</h3><p>{p.desc}</p><div className="tags">{p.tags.map(t=><span className="tag" key={t}>{t}</span>)}</div>{p.href&&<a className="artifact-link project-link" href={p.href} target="_blank" rel="noreferrer">{p.linkLabel} <ArrowUpRight size={14}/></a>}<ArrowUpRight className="project-arrow" size={18}/></article>)}</div>
   </div></section>
   <section className="section artifacts-section" id="artifacts"><div className="wrap">
-   <div className="reveal"><SectionTitle kicker="05 / Academic artifacts" title={<>Work that shows <em>how I think.</em></>} sub="Selected coursework and documented experiments from my AI and data analytics studies. Select an artifact to explore its purpose, design process, implementation, testing and learning outcomes."/></div>
+   <div className="reveal"><SectionTitle kicker="07 / Academic artifacts" title={<>Work that shows <em>how I think.</em></>} sub="Selected coursework and documented experiments from my AI and data analytics studies. Select an artifact to explore its purpose, design process, implementation, testing and learning outcomes."/></div>
    <div className="artifact-grid">
     <article className="artifact-card reveal" id="artifact-codecoach"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/codecoach/" aria-label="Open CodeCoach artifact details"/>
      <div className="artifact-art codecoach-art"><img className="artifact-thumb" src="/portfolio/images/codecoach.png" alt="CodeCoach chatbot preview" loading="lazy"/><div className="artifact-terminal" hidden><div className="terminal-top"><i/><i/><i/><span>CodeCoach · practice session</span></div><div className="terminal-body"><small>JAVA · ARRAYS</small><strong>Find the maximum value</strong><p>What would you check first?</p><div className="terminal-hint">HINT 01 <span>Try scanning once from left to right.</span></div></div></div></div>
@@ -138,7 +137,7 @@ export default function Home(){
    </div>
   </div></section>
   <section className="section" id="contact"><div className="wrap"><div className="contact-panel reveal">
-   <div className="contact-copy"><div className="section-kicker">06 / Contact</div><h2>Let’s build<br/>something useful.</h2><p>I’m interested in opportunities where software engineering, data and emerging AI technologies come together. Connect with me, explore my work, or review my experience.</p></div>
+   <div className="contact-copy"><div className="section-kicker">08 / Contact</div><h2>Let’s build<br/>something useful.</h2><p>I’m interested in opportunities where software engineering, data and emerging AI technologies come together. Connect with me, explore my work, or review my experience.</p></div>
    <div className="contact-links">
     <a className="contact-link" href="https://github.com/AnushaKallempudi12" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Github size={18}/></span><span><strong>GitHub</strong><small>Explore my code and projects</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="https://www.linkedin.com/in/anusha-kallempudi" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Linkedin size={18}/></span><span><strong>LinkedIn</strong><small>Connect with me professionally</small></span><ArrowUpRight size={16}/></a>

@@ -3748,3 +3748,88 @@ main>.footer{
     linear-gradient(135deg,#59415A,#35283D)!important;
   border-color:rgba(222,181,211,.24)!important;
 }
+
+
+/* Homepage refinement: GitHub-inspired artifact cards, two-by-two layout,
+   brand-true contact icons, aligned artifact navigation, and a tighter About start. */
+@media(min-width:761px){
+  .artifacts-section .artifact-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    max-width:1180px!important;
+    gap:18px!important;
+  }
+}
+.artifacts-section .artifact-card{
+  background:
+    radial-gradient(ellipse 90% 46% at 50% 112%,rgba(72,79,88,.24),transparent 72%),
+    linear-gradient(145deg,#1c2128 0%,#161b22 58%,#11161d 100%)!important;
+  border:1px solid #30363d!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.20)!important;
+  color:#f0f6fc!important;
+}
+.artifacts-section .artifact-card::before{
+  opacity:.68!important;
+  background:
+    radial-gradient(ellipse 78% 58% at 8% 112%,transparent 56%,rgba(139,148,158,.42) 57%,transparent 58.2%),
+    radial-gradient(ellipse 92% 72% at 34% 124%,transparent 57%,rgba(72,79,88,.52) 58%,transparent 59.2%),
+    radial-gradient(ellipse 108% 84% at 76% 137%,transparent 58%,rgba(110,118,129,.42) 59%,transparent 60.2%),
+    linear-gradient(165deg,transparent 35%,rgba(139,148,158,.09) 100%)!important;
+}
+.artifacts-section .artifact-card::after{
+  background:radial-gradient(ellipse,rgba(139,148,158,.10),transparent 70%)!important;
+}
+.artifacts-section .artifact-card h3{color:#f0f6fc!important}
+.artifacts-section .artifact-card>p{color:#c9d1d9!important}
+.artifacts-section .artifact-meta{color:#8b949e!important}
+.artifacts-section .artifact-link{
+  color:#79c0ff!important;
+  border-bottom-color:rgba(121,192,255,.48)!important;
+}
+.artifacts-section .artifact-link:hover{color:#f0f6fc!important;border-bottom-color:#f0f6fc!important}
+.artifacts-section .artifact-art{
+  background:linear-gradient(145deg,#21262d,#161b22)!important;
+  border-color:#30363d!important;
+}
+.artifacts-section .artifact-thumb{background:rgba(13,17,23,.72)!important}
+
+/* Contact symbols retain their recognizable platform colors, not the site accent. */
+#contact .contact-link-icon{
+  width:40px!important;
+  height:40px!important;
+  min-width:40px!important;
+  display:grid!important;
+  place-items:center!important;
+  border-radius:50%!important;
+  background:#f0f3f6!important;
+  border:1px solid #d0d7de!important;
+  box-shadow:none!important;
+}
+#contact .contact-link:nth-child(1) .contact-link-icon{color:#181717!important}
+#contact .contact-link:nth-child(2) .contact-link-icon{color:#0a66c2!important}
+#contact .contact-link:nth-child(3) .contact-link-icon{color:#ea4335!important}
+#contact .contact-link-icon svg{stroke:currentColor!important}
+#contact .contact-link>svg:last-child{color:#8b949e!important}
+
+/* Match the artifact-page navigation to the homepage's 1180px content margins. */
+.detail-page header.detail-nav{
+  box-sizing:border-box!important;
+  width:100%!important;
+  padding-left:max(32px,calc((100vw - 1180px)/2))!important;
+  padding-right:max(32px,calc((100vw - 1180px)/2))!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:0!important;
+}
+@media(max-width:640px){
+  .detail-page header.detail-nav{
+    padding-left:20px!important;
+    padding-right:20px!important;
+  }
+}
+
+/* Raise the Professional Bio content by about half an inch without changing its copy. */
+#about .about-grid{margin-top:-48px!important}
+@media(max-width:640px){
+  #about .about-grid{margin-top:-30px!important}
+}

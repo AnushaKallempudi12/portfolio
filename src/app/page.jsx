@@ -75,10 +75,22 @@ export default function Home(){
    </div>
   </section>
   <section className="section" id="about"><div className="wrap about-grid">
-   <div className="reveal"><div className="section-kicker">01 / About</div><h2 className="section-heading">From software foundations<br/><em>to applied AI.</em></h2>
+   <div className="reveal"><div className="section-kicker">01 / Professional Bio</div><h2 className="section-heading">From software foundations<br/><em>to applied AI.</em></h2>
     <p className="about-copy">My background is in software engineering at <strong>Tata Consultancy Services</strong>, where I worked on a retail technology project for Marks & Spencer. I contributed to developing backend functionality, integrating application services, validating APIs, automating regression testing, and supporting application releases. Working across these areas gave me an understanding of how different parts of an enterprise application come together to support business operations.</p>
     <p className="about-copy">I’m currently pursuing an <strong>M.S. in Artificial Intelligence, specializing in Data Analytics</strong> at Indiana Wesleyan University. I’m building on my engineering experience to understand how data and AI can solve practical problems, while continuing to grow as a software developer.</p>
     <div className="principles"><div className="principle"><small>01 — BUILD</small><p>Reliable software with a clear purpose.</p></div><div className="principle"><small>02 — LEARN</small><p>Stay curious and keep improving.</p></div></div>
+    <div className="portfolio-positioning">
+     <article className="positioning-card">
+      <div className="positioning-kicker">02 / Personal Value Proposition</div>
+      <h3>Engineering experience. Applied AI perspective.</h3>
+      <p>I bring together hands-on software engineering experience and graduate study in artificial intelligence and data analytics to turn practical problems into reliable, thoughtfully designed software and data-informed AI solutions. My background across application development, API integration, testing, and analytics helps me connect technical decisions with quality, usability, and real-world needs.</p>
+     </article>
+     <article className="positioning-card">
+      <div className="positioning-kicker">03 / Target Audience</div>
+      <h3>Who this portfolio is for.</h3>
+      <p>This portfolio is intended for recruiters, hiring managers, and technical teams exploring early-career software engineering, data, and AI/ML talent, as well as educators and peers interested in applied learning. It brings together my professional experience, technical toolkit, and four academic artifacts so visitors can understand how I approach problems, choose tools, and connect technical work to practical value.</p>
+     </article>
+    </div>
    </div>
    
   </div></section>

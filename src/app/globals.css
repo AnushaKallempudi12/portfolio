@@ -4168,6 +4168,13 @@ main>.footer{
   margin-top:0!important;
 }
 
+/* Keep all artifact section labels and subheadings evenly spaced. */
+.detail-page .detail-index,
+.detail-page .detail-subhead{
+  letter-spacing:0!important;
+  word-spacing:normal!important;
+}
+
 /* Final spacing and compact-height adjustment requested for artifact pages. */
 .detail-page .detail-index,
 .detail-page .detail-subhead{

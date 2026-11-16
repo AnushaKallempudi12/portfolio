@@ -4147,3 +4147,6 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
+/* Artifact 3: use a consistent 17px size for section and subsection headings */
+.ati-page .detail-index,
+.ati-page .detail-subhead{font-size:17px}

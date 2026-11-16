@@ -4167,3 +4167,33 @@ main>.footer{
 .detail-page .detail-section>.detail-index+h3{
   margin-top:0!important;
 }
+
+/* Final spacing and compact-height adjustment requested for artifact pages. */
+.detail-page .detail-index,
+.detail-page .detail-subhead{
+  letter-spacing:0!important;
+}
+.detail-page header.detail-nav{
+  height:48px!important;
+  min-height:48px!important;
+  max-height:48px!important;
+}
+.detail-page header.detail-nav.scrolled{
+  height:44px!important;
+  min-height:44px!important;
+  max-height:44px!important;
+}
+@media(max-width:760px){
+  .detail-page header.detail-nav{
+    height:46px!important;
+    min-height:46px!important;
+    max-height:46px!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+  .detail-page header.detail-nav.scrolled{
+    height:44px!important;
+    min-height:44px!important;
+    max-height:44px!important;
+  }
+}

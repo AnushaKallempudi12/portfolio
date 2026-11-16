@@ -4150,3 +4150,18 @@ main>.footer{
 /* Artifact 3: use a consistent 17px size for section and subsection headings */
 .ati-page .detail-index,
 .ati-page .detail-subhead{font-size:17px}
+
+/* Consistent artifact section headings and tighter spacing below numbered labels */
+.detail-page .detail-index,
+.detail-page .detail-subhead{
+  font-size:17px!important;
+}
+.detail-page .detail-section>.detail-index{
+  margin:0 0 8px!important;
+  line-height:1.35!important;
+}
+.detail-page .detail-section>.detail-index+p,
+.detail-page .detail-section>.detail-index+h2,
+.detail-page .detail-section>.detail-index+h3{
+  margin-top:0!important;
+}

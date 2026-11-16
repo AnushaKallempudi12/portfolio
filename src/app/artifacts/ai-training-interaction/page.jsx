@@ -192,10 +192,15 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">3. VALUE PROPOSITION</p>
-    
-    <div className="ati-unique-card"><p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p></div>
-    
+    <p className="detail-index">3. VALUE PROPOSITION OF THE ARTIFACT</p>
+    <p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p>
+   </section>
+<section className="detail-section ati-reveal">
+    <p className="detail-index">3.1 UNIQUE VALUE</p>
+    <div className="ati-unique-card"><p>The activity combines a simple explanation of next-token prediction with hands-on decisions about training-data coverage and task suitability. Rather than treating hallucination as an abstract definition, the stages ask learners to question an unfamiliar premise, classify information types, and decide when additional verification or tools are needed.</p></div>
+   </section>
+<section className="detail-section ati-reveal">
+    <p className="detail-index">3.2 RELEVANCE</p>
     <div className="ati-audience-grid">
      <article><strong>For AI learners</strong><span>Build a practical mental model of next-token prediction and training-data limits.</span></article>
      <article><strong>For everyday users</strong><span>Recognize when a fluent response should be checked before acting on it.</span></article>

@@ -140,13 +140,13 @@ export default function AITrainingInteractionPage(){
   </div></section>
   <div className="detail-wrap detail-content ati-content">
    <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">1. INTRODUCTION</p>
+    <p className="detail-index">1. INTRODUCTION</p>
     <p>AI Training Interaction is a learning activity that helped me examine how large language models learn and respond. By working through the Professor Predict exercises, I explored why an answer can sound convincing without being verified and why responsible AI use requires questioning assumptions and checking important information.</p>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">2. DESCRIPTION</p>
+    <p className="detail-index">2. DESCRIPTION</p>
     <p>The activity moves through five stages: predicting the next word, examining how a language model works, considering what may be represented in training data, deciding which tasks are suitable for an LLM, and reflecting on what I learned. The interactive walkthrough below presents the exercises and the reasoning behind my responses.</p>
-    <h3 className="detail-subhead numbered-subsection-heading">2.1 OBJECTIVE</h3>
+    <h3 className="detail-subhead">2.1 OBJECTIVE</h3>
     <p>Understand the difference between predicting likely text and verifying information, recognize limits in training-data coverage, and identify when a task needs an external source, a specialized tool, or professional review.</p>
    </section>
 <section className="detail-section ati-reveal" id="stages">
@@ -171,7 +171,7 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">2.2 PROCESS</p>
+    <p className="detail-index">2.2 PROCESS</p>
     <div className="ati-process-list">
      <article><span>01</span><div><h3>Question the premise</h3><p>When I encountered Velmora, I did not assume the country or its president was real. I chose not to guess.</p></div></article>
      <article><span>02</span><div><h3>Think about data coverage</h3><p>I classified information types by likely representation and considered why private, rare-language, and real-time information may be limited.</p></div></article>
@@ -180,7 +180,7 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">2.3 TOOLS AND TECH USED</p>
+    <p className="detail-index">2.3 TOOLS AND TECH USED</p>
     <div className="ati-source-note"><span>TOOL USED</span><strong>ChatGPT</strong><small>Used to interact with the AI chatbot, explore training concepts, receive feedback, organize observations, and improve clarity and grammar. I reviewed the final work and retained responsibility for my responses and reflections.</small></div>
    </section>
 <section className="detail-section ati-reveal">
@@ -192,7 +192,7 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">3. VALUE PROPOSITION</p>
+    <p className="detail-index">3. VALUE PROPOSITION</p>
     
     <div className="ati-unique-card"><p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p></div>
     
@@ -203,11 +203,11 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">4. REFERENCES</p>
+    <p className="detail-index">4. REFERENCES</p>
     <p>No external references were used or cited in this activity. The artifact documents my responses and reflections from the interactive learning exercise.</p>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index numbered-section-heading">5. PROJECT DOCUMENTATION</p>
+    <p className="detail-index">5. PROJECT DOCUMENTATION</p>
     <p>This original activity document records my work through the Professor Predict stages, including my responses, classifications, reasoning, completion summary, personal reflection, and AI disclosure.</p>
     <div className="detail-document-frame detail-html-document-frame"><iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
     <p className="detail-document-fallback">If the preview does not load, <a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">open the original activity document</a>.</p>

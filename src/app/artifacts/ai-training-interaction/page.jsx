@@ -140,7 +140,7 @@ export default function AITrainingInteractionPage(){
   </div></section>
   <div className="detail-wrap detail-content ati-content">
    <section className="detail-section ati-reveal">
-    <p className="detail-index">1. INTRODUCTION</p>
+    <p className="detail-index">1.INTRODUCTION</p>
     <p>AI Training Interaction is a learning activity that helped me examine how large language models learn and respond. By working through the Professor Predict exercises, I explored why an answer can sound convincing without being verified and why responsible AI use requires questioning assumptions and checking important information.</p>
    </section>
 <section className="detail-section ati-reveal">

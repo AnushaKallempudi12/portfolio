@@ -4088,24 +4088,17 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
-/* Make artifact navigation labels visibly larger on desktop and mobile. */
-.detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger,
-.detail-page header.detail-nav>a[href="/#top"]{
+/* Set both artifact navigation labels to the requested 14px size. */
+.detail-page header.detail-nav > a,
+.detail-page header.detail-nav > .detail-nav-dropdown > .nav-dropdown-trigger{
   font-family:var(--mono)!important;
-  font-size:16px!important;
+  font-size:14px!important;
   font-weight:600!important;
   text-transform:uppercase!important;
   letter-spacing:.045em!important;
   line-height:1.2!important;
   -webkit-text-size-adjust:100%!important;
 }
-@media(max-width:760px){
-  .detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger,
-  .detail-page header.detail-nav>a[href="/#top"]{
-    font-size:16px!important;
-  }
-}
-
 
 /* Restore the solid muted sage-green toolkit cards with high-contrast dark text. */
 #skills .skill-group{

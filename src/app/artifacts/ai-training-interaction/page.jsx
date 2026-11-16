@@ -144,11 +144,11 @@ export default function AITrainingInteractionPage(){
     <p>AI Training Interaction is a learning activity that helped me examine how large language models learn and respond. By working through the Professor Predict exercises, I explored why an answer can sound convincing without being verified and why responsible AI use requires questioning assumptions and checking important information.</p>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">2. DESCRIPTION</p>
+    <p className="detail-index">2.DESCRIPTION</p>
     <p>The activity moves through five stages: predicting the next word, examining how a language model works, considering what may be represented in training data, deciding which tasks are suitable for an LLM, and reflecting on what I learned. The interactive walkthrough below presents the exercises and the reasoning behind my responses.</p>
    </section>
    <section className="detail-section ati-reveal">
-    <p className="detail-index">2.1 OBJECTIVE</p>
+    <p className="detail-index">2.1OBJECTIVE</p>
     <p>Understand the difference between predicting likely text and verifying information, recognize limits in training-data coverage, and identify when a task needs an external source, a specialized tool, or professional review.</p>
    </section>
 <section className="detail-section ati-reveal" id="stages">
@@ -194,7 +194,7 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">3. VALUE PROPOSITION OF THE ARTIFACT</p>
+    <p className="detail-index">3.VALUE PROPOSITION OF THE ARTIFACT</p>
     <p>The value of this activity is the shift from simply accepting an answer to evaluating how it was produced and what support it needs. The exercise connects basic language-model concepts to practical decisions about information quality, privacy, and responsible use.</p>
    </section>
 <section className="detail-section ati-reveal">
@@ -210,7 +210,7 @@ export default function AITrainingInteractionPage(){
     </div>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">4. REFERENCES</p>
+    <p className="detail-index">4.REFERENCES</p>
     <p>No external references were used or cited in this activity. The artifact documents my responses and reflections from the interactive learning exercise.</p>
    </section>
 <section className="detail-section ati-reveal">

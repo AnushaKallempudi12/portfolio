@@ -4088,16 +4088,20 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
-/* Set both artifact navigation labels to the requested 14px size. */
-.detail-page header.detail-nav > a,
-.detail-page header.detail-nav > .detail-nav-dropdown > .nav-dropdown-trigger{
+/* Match the Artifacts dropdown label to the Back to Portfolio link. */
+.detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger{
   font-family:var(--mono)!important;
-  font-size:14px!important;
-  font-weight:600!important;
-  text-transform:uppercase!important;
-  letter-spacing:.045em!important;
+  font-size:11px!important;
+  font-weight:500!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
   line-height:1.2!important;
   -webkit-text-size-adjust:100%!important;
+}
+@media(max-width:650px){
+  .detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger{
+    font-size:10px!important;
+  }
 }
 
 /* Restore the solid muted sage-green toolkit cards with high-contrast dark text. */

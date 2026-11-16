@@ -4088,19 +4088,23 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
-/* Match the Artifacts dropdown label to the Back to Portfolio link. */
-.detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger{
+/* Keep both artifact navigation labels consistent, readable, and uppercase. */
+.detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger,
+.detail-page header.detail-nav>a,
+.detail-page header.detail-nav>a:last-child{
   font-family:var(--mono)!important;
-  font-size:11px!important;
+  font-size:12px!important;
   font-weight:500!important;
-  letter-spacing:0!important;
-  text-transform:none!important;
+  letter-spacing:.04em!important;
+  text-transform:uppercase!important;
   line-height:1.2!important;
   -webkit-text-size-adjust:100%!important;
 }
 @media(max-width:650px){
-  .detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger{
-    font-size:10px!important;
+  .detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger,
+  .detail-page header.detail-nav>a,
+  .detail-page header.detail-nav>a:last-child{
+    font-size:12px!important;
   }
 }
 
@@ -4147,14 +4151,12 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
-/* Artifact 3: use a consistent 17px size for section and subsection headings */
-.ati-page .detail-index,
-.ati-page .detail-subhead{font-size:17px}
-
-/* Consistent artifact section headings and tighter spacing below numbered labels */
+/* Keep artifact section labels readable without excessive character spacing. */
 .detail-page .detail-index,
 .detail-page .detail-subhead{
   font-size:17px!important;
+  letter-spacing:.04em!important;
+  text-transform:uppercase!important;
 }
 .detail-page .detail-section>.detail-index{
   margin:0 0 8px!important;

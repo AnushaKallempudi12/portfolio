@@ -144,7 +144,7 @@ export default function AITrainingInteractionPage(){
     <p>AI Training Interaction is a learning activity that helped me examine how large language models learn and respond. By working through the Professor Predict exercises, I explored why an answer can sound convincing without being verified and why responsible AI use requires questioning assumptions and checking important information.</p>
    </section>
 <section className="detail-section ati-reveal">
-    <p className="detail-index">2. DESCRIPTION</p>
+    <h3 className="detail-subhead">2. DESCRIPTION</h3>
     <p>The activity moves through five stages: predicting the next word, examining how a language model works, considering what may be represented in training data, deciding which tasks are suitable for an LLM, and reflecting on what I learned. The interactive walkthrough below presents the exercises and the reasoning behind my responses.</p>
     <h3 className="detail-subhead">2.1 OBJECTIVE</h3>
     <p>Understand the difference between predicting likely text and verifying information, recognize limits in training-data coverage, and identify when a task needs an external source, a specialized tool, or professional review.</p>

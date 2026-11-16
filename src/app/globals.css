@@ -4088,17 +4088,18 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
-/* Artifact-page navigation labels: uppercase and 14px on every viewport. */
-.detail-page header.detail-nav .nav-dropdown-trigger,
-.detail-page header.detail-nav>a{
-  font-size:14px!important;
+/* Artifact-page navigation labels: enforce 14px for both controls on every viewport. */
+.detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger,
+.detail-page header.detail-nav>a[href="/#top"]{
+  font:600 14px var(--mono)!important;
   text-transform:uppercase!important;
   letter-spacing:.045em!important;
-  font-weight:600!important;
+  line-height:1.2!important;
+  -webkit-text-size-adjust:100%!important;
 }
 @media(max-width:760px){
-  .detail-page header.detail-nav .nav-dropdown-trigger,
-  .detail-page header.detail-nav>a{
+  .detail-page header.detail-nav .detail-nav-dropdown .nav-dropdown-trigger,
+  .detail-page header.detail-nav>a[href="/#top"]{
     font-size:14px!important;
   }
 }

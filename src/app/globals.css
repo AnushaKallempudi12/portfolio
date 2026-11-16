@@ -4146,3 +4146,47 @@ main>.footer{
 }
 #work .project-art:before,
 #work .project-art:after{display:none!important}
+
+
+/* Academic artifact heading hierarchy: numbered section labels are primary;
+   their descriptive titles are secondary. Shared by every artifact page. */
+.detail-page .detail-section > .detail-index.numbered-section-heading{
+  display:block;
+  margin:0 0 11px!important;
+  color:var(--blue,#8fb5ff)!important;
+  font-family:var(--mono,"DM Mono",monospace)!important;
+  font-size:clamp(20px,2.35vw,26px)!important;
+  font-weight:700!important;
+  line-height:1.28!important;
+  letter-spacing:.045em!important;
+}
+.detail-page .detail-section > h2.numbered-section-title{
+  margin:0 0 17px!important;
+  color:#d5deec!important;
+  font-size:clamp(18px,1.9vw,23px)!important;
+  font-weight:600!important;
+  line-height:1.4!important;
+  letter-spacing:-.025em!important;
+}
+.detail-page .detail-section > h3.numbered-subsection-heading,
+.detail-page .detail-section h3.numbered-subsection-heading{
+  margin:22px 0 11px!important;
+  color:var(--blue,#8fb5ff)!important;
+  font-family:var(--mono,"DM Mono",monospace)!important;
+  font-size:clamp(16px,1.55vw,19px)!important;
+  font-weight:600!important;
+  line-height:1.35!important;
+  letter-spacing:.025em!important;
+}
+@media(max-width:650px){
+  .detail-page .detail-section > .detail-index.numbered-section-heading{
+    font-size:20px!important;
+  }
+  .detail-page .detail-section > h2.numbered-section-title{
+    font-size:18px!important;
+  }
+  .detail-page .detail-section > h3.numbered-subsection-heading,
+  .detail-page .detail-section h3.numbered-subsection-heading{
+    font-size:16px!important;
+  }
+}

@@ -4088,10 +4088,10 @@ main>.footer{
 #work .project-art:before,
 #work .project-art:after{display:none!important}
 
-/* Artifact-page navigation labels: uppercase and 11.5px on every viewport. */
+/* Artifact-page navigation labels: uppercase and 14px on every viewport. */
 .detail-page header.detail-nav .nav-dropdown-trigger,
 .detail-page header.detail-nav>a{
-  font-size:11.5px!important;
+  font-size:14px!important;
   text-transform:uppercase!important;
   letter-spacing:.045em!important;
   font-weight:600!important;
@@ -4099,7 +4099,7 @@ main>.footer{
 @media(max-width:760px){
   .detail-page header.detail-nav .nav-dropdown-trigger,
   .detail-page header.detail-nav>a{
-    font-size:11.5px!important;
+    font-size:14px!important;
   }
 }
 

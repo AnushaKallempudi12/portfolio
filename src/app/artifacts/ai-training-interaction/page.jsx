@@ -148,7 +148,7 @@ export default function AITrainingInteractionPage(){
     <p>The activity moves through five stages: predicting the next word, examining how a language model works, considering what may be represented in training data, deciding which tasks are suitable for an LLM, and reflecting on what I learned. The interactive walkthrough below presents the exercises and the reasoning behind my responses.</p>
    </section>
    <section className="detail-section ati-reveal">
-    <p className="detail-index">2.1OBJECTIVE</p>
+    <p className="detail-index">2.1 OBJECTIVE</p>
     <p>Understand the difference between predicting likely text and verifying information, recognize limits in training-data coverage, and identify when a task needs an external source, a specialized tool, or professional review.</p>
    </section>
 <section className="detail-section ati-reveal" id="stages">

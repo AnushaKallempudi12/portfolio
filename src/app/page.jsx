@@ -5,10 +5,13 @@ import { ArrowDownRight, ArrowUpRight, ChevronDown, ExternalLink, Menu, X, Githu
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const CinematicVideo = dynamic(()=>import("../components/CinematicVideo"),{ssr:false});
+// TEMPORARILY PAUSED: background video feature. Restore this import when re-enabled.
+// const CinematicVideo = dynamic(()=>import("../components/CinematicVideo"),{ssr:false});
 const projects=[
  {n:"01",visual:"lifesync",name:"LifeSync",type:"Product concept · Web app",desc:"A personal dashboard concept connecting money, learning and everyday habits in one place.",tags:["Product thinking","UX","Web app"],href:"https://anushakallempudi12.github.io/LIfeSync/",linkLabel:"Explore LifeSync"},
+ /* TEMPORARILY PAUSED: Vee Bot project card. Restore this object when re-enabled.
  {n:"03",visual:"visa",name:"Vee Bot",type:"AI visa assistant · Chatbot",desc:"An AI-powered visa assistant that helps users explore visa-related questions and navigate guidance through a conversational experience.",tags:["AI assistant","Visa guidance","Conversational AI"],href:"https://anushakallempudi12.github.io/vee_bot/",linkLabel:"Try Vee Bot"}
+ */
 ];
 const skills=[
  {title:"Backend & application development",items:["Java","Spring Boot","REST APIs","SQL"]},
@@ -23,7 +26,9 @@ function ProjectVisual({kind}) {
   models:<div className="visual-model" aria-hidden="true"><div className="model-label">MODEL PIPELINE <span>01 / 02</span></div><div className="model-network"><div className="network-column"><i/><i/><i/><i/></div><div className="network-links"><i/><i/><i/><i/><i/><i/></div><div className="network-column middle"><i/><i/><i/></div><div className="network-links second"><i/><i/><i/><i/><i/></div><div className="network-column last"><i/><i/></div></div><div className="model-foot"><span>FEATURES</span><b>→</b><span>LEARNING</span><b>→</b><span>PREDICTION</span></div></div>,
   lifesync:<img className="project-preview-image" src="/portfolio/images/Lifesync.png" alt="LifeSync application homepage preview" loading="lazy"/>,
   training:<div className="visual-training" aria-hidden="true"><div className="training-top"><span>PROFESSOR PREDICT</span><span>5 STAGES</span></div><div className="training-prompt"><small>NEXT-WORD EXERCISE</small><strong>The capital of France is <em>___</em></strong><div className="training-answer"><b>Paris</b><span>✓ CORRECT</span></div></div><div className="training-steps"><i className="active"/><i/><i/><i/><i/></div><div className="training-foot"><span>LEARN · QUESTION · VERIFY</span><b>HALLUCINATION SPOTTER</b></div></div>,
+  /* TEMPORARILY PAUSED: Vee Bot project preview. Restore this visual when re-enabled.
   visa:<img className="project-preview-image" src="/portfolio/images/Vee_bot.png" alt="Vee Bot AI visa assistant preview" loading="lazy"/>
+  */
  };
  return <div className="project-visual">{visuals[kind]}</div>;
 }
@@ -43,7 +48,8 @@ export default function Home(){
  const close=()=>{setMenu(false);setArtifactsOpen(false);};
  return <main>
   <div className="site-noise"/><div className="scroll-progress" aria-hidden="true"/>
-  <CinematicVideo/>
+  {/* TEMPORARILY PAUSED: background video. Restore this component when re-enabled. */}
+  {/* <CinematicVideo/> */}
   <nav ref={navRef} className={`nav ${menu?"mobile-open":""}`} aria-label="Main navigation">
    <a className="brand" href="#top" onClick={close}>Anusha Kallempudi</a>
    <div className="navlinks">

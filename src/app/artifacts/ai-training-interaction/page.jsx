@@ -211,25 +211,13 @@ export default function AITrainingInteractionPage(){
    </section>
 <section className="detail-section ati-reveal">
     <p className="detail-index">4.REFERENCES</p>
-    <p>No external references were used or cited in this activity. The artifact documents my responses and reflections from the interactive learning exercise.</p>
+    <p>This artifact is based on the Professor Predict interactive learning activity completed as part of Machine Learning Fundamentals. The original activity responses and reflections are included in the project documentation.</p>
    </section>
 <section className="detail-section ati-reveal">
     <p className="detail-index">5. PROJECT DOCUMENTATION</p>
     <p>This original activity document records my work through the Professor Predict stages, including my responses, classifications, reasoning, completion summary, personal reflection, and AI disclosure.</p>
     <div className="detail-document-frame detail-html-document-frame"><iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fanushakallempudi12.github.io%2Fportfolio%2Fdocuments%2FAI%2520Training%2520Interaction.docx" title="Embedded AI Training Interaction original Word activity record" loading="lazy" allowFullScreen/></div>
     <p className="detail-document-fallback">If the preview does not load, <a href="/portfolio/documents/AI%20Training%20Interaction.docx" target="_blank" rel="noreferrer">open the original activity document</a>.</p>
-   </section>
-<section className="detail-section ati-reveal">
-    <p className="detail-index">PERSONAL REFLECTION</p><h2>How the exercise changed my approach</h2>
-    <p>This activity helped me understand how large language models work and why their answers are not always accurate. The Velmora example was particularly interesting because I recognized the unfamiliar country name and questioned whether the information was real instead of making up an answer.</p>
-    <p>I also learned that the quality of an AI response depends on its training data and access to external tools. An LLM can help draft cover letters, explain algorithms, and brainstorm product names, but it needs reliable sources for current stock prices and recent research. I also understood why calculators and professional experts are important for exact calculations and legal questions.</p>
-    <div className="ati-reflection-quote"><Sparkles size={18}/><p>Going forward, I would use AI as a supporting tool, verify important information, and recognize when a task requires external sources or expert knowledge.</p></div>
-   </section>
-<section className="detail-section ati-reveal ati-portfolio-reflection">
-    <p className="detail-index">FEEDBACK & PORTFOLIO DEVELOPMENT</p><h2>How feedback and new experiences shaped my vision</h2>
-    <p>One specific piece of feedback I received on Artifact 2 was that my reflection needed to be more complete: I should identify the feedback I received and explain how it influenced my vision. That comment made me think beyond describing what I had completed and consider how feedback and new experiences shape the direction of my work.</p>
-    <p>At the beginning of the program, I used Google Sites as a basic way to present my assignments. During the residency, meeting others and exploring the tools, platforms, and approaches I was introduced to expanded my understanding of what a professional portfolio could be. I became interested in creating a portfolio that did more than display submissions. I wanted it to present my work in a more organized and interactive way, while giving me room to add future projects, documentation, and reflections.</p>
-    <p>This experience influenced my decision to move from the basic Google Sites format to the portfolio website I have developed. I now see the portfolio as an evolving professional space where I can communicate my technical interests, learning progress, and the way I respond to feedback. The professor's comment reinforced that my work should show not only what I create, but also how I learn and grow from feedback.</p>
    </section>
 <section className="detail-section ati-reveal">
     <p className="detail-index">AI DISCLOSURE</p><h2>How AI supported this activity</h2>

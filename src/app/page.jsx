@@ -109,12 +109,14 @@ export default function Home(){
   <section className="section" id="skills"><div className="wrap"><div className="reveal"><SectionTitle kicker="05 / Toolkit" title={<>Tools I work <em>with.</em></>} sub="A growing toolkit across application development, testing, data and AI."/></div>
    <div className="skills-grid">{skills.map(s=><div className="skill-group reveal" key={s.title}><h3>{s.title}</h3><div className="skill-list">{s.items.map(i=><span key={i}>{i}</span>)}</div></div>)}</div>
   </div></section>
+  {/* TEMPORARILY PAUSED: Projects section. Preserve this entire section for restoration after the assignment.
   <section className="section" id="work"><div className="wrap">
    <div className="reveal"><SectionTitle kicker="06 / Projects" title={<>Ideas shaped into <em>useful products.</em></>} sub="Product concepts that bring together practical problem-solving, thoughtful experiences and emerging technology."/></div>
    <div className="project-grid">{projects.map(p=><article className="project reveal" key={p.n}><div className="project-art"><ProjectVisual kind={p.visual}/></div><div className="project-index">{p.n} / {p.type}</div><h3>{p.name}</h3><p>{p.desc}</p><div className="tags">{p.tags.map(t=><span className="tag" key={t}>{t}</span>)}</div>{p.href&&<a className="artifact-link project-link" href={p.href} target="_blank" rel="noreferrer">{p.linkLabel} <ArrowUpRight size={14}/></a>}<ArrowUpRight className="project-arrow" size={18}/></article>)}</div>
   </div></section>
+  */}
   <section className="section artifacts-section" id="artifacts"><div className="wrap">
-   <div className="reveal"><SectionTitle kicker="07 / Academic artifacts" title={<>Work that shows <em>how I think.</em></>} sub="Selected coursework and documented experiments from my AI and data analytics studies. Select an artifact to explore its purpose, design process, implementation, testing and learning outcomes."/></div>
+   <div className="reveal"><SectionTitle kicker="06 / Academic artifacts" title={<>Work that shows <em>how I think.</em></>} sub="Selected coursework and documented experiments from my AI and data analytics studies. Select an artifact to explore its purpose, design process, implementation, testing and learning outcomes."/></div>
    <div className="artifact-grid">
     <article className="artifact-card reveal" id="artifact-codecoach"><a className="artifact-card-hitarea" href="https://anushakallempudi12.github.io/portfolio/artifacts/codecoach/" aria-label="Open CodeCoach artifact details"/>
      <div className="artifact-art codecoach-art"><img className="artifact-thumb" src="/portfolio/images/codecoach-artifact.png" alt="CodeCoach AI mentor guiding a learner through a coding challenge" loading="lazy"/><div className="artifact-terminal" hidden><div className="terminal-top"><i/><i/><i/><span>CodeCoach · practice session</span></div><div className="terminal-body"><small>JAVA · ARRAYS</small><strong>Find the maximum value</strong><p>What would you check first?</p><div className="terminal-hint">HINT 01 <span>Try scanning once from left to right.</span></div></div></div></div>
@@ -143,7 +145,7 @@ export default function Home(){
    </div>
   </div></section>
   <section className="section" id="contact"><div className="wrap"><div className="contact-panel reveal">
-   <div className="contact-copy"><div className="section-kicker">08 / Contact</div><h2>Let’s build<br/>something useful.</h2><p>I’m interested in opportunities where software engineering, data and emerging AI technologies come together. Connect with me, explore my work, or review my experience.</p></div>
+   <div className="contact-copy"><div className="section-kicker">07 / Contact</div><h2>Let’s build<br/>something useful.</h2><p>I’m interested in opportunities where software engineering, data and emerging AI technologies come together. Connect with me, explore my work, or review my experience.</p></div>
    <div className="contact-links">
     <a className="contact-link" href="https://github.com/AnushaKallempudi12" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Github size={18}/></span><span><strong>GitHub</strong><small>Explore my code and projects</small></span><ArrowUpRight size={16}/></a>
     <a className="contact-link" href="https://www.linkedin.com/in/anusha-kallempudi" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Linkedin size={18}/></span><span><strong>LinkedIn</strong><small>Connect with me professionally</small></span><ArrowUpRight size={16}/></a>

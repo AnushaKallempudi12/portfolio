@@ -4204,3 +4204,23 @@ main>.footer{
     max-height:44px!important;
   }
 }
+
+
+/* CodeCoach Artifact 1: interactive unique-value explorer and distinct audience/skills cards. */
+.codecoach-value-explorer{margin:22px 0 20px;border:1px solid #d8e0e8;border-radius:7px;background:#fff;overflow:hidden;box-shadow:0 10px 26px rgba(20,42,70,.055)}
+.codecoach-value-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:13px 15px;background:#f2f5f8;border-bottom:1px solid #e0e6ed}
+.codecoach-value-tabs button{padding:9px 12px;border:1px solid #d5dee8;border-radius:4px;background:#fff;color:#53657a;font:10px var(--mono);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.codecoach-value-tabs button:hover{border-color:#7897bc}
+.codecoach-value-tabs button.active{background:#315f9b;border-color:#315f9b;color:#fff}
+.codecoach-value-tabs button:focus-visible{outline:3px solid rgba(49,95,155,.28);outline-offset:2px}
+.codecoach-value-panel{min-height:160px;padding:22px 24px}
+.codecoach-value-panel>span,.codecoach-audience-skills article>span{display:block;margin-bottom:9px;color:#58769b;font:9px var(--mono);letter-spacing:.1em}
+.codecoach-value-panel h3{margin:0 0 8px;color:#20334a;font-size:18px}
+.codecoach-value-panel p{max-width:780px;margin:0;color:#596879;font-size:13px;line-height:1.85}
+.codecoach-audience-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.codecoach-audience-skills article{min-width:0;padding:20px 22px;border:1px solid #d7e0e8;border-radius:6px;background:#f8fafc}
+.codecoach-audience-skills article h3{margin:0 0 9px;color:#263b52;font-size:16px}
+.codecoach-audience-skills .detail-list{margin:0;font-size:12px;line-height:1.8}
+.codecoach-document-row>div p{font-size:12px!important;line-height:1.75!important;color:#596879!important;margin:0 0 8px!important}
+.codecoach-document-row .codecoach-download-link{font-size:11px!important;line-height:1.5!important}
+@media(max-width:650px){.codecoach-audience-skills{grid-template-columns:1fr}.codecoach-value-tabs{gap:6px}.codecoach-value-tabs button{flex:1 1 auto}.codecoach-value-panel{padding:19px;min-height:0}}

@@ -56,7 +56,8 @@ export default function CodeCoachPage(){
  const [menuOpen,setMenuOpen]=useState(false);
  const [challengeId,setChallengeId]=useState("maximum");
  const [hintLevel,setHintLevel]=useState(0);
- const [showApproach,setShowApproach]=useState(false);\n const [uniqueValueTab,setUniqueValueTab]=useState("guidance");
+ const [showApproach,setShowApproach]=useState(false);
+ const [uniqueValueTab,setUniqueValueTab]=useState("guidance");
  useEffect(()=>{
   const items=document.querySelectorAll(".detail-content .detail-section");
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target);}}),{threshold:.08});

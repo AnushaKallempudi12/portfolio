@@ -4221,6 +4221,5 @@ main>.footer{
 .codecoach-audience-skills article{min-width:0;padding:20px 22px;border:1px solid #d7e0e8;border-radius:6px;background:#f8fafc}
 .codecoach-audience-skills article h3{margin:0 0 9px;color:#263b52;font-size:16px}
 .codecoach-audience-skills .detail-list{margin:0;font-size:12px;line-height:1.8}
-.codecoach-document-row>div p{font-size:12px!important;line-height:1.75!important;color:#596879!important;margin:0 0 8px!important}
-.codecoach-document-row .codecoach-download-link{font-size:11px!important;line-height:1.5!important}
+/* CodeCoach documentation uses the shared Artifact 2 paragraph and document-toolbar styles. */
 @media(max-width:650px){.codecoach-audience-skills{grid-template-columns:1fr}.codecoach-value-tabs{gap:6px}.codecoach-value-tabs button{flex:1 1 auto}.codecoach-value-panel{padding:19px;min-height:0}}

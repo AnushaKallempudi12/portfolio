@@ -109,10 +109,12 @@ export default function Home(){
   <section className="section" id="skills"><div className="wrap"><div className="reveal"><SectionTitle kicker="05 / Toolkit" title={<>Tools I work <em>with.</em></>} sub="A growing toolkit across application development, testing, data and AI."/></div>
    <div className="skills-grid">{skills.map(s=><div className="skill-group reveal" key={s.title}><h3>{s.title}</h3><div className="skill-list">{s.items.map(i=><span key={i}>{i}</span>)}</div></div>)}</div>
   </div></section>
+  {/* TEMPORARILY PAUSED: Projects section. Preserve this entire section for restoration after the assignment.
   <section className="section" id="work"><div className="wrap">
    <div className="reveal"><SectionTitle kicker="06 / Projects" title={<>Ideas shaped into <em>useful products.</em></>} sub="Product concepts that bring together practical problem-solving, thoughtful experiences and emerging technology."/></div>
    <div className="project-grid">{projects.map(p=><article className="project reveal" key={p.n}><div className="project-art"><ProjectVisual kind={p.visual}/></div><div className="project-index">{p.n} / {p.type}</div><h3>{p.name}</h3><p>{p.desc}</p><div className="tags">{p.tags.map(t=><span className="tag" key={t}>{t}</span>)}</div>{p.href&&<a className="artifact-link project-link" href={p.href} target="_blank" rel="noreferrer">{p.linkLabel} <ArrowUpRight size={14}/></a>}<ArrowUpRight className="project-arrow" size={18}/></article>)}</div>
   </div></section>
+  */}
   <section className="section artifacts-section" id="artifacts"><div className="wrap">
    <div className="reveal"><SectionTitle kicker="07 / Academic artifacts" title={<>Work that shows <em>how I think.</em></>} sub="Selected coursework and documented experiments from my AI and data analytics studies. Select an artifact to explore its purpose, design process, implementation, testing and learning outcomes."/></div>
    <div className="artifact-grid">

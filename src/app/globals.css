@@ -4223,3 +4223,238 @@ main>.footer{
 .codecoach-audience-skills .detail-list{margin:0;font-size:12px;line-height:1.8}
 /* CodeCoach documentation uses the shared Artifact 2 paragraph and document-toolbar styles. */
 @media(max-width:650px){.codecoach-audience-skills{grid-template-columns:1fr}.codecoach-value-tabs{gap:6px}.codecoach-value-tabs button{flex:1 1 auto}.codecoach-value-panel{padding:19px;min-height:0}}
+
+
+/* ==========================================================================
+   TEMPORARY PORTFOLIO PALETTE — SAPPHIRE BLUE + CHAMPAGNE GOLD
+   Layout, content, typography, spacing, and component structure are unchanged.
+   The previous forest-green palette rules remain above for easy restoration.
+   To restore the previous palette, remove this final override block only.
+   ========================================================================== */
+:root{
+  --bg:#102A43;
+  --panel:#174A73;
+  --panel2:#0D2238;
+  --ink:#F4F1E8;
+  --muted:#C4D0DB;
+  --line:rgba(231,198,106,.20);
+  --blue:#2878A5;
+  --cyan:#8ABBD2;
+  --cream:#F4F1E8;
+  --palette-gold:#E7C66A;
+  --palette-sapphire:#102A43;
+  --palette-blue:#174A73;
+  --palette-steel:#2878A5;
+}
+html,body{background:#102A43!important;color:#F4F1E8!important}
+::selection{background:#E7C66A!important;color:#102A43!important}
+main{background:#102A43!important}
+
+/* Homepage navigation: retain the existing light navigation bar and geometry. */
+.nav:not(.detail-nav){
+  background:#F4F1E8!important;
+  color:#102A43!important;
+  border-bottom-color:rgba(16,42,67,.16)!important;
+  box-shadow:0 4px 14px rgba(5,24,42,.10)!important;
+}
+.nav.scrolled:not(.detail-nav){background:rgba(244,241,232,.97)!important;border-bottom-color:rgba(16,42,67,.16)!important}
+.nav:not(.detail-nav) .brand,
+.nav:not(.detail-nav) .navlinks,
+.nav:not(.detail-nav) .navlinks a,
+.nav:not(.detail-nav) .navlinks button,
+.nav:not(.detail-nav) .nav-dropdown-trigger,
+.nav:not(.detail-nav) .menu-btn{color:#102A43!important;-webkit-text-fill-color:#102A43!important}
+.nav:not(.detail-nav) .brand span,
+.nav:not(.detail-nav) .navlinks a:hover,
+.nav:not(.detail-nav) .nav-dropdown-trigger:hover{color:#2878A5!important;-webkit-text-fill-color:#2878A5!important}
+.nav:not(.detail-nav) .nav-dropdown-menu{
+  background:rgba(16,42,67,.98)!important;
+  border-color:rgba(231,198,106,.30)!important;
+}
+.nav:not(.detail-nav) .nav-dropdown-menu a,
+.nav:not(.detail-nav) .nav-dropdown-menu a:visited{color:#F4F1E8!important;-webkit-text-fill-color:#F4F1E8!important}
+.nav:not(.detail-nav) .nav-dropdown-menu a:hover,
+.nav:not(.detail-nav) .nav-dropdown-menu a:focus-visible{background:rgba(231,198,106,.14)!important;color:#E7C66A!important;-webkit-text-fill-color:#E7C66A!important}
+.nav:not(.detail-nav) .nav-dropdown-menu a svg{color:#E7C66A!important;stroke:#E7C66A!important}
+.nav.mobile-open .navlinks{background:rgba(244,241,232,.99)!important}
+
+/* Homepage hero: same name, layout, alignment, and content; palette only. */
+.hero{
+  background:linear-gradient(118deg,#102A43 0%,#0D2238 56%,#174A73 100%)!important;
+  color:#F4F1E8!important;
+}
+.hero-grid{
+  background-image:linear-gradient(rgba(244,241,232,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(244,241,232,.045) 1px,transparent 1px)!important;
+  opacity:.28!important;
+}
+.hero-glow{background:radial-gradient(circle,rgba(40,120,165,.25),rgba(16,42,67,0) 68%)!important}
+.hero h1,.hero h1 .hero-name,.hero h1 .hero-first-name{color:#F4F1E8!important;-webkit-text-fill-color:#F4F1E8!important}
+.hero-copy{color:#D7E0E7!important}
+.hero-profession,.hero-profession span,.hero-meta,.scroll-cue{color:#E7C66A!important}
+.hero-profession span{opacity:.9}
+.hero-button-primary,.nav-cta,.button{
+  background:#E7C66A!important;
+  border-color:#E7C66A!important;
+  color:#102A43!important;
+}
+.hero-button-primary:hover,.nav-cta:hover,.button:hover{background:#F0D98F!important;border-color:#F0D98F!important;color:#102A43!important}
+.hero-button-secondary{background:rgba(244,241,232,.05)!important;border-color:rgba(231,198,106,.60)!important;color:#F4F1E8!important}
+.hero-button-secondary:hover{background:rgba(231,198,106,.14)!important;color:#F4F1E8!important}
+
+/* Main homepage sections and text. Preserve every section's current dimensions. */
+.section,.artifacts-section{
+  background:linear-gradient(180deg,#102A43 0%,#0D2238 100%)!important;
+  color:#F4F1E8!important;
+}
+.section-heading,.section-heading em,.about-copy strong,
+.timeline-role,.contact-panel h2{color:#F4F1E8!important}
+.section-heading em{color:#8ABBD2!important}
+.section-kicker,.eyebrow,.project-index,.skill-group h3,
+.principle small,.positioning-kicker,.timeline-org{color:#E7C66A!important}
+.about-copy,.hero-copy,.project p,.timeline-desc,.contact-panel p{color:#D1DDE6!important}
+.timeline-points{color:#D1DDE6!important}
+.timeline-points li::marker{color:#E7C66A!important}
+.timeline,.timeline-item{border-color:rgba(231,198,106,.20)!important}
+.timeline-date,.footer{color:#B6C7D5!important}
+
+/* About, skills, project, and artifact cards: sapphire surfaces with gold details. */
+.principle,.positioning-card{
+  background:linear-gradient(145deg,#174A73 0%,#123854 100%)!important;
+  border-color:rgba(231,198,106,.28)!important;
+  box-shadow:0 10px 26px rgba(3,17,31,.22)!important;
+}
+.principle p,.positioning-card p{color:#D7E2EA!important}
+.positioning-card h3{color:#F4F1E8!important}
+#skills .skill-group{
+  background:linear-gradient(145deg,#174A73 0%,#123854 100%)!important;
+  border:1px solid rgba(231,198,106,.24)!important;
+  color:#F4F1E8!important;
+  box-shadow:0 8px 22px rgba(3,17,31,.18)!important;
+}
+#skills .skill-group h3{color:#E7C66A!important}
+#skills .skill-group .skill-list span{
+  color:#F4F1E8!important;
+  background:rgba(244,241,232,.08)!important;
+  border-color:rgba(244,241,232,.20)!important;
+}
+#work .project{
+  background:linear-gradient(145deg,#174A73 0%,#102A43 100%)!important;
+  border-color:rgba(231,198,106,.25)!important;
+  box-shadow:0 14px 32px rgba(3,17,31,.22)!important;
+}
+#work .project:hover{border-color:rgba(231,198,106,.62)!important}
+#work .project h3{color:#F4F1E8!important}
+#work .project p{color:#D1DDE6!important}
+#work .project-index,#work .project-arrow{color:#E7C66A!important}
+#work .project .tag{color:#E3EAF0!important;background:rgba(244,241,232,.07)!important;border-color:rgba(231,198,106,.22)!important}
+#work .project-art{background:linear-gradient(135deg,#2878A5,#102A43)!important;border-color:rgba(231,198,106,.22)!important}
+#work .project-art:before,#work .project-art:after{border-color:rgba(231,198,106,.34)!important}
+.artifacts-section .artifact-card{
+  background:linear-gradient(145deg,#174A73 0%,#102A43 100%)!important;
+  border-color:rgba(231,198,106,.26)!important;
+  color:#F4F1E8!important;
+  box-shadow:0 14px 32px rgba(3,17,31,.22)!important;
+}
+.artifacts-section .artifact-card h3{color:#F4F1E8!important}
+.artifacts-section .artifact-card>p{color:#D1DDE6!important}
+.artifacts-section .artifact-meta{color:#E7C66A!important}
+.artifacts-section .artifact-link{color:#E7C66A!important;border-bottom-color:rgba(231,198,106,.48)!important}
+.artifacts-section .artifact-link:hover{color:#F4F1E8!important;border-bottom-color:#F4F1E8!important}
+.artifacts-section .artifact-art{background:linear-gradient(135deg,#2878A5,#102A43)!important;border-color:rgba(231,198,106,.22)!important}
+.artifacts-section .artifact-card::before{opacity:.42!important;background:linear-gradient(155deg,rgba(40,120,165,.30),rgba(231,198,106,.08))!important}
+.artifacts-section .artifact-card::after{background:radial-gradient(ellipse,rgba(231,198,106,.08),transparent 70%)!important}
+
+/* Contact links and footer. */
+#contact .contact-link{
+  background:linear-gradient(145deg,#174A73,#123854)!important;
+  border-color:rgba(231,198,106,.28)!important;
+  color:#F4F1E8!important;
+  box-shadow:0 8px 22px rgba(3,17,31,.20)!important;
+}
+#contact .contact-link strong{color:#F4F1E8!important}
+#contact .contact-link small{color:#C9D8E3!important}
+#contact .contact-link>svg:last-child{color:#E7C66A!important}
+#contact .contact-link-icon{background:rgba(231,198,106,.12)!important;border-color:rgba(231,198,106,.28)!important;color:#E7C66A!important}
+#contact .contact-link:hover{background:linear-gradient(145deg,#2878A5,#174A73)!important;border-color:#E7C66A!important}
+.footer{border-color:rgba(231,198,106,.20)!important}
+
+/* Standalone artifact pages: retain their light content layout with sapphire/gold branding. */
+.detail-page,.detail-page.codecoach-page,.detail-page.ml-dl-page,.detail-page.ati-page,.detail-page.rai-page{
+  background:#F4F1E8!important;color:#102A43!important;
+}
+.detail-page .detail-content{background:#F4F1E8!important}
+.detail-page .detail-nav{
+  background:#102A43!important;color:#F4F1E8!important;
+  border-color:rgba(231,198,106,.24)!important;
+}
+.detail-page .detail-nav a,.detail-page .detail-nav .nav-dropdown-trigger{color:#F4F1E8!important;-webkit-text-fill-color:#F4F1E8!important}
+.detail-page .detail-nav .nav-dropdown-trigger svg{color:#E7C66A!important;stroke:#E7C66A!important}
+.detail-page .detail-nav .nav-dropdown-menu{background:rgba(16,42,67,.99)!important;border-color:rgba(231,198,106,.28)!important}
+.detail-page .detail-nav .nav-dropdown-menu a{color:#F4F1E8!important}
+.detail-page .detail-nav .nav-dropdown-menu a:hover{background:rgba(231,198,106,.14)!important;color:#E7C66A!important}
+.detail-page .detail-hero{
+  background:radial-gradient(ellipse at 82% 22%,rgba(40,120,165,.32),transparent 38%),linear-gradient(120deg,#102A43,#174A73 65%,#0D2238)!important;
+  color:#F4F1E8!important;
+}
+.detail-page .detail-hero h1,.detail-page .detail-hero h2,.detail-page .detail-hero strong{color:#F4F1E8!important}
+.detail-page .detail-hero .detail-index,.detail-page .detail-hero .detail-kicker{color:#E7C66A!important}
+.detail-page .detail-hero .detail-snapshot-grid>div{background:linear-gradient(145deg,#F4F1E8,#E8EFF5)!important;color:#102A43!important;border-color:#C7D7E3!important}
+.detail-page .detail-hero .detail-snapshot-grid strong,.detail-page .detail-hero .detail-snapshot-grid span{color:#174A73!important}
+.detail-page .detail-hero .detail-tags span{color:#F4F1E8!important;background:rgba(244,241,232,.08)!important;border-color:rgba(231,198,106,.38)!important}
+.detail-page .detail-content>section.detail-section:nth-of-type(odd){
+  background:linear-gradient(145deg,#F4F1E8 0%,#E8EFF5 100%)!important;
+  color:#102A43!important;border-color:#C7D7E3!important;
+}
+.detail-page .detail-content>section.detail-section:nth-of-type(even){
+  background:linear-gradient(145deg,#F4F1E8 0%,#F0EAD9 100%)!important;
+  color:#102A43!important;border-color:#E4D9B9!important;
+}
+.detail-page .detail-content>section.detail-section h2,
+.detail-page .detail-content>section.detail-section h3,
+.detail-page .detail-content>section.detail-section strong{color:#102A43!important}
+.detail-page .detail-content>section.detail-section>p:not(.detail-index),
+.detail-page .detail-content>section.detail-section li{color:#40576B!important}
+.detail-page .detail-content .detail-index,
+.detail-page .detail-content .detail-subhead,
+.detail-page .detail-content .detail-reference-type{color:#174A73!important}
+.detail-page .detail-content .detail-primary,
+.detail-page .detail-content .ati-next,
+.detail-page .detail-content .detail-cta .detail-primary,
+.detail-page .detail-content .codecoach-value-tabs button.active{
+  background:#174A73!important;border-color:#174A73!important;color:#F4F1E8!important;
+}
+.detail-page .detail-content .detail-secondary,
+.detail-page .detail-content .codecoach-text-button,
+.detail-page .detail-content .codecoach-reset,
+.detail-page .detail-content .ati-prev{
+  border-color:#2878A5!important;color:#174A73!important;
+}
+.detail-page .detail-content .detail-document-toolbar>span,
+.detail-page .detail-content .detail-document-actions a,
+.detail-page .detail-content .ati-document-link,
+.detail-page .detail-content .codecoach-download-link{color:#174A73!important}
+.detail-page .detail-content .detail-document-toolbar,
+.detail-page .detail-content .detail-document-section{border-color:#C7D7E3!important}
+.detail-page .detail-content .detail-case-tabs button.active,
+.detail-page .detail-content .codecoach-challenge-tabs button.active,
+.detail-page .detail-content .ati-stage-nav button.active,
+.detail-page .detail-content .ati-batch-tabs button.active,
+.detail-page .detail-content .ati-filter-row button.active{
+  background:#174A73!important;border-color:#174A73!important;color:#F4F1E8!important;
+}
+.detail-page .detail-content .detail-case-tabs button.active *,
+.detail-page .detail-content .codecoach-challenge-tabs button.active *,
+.detail-page .detail-content .ati-stage-nav button.active *,
+.detail-page .detail-content .ati-batch-tabs button.active *,
+.detail-page .detail-content .ati-filter-row button.active *{color:#F4F1E8!important}
+.detail-page .detail-content .detail-cta{
+  background:linear-gradient(135deg,#102A43,#174A73)!important;
+  border-color:rgba(231,198,106,.35)!important;
+}
+.detail-page .detail-content .detail-cta h2,
+.detail-page .detail-content .detail-cta p{color:#F4F1E8!important}
+.detail-page .detail-content .detail-cta a{color:#E7C66A!important}
+@media(max-width:760px){
+  .nav.mobile-open .navlinks{background:#F4F1E8!important}
+  .nav.mobile-open .navlinks a,.nav.mobile-open .navlinks button{color:#102A43!important}
+}

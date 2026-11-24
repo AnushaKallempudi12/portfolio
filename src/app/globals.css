@@ -4231,7 +4231,8 @@ main>.footer{
    The previous forest-green palette rules remain above for easy restoration.
    To restore the previous palette, remove this final override block only.
    ========================================================================== */
-:root{
+/* Palette variables are scoped to the homepage only; artifact pages retain their original theme. */
+body:has(.hero){
   --bg:#102A43;
   --panel:#174A73;
   --panel2:#0D2238;
@@ -4246,9 +4247,9 @@ main>.footer{
   --palette-blue:#174A73;
   --palette-steel:#2878A5;
 }
-html,body{background:#102A43!important;color:#F4F1E8!important}
-::selection{background:#E7C66A!important;color:#102A43!important}
-main{background:#102A43!important}
+body:has(.hero){background:#102A43!important;color:#F4F1E8!important}
+body:has(.hero) ::selection{background:#E7C66A!important;color:#102A43!important}
+body:has(.hero) main{background:#102A43!important}
 
 /* Homepage navigation: retain the existing light navigation bar and geometry. */
 .nav:not(.detail-nav){
@@ -4378,83 +4379,3 @@ main{background:#102A43!important}
 #contact .contact-link:hover{background:linear-gradient(145deg,#2878A5,#174A73)!important;border-color:#E7C66A!important}
 .footer{border-color:rgba(231,198,106,.20)!important}
 
-/* Standalone artifact pages: retain their light content layout with sapphire/gold branding. */
-.detail-page,.detail-page.codecoach-page,.detail-page.ml-dl-page,.detail-page.ati-page,.detail-page.rai-page{
-  background:#F4F1E8!important;color:#102A43!important;
-}
-.detail-page .detail-content{background:#F4F1E8!important}
-.detail-page .detail-nav{
-  background:#102A43!important;color:#F4F1E8!important;
-  border-color:rgba(231,198,106,.24)!important;
-}
-.detail-page .detail-nav a,.detail-page .detail-nav .nav-dropdown-trigger{color:#F4F1E8!important;-webkit-text-fill-color:#F4F1E8!important}
-.detail-page .detail-nav .nav-dropdown-trigger svg{color:#E7C66A!important;stroke:#E7C66A!important}
-.detail-page .detail-nav .nav-dropdown-menu{background:rgba(16,42,67,.99)!important;border-color:rgba(231,198,106,.28)!important}
-.detail-page .detail-nav .nav-dropdown-menu a{color:#F4F1E8!important}
-.detail-page .detail-nav .nav-dropdown-menu a:hover{background:rgba(231,198,106,.14)!important;color:#E7C66A!important}
-.detail-page .detail-hero{
-  background:radial-gradient(ellipse at 82% 22%,rgba(40,120,165,.32),transparent 38%),linear-gradient(120deg,#102A43,#174A73 65%,#0D2238)!important;
-  color:#F4F1E8!important;
-}
-.detail-page .detail-hero h1,.detail-page .detail-hero h2,.detail-page .detail-hero strong{color:#F4F1E8!important}
-.detail-page .detail-hero .detail-index,.detail-page .detail-hero .detail-kicker{color:#E7C66A!important}
-.detail-page .detail-hero .detail-snapshot-grid>div{background:linear-gradient(145deg,#F4F1E8,#E8EFF5)!important;color:#102A43!important;border-color:#C7D7E3!important}
-.detail-page .detail-hero .detail-snapshot-grid strong,.detail-page .detail-hero .detail-snapshot-grid span{color:#174A73!important}
-.detail-page .detail-hero .detail-tags span{color:#F4F1E8!important;background:rgba(244,241,232,.08)!important;border-color:rgba(231,198,106,.38)!important}
-.detail-page .detail-content>section.detail-section:nth-of-type(odd){
-  background:linear-gradient(145deg,#F4F1E8 0%,#E8EFF5 100%)!important;
-  color:#102A43!important;border-color:#C7D7E3!important;
-}
-.detail-page .detail-content>section.detail-section:nth-of-type(even){
-  background:linear-gradient(145deg,#F4F1E8 0%,#F0EAD9 100%)!important;
-  color:#102A43!important;border-color:#E4D9B9!important;
-}
-.detail-page .detail-content>section.detail-section h2,
-.detail-page .detail-content>section.detail-section h3,
-.detail-page .detail-content>section.detail-section strong{color:#102A43!important}
-.detail-page .detail-content>section.detail-section>p:not(.detail-index),
-.detail-page .detail-content>section.detail-section li{color:#40576B!important}
-.detail-page .detail-content .detail-index,
-.detail-page .detail-content .detail-subhead,
-.detail-page .detail-content .detail-reference-type{color:#174A73!important}
-.detail-page .detail-content .detail-primary,
-.detail-page .detail-content .ati-next,
-.detail-page .detail-content .detail-cta .detail-primary,
-.detail-page .detail-content .codecoach-value-tabs button.active{
-  background:#174A73!important;border-color:#174A73!important;color:#F4F1E8!important;
-}
-.detail-page .detail-content .detail-secondary,
-.detail-page .detail-content .codecoach-text-button,
-.detail-page .detail-content .codecoach-reset,
-.detail-page .detail-content .ati-prev{
-  border-color:#2878A5!important;color:#174A73!important;
-}
-.detail-page .detail-content .detail-document-toolbar>span,
-.detail-page .detail-content .detail-document-actions a,
-.detail-page .detail-content .ati-document-link,
-.detail-page .detail-content .codecoach-download-link{color:#174A73!important}
-.detail-page .detail-content .detail-document-toolbar,
-.detail-page .detail-content .detail-document-section{border-color:#C7D7E3!important}
-.detail-page .detail-content .detail-case-tabs button.active,
-.detail-page .detail-content .codecoach-challenge-tabs button.active,
-.detail-page .detail-content .ati-stage-nav button.active,
-.detail-page .detail-content .ati-batch-tabs button.active,
-.detail-page .detail-content .ati-filter-row button.active{
-  background:#174A73!important;border-color:#174A73!important;color:#F4F1E8!important;
-}
-.detail-page .detail-content .detail-case-tabs button.active *,
-.detail-page .detail-content .codecoach-challenge-tabs button.active *,
-.detail-page .detail-content .ati-stage-nav button.active *,
-.detail-page .detail-content .ati-batch-tabs button.active *,
-.detail-page .detail-content .ati-filter-row button.active *{color:#F4F1E8!important}
-.detail-page .detail-content .detail-cta{
-  background:linear-gradient(135deg,#102A43,#174A73)!important;
-  border-color:rgba(231,198,106,.35)!important;
-}
-.detail-page .detail-content .detail-cta h2,
-.detail-page .detail-content .detail-cta p{color:#F4F1E8!important}
-.detail-page .detail-content .detail-cta a{color:#E7C66A!important}
-@media(max-width:760px){
-  .nav.mobile-open .navlinks{background:#F4F1E8!important}
-  .nav.mobile-open .navlinks a,.nav.mobile-open .navlinks button{color:#102A43!important}
-}

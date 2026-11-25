@@ -281,7 +281,7 @@ body{background:#111311;color:var(--ink)}
 .detail-nav a:last-child{color:#c7d0c8}
 .detail-hero{background:radial-gradient(ellipse at 82% 22%,rgba(105,145,132,.25),transparent 38%),linear-gradient(120deg,#111b1a,#1c2b27 65%,#131d1b);color:#f2f1eb;padding:100px 0 86px}
 .detail-wrap{width:min(1020px,calc(100% - 48px));margin:0 auto}
-.detail-eyebrow,.detail-index{font:10px var(--mono);letter-spacing:.14em;color:#b99167;text-transform:uppercase}
+.detail-eyebrow,.detail-index{font:700 10px var(--mono);letter-spacing:.14em;color:#b99167;text-transform:uppercase}
 .detail-hero h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-.065em;margin:25px 0 22px}
 .detail-hero h1 em{font-style:normal;color:#c9a47c}
 .detail-lead{max-width:750px;color:#c0cbc3;font-size:16px;line-height:1.9}

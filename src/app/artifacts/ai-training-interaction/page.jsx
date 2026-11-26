@@ -211,7 +211,10 @@ export default function AITrainingInteractionPage(){
    </section>
 <section className="detail-section ati-reveal">
     <p className="detail-index">REFERENCES</p>
-    <p>This artifact is based on the Professor Predict interactive learning activity completed as part of Machine Learning Fundamentals. The original activity responses and reflections are included in the project documentation.</p>
+    <ol className="ati-references">
+     <li>Indiana Wesleyan University. AIML-500 Machine Learning Fundamentals, Workshop 3.2: <em>Deep Learning and Neural Networks</em> (course reading).</li>
+     <li>Indiana Wesleyan University. AIML-500 Machine Learning Fundamentals, Workshop 3.3: <em>AI Training Interaction</em>.</li>
+    </ol>
    </section>
 <section className="detail-section ati-reveal detail-document-section">
     <p className="detail-index">PROJECT DOCUMENTATION</p>
